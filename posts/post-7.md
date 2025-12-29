@@ -42,4 +42,5 @@ Now, we are showing only the sub-category as my dimension but what if your user 
 Once, we have it just need to drag it and see the magic. I am selecting the Category and sub-category together. Easy peasy lemon squeeze!! In rows, you need to use the select dimension field parameter and in the values, you will be using the KPI CY and KPI LY.
 
 [Image placeholder]
-Value 4  in the field parameters helps a lot to achieve things like this. There are many more use cases where value 4 can become crucial. In this blog, we have restricted ourselves to matrix visuals, but you can even import visuals to enhance the user experience on your reports. 
+Value 4  in the field parameters helps a lot to achieve things like this. There are many more use cases where value 4 can become crucial. In this blog, we have restricted ourselves to matrix visuals, but you can even import visuals to enhance the user experience on your reports.
+
