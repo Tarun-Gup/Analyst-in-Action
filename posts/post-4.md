@@ -1,6 +1,6 @@
 # Power BI: Checklist I run before publishing any report
 
-*22-November-2025*
+*Published on August 2025*
 
 [Image placeholder]
 
