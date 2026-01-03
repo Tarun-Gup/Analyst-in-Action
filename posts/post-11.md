@@ -40,8 +40,6 @@ Correct Subtotals =SWITCH (
     [Total Sales]
 )
 
-
-
 ```
 
 To calculate Average Sales we are using this measure
@@ -71,6 +69,7 @@ SWITCH (
 ```
 
 Too much playing with DAX for the day!! Let's do one last scenario, we would like to show the Order year in the row and Categories in the column. Row subtotals should represent the Sales without the furniture category sales and column subtotals should show the total sales.
+
 ```DAX
 Correct Subtotals excluding furniture =
 SWITCH (
@@ -89,16 +88,5 @@ It's too confusing now. Okay, let's create a debunk measure for it then. We are 
 
 Protip: Using all these measures is fun but beware that by default matrix will only show totals as the label for the column and row subtotals. To change it select the matrix and go to the Column Subtotal and Row Subtotal to change it. Also, if you do not want to provide a label just click on the Subtotal label and provide a space.
 
-```DAX
-Correct Subtotals DEBUNKED =
-SWITCH (
-    TRUE (),
-    ISINSCOPE ( Row_Name )
-        && ISINSCOPE ( Column_Name ), [Total Sales], -- show all inner values
-    ISINSCOPE ( Row_Name ), [Average Sales],         -- row subtotal
-    ISINSCOPE ( Column_Name ), [Total Sales],        -- column subtotal
-    [Total Sales]                                    -- grand total
-)
-```
 [Image placeholder: describe what the image will show]
 Isn't it amazing?? In this blog, we have only explored 3 scenarios but there can be more such scenarios. Most of such scenarios can be tackled with a slight tweaking to the measures provided above. We would strongly recommend before you try these measures have a basic understanding of HASONEVALUE and ISINSCOPE. 
