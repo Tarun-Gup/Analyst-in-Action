@@ -31,7 +31,7 @@ We have utilized HASONEVALUE to define this condition. HASONEVALUE checks if a p
 Easy peasy lemon squeezy!! 😂 Moving to the second scenario, now we are looking for a similar setup as the first scenario but this time we only need the average sales on the row subtotals and total sales as the column subtotals. To achieve it with a single measure we will take benefit of basic SWITCH and ISINSCOPE functions.
 
 ```DAX
-Correct Subtotals =ITCH (
+Correct Subtotals =SWITCH (
     TRUE (),
     ISINSCOPE ( SampleSuperstore[Category] )
         && ISINSCOPE ( SampleSuperstore[Order Year] ), [Total Sales],
@@ -46,8 +46,59 @@ Correct Subtotals =ITCH (
 
 To calculate Average Sales we are using this measure
 
-
+```DAX
 Average Sales =
 CALCULATE (
     AVERAGEX ( VALUES ( SampleSuperstore[Order Year] ), [Total Sales] )
 )
+
+```
+
+[Image placeholder: describe what the image will show]
+
+What is going on here 😵‍💫??? Okay, let's debunk the DAX step by step. To understand the Correct Subtotals measure wewill first need to understand the function ISINSCOPE. In simple words, ISINSCOPE allows us to detect if a particular field is in the row or column of a visual. To understand ISINSCOPE in detail we would recommend visiting DAXGUIDE(https://example.com)
+
+```DAX
+Correct Subtotals DEBUNKED =
+SWITCH (
+    TRUE (),
+    ISINSCOPE ( Row_Name )
+        && ISINSCOPE ( Column_Name ), [Total Sales], -- show all inner values
+    ISINSCOPE ( Row_Name ), [Average Sales],         -- row subtotal
+    ISINSCOPE ( Column_Name ), [Total Sales],        -- column subtotal
+    [Total Sales]                                    -- grand total
+)
+```
+
+Too much playing with DAX for the day!! Let's do one last scenario, we would like to show the Order year in the row and Categories in the column. Row subtotals should represent the Sales without the furniture category sales and column subtotals should show the total sales.
+```DAX
+Correct Subtotals excluding furniture =
+SWITCH (
+    TRUE (),
+    ISINSCOPE ( SampleSuperstore[Category] )
+        && ISINSCOPE ( SampleSuperstore[Order Year] ), [Total Sales],
+    ISINSCOPE ( SampleSuperstore[Order Year] ), [Sales excluding furniture],
+    ISINSCOPE ( SampleSuperstore[Category] ), [Total Sales],
+    [Sales excluding furniture]
+)
+
+)
+```
+[Image placeholder: describe what the image will show]
+It's too confusing now. Okay, let's create a debunk measure for it then. We are using the same ISINSCOPE function which will return TRUE if a particular field is used in the row or column in a visual (matrix in this case). Otherwise, it will return FALSE.
+
+Protip: Using all these measures is fun but beware that by default matrix will only show totals as the label for the column and row subtotals. To change it select the matrix and go to the Column Subtotal and Row Subtotal to change it. Also, if you do not want to provide a label just click on the Subtotal label and provide a space.
+
+```DAX
+Correct Subtotals DEBUNKED =
+SWITCH (
+    TRUE (),
+    ISINSCOPE ( Row_Name )
+        && ISINSCOPE ( Column_Name ), [Total Sales], -- show all inner values
+    ISINSCOPE ( Row_Name ), [Average Sales],         -- row subtotal
+    ISINSCOPE ( Column_Name ), [Total Sales],        -- column subtotal
+    [Total Sales]                                    -- grand total
+)
+```
+[Image placeholder: describe what the image will show]
+Isn't it amazing?? In this blog, we have only explored 3 scenarios but there can be more such scenarios. Most of such scenarios can be tackled with a slight tweaking to the measures provided above. We would strongly recommend before you try these measures have a basic understanding of HASONEVALUE and ISINSCOPE. 
