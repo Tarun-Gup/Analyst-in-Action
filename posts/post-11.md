@@ -54,7 +54,7 @@ CALCULATE (
 
 [Image placeholder: describe what the image will show]
 
-What is going on here 😵‍💫??? Okay, let's debunk the DAX step by step. To understand the Correct Subtotals measure wewill first need to understand the function ISINSCOPE. In simple words, ISINSCOPE allows us to detect if a particular field is in the row or column of a visual. To understand ISINSCOPE in detail we would recommend visiting DAXGUIDE(https://example.com)
+What is going on here 😵‍💫??? Okay, let's debunk the DAX step by step. To understand the Correct Subtotals measure wewill first need to understand the function ISINSCOPE. In simple words, ISINSCOPE allows us to detect if a particular field is in the row or column of a visual. To understand ISINSCOPE in detail we would recommend visiting [DAXGUIDE](https://example.com)
 
 ```DAX
 Correct Subtotals DEBUNKED =
