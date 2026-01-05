@@ -23,18 +23,22 @@ Let's start with the simplest of the lot. I like structuring my report a lot sin
 Select the measures that you want to group. In my case, I need to group my base measures. Once you select, you can see the display folder section to the right, just type the name that you want to give to this folder.
 
 [Image placeholder]
+
 Once you have done this, hit save. It's the icon below the edit on top, or you can do Ctrl+S. Now we head to our PBIX to see the magic.
 
 [Image placeholder]
+
 Awesome! Now that we have the folder, we would like to create a sub-folder under this to create a distinction between quantity and sales measures. To do this, just select the measure that needs to be in the Quantity subfolder. In this case, it is Total Quantity. Under the display folder, you just type Base\Quantity. Do note that we need to use the forward slash and not the backward slash to create a subfolder.
 
 [Image placeholder]
+
 How cool is this? Let's go to my favourite use case. Editing a measure and specifically bulk editing measures across the PBIX. If you think of this in Power BI, it's so boring to fix errors across tons of measures. With TE, it is so simple.
 
 Okay, first, for the demo purpose, I have changed my base measure name by adding _ after Sales. But I did it only in the dependent measure, so all measures give errors. There are 2 ways to do this- one is a quite nerdy approach, and the other is that you don't like to sit for hours to fix this. 
 
 A basic and nerdy approach is to click on the measure that gives an error and fix it one by one by removing the _. But we don't have that much time, so here comes the superpower of TE that is C# scripts. To know more about C# scripts, I would recommend this quick read. In this demo, our goal is to get rid of the _ after Sales in all the measures. So I have designed this C# script to tackle this. 
 
+```csharp
 foreach(var m in Model.AllMeasures)
 {
     if(m.Expression.Contains("SampleSuperstore[Sales_]"))
@@ -43,18 +47,28 @@ foreach(var m in Model.AllMeasures)
     }
 }
 
-This C# script will go across all the measures in the model and check if it is using Sales_ and replace it with Sales.Perfect, but wait, do I need to learn how to create such a C# script? No, you can refer to this GitHub page, which has all the basic C# scripts readily available, just tweak them a little based on your needs. Also, with TE version 3, you don't even need a C# script to bulk edit the measures. 
 
-Okay, let's test the superpower of C#script with another use case we need to format all the measures, which can be again a repetitive task if you stick with the Power BI to do so. You can create a basic C# script that is readily available on GitHub.
+```
+
+This C# script will go across all the measures in the model and check if it is using Sales_ and replace it with Sales.Perfect, but wait, do I need to learn how to create such a C# script? No, you can refer to this GitHub page, which has all the basic C# scripts readily available, just tweak them a little based on your needs. Also, with TE version 3, you don't even need a C# script to bulk edit the measures. kay, let's test the superpower of C#script with another use case we need to format all the measures, which can be again a repetitive task if you stick with the Power BI to do so. You can create a basic C# script that is readily available on GitHub.
 
 To run any sort of C#script, go to the advanced scripting or C#script option and copy and paste. At first, after execution, if you closely observe, there will be a blue icon popping up with every measure. No need to worry, it is the sign to deploy the change, hit save, and these warnings will be gone.
 
 [Image placeholder]
+
 Here is the C# script you can use to format all your measures. C#scripts can help a lot when it comes to all boring and repetitive tasks.
 
-// --- FORMAT ALL MEASURES ---
-// Use DAX Formatter (batched) on every measure in the model
+```csharp
+-- FORMAT ALL MEASURES ---
+
+/// Use DAX Formatter (batched) on every measure in the model
+
 Model.AllMeasures.FormatDax();
+
+```
+
+
+
 
 Talking of repetitive tasks, have you ever tried giving the format strings to different measures? You can do it in Power BI, but I generally prefer to do this with TE. If you change the string Power BI always show working on it, which is normal, but it is just slow if you consider changing format strings for 100 measures. 
 
@@ -62,7 +76,8 @@ Can you do a bulk change in this also? YES!!! But a clear warning for this use c
 
 In my recommendation, don't use the generic C# script; instead, let's do the basic stuff by changing the format string of all decimal numbers to whole numbers and vice versa with a comma separator.
 
-// --- TOGGLE FORMAT STRING: Decimal  Whole Number ---
+```csharp
+/ --- TOGGLE FORMAT STRING: Decimal  Whole Number ---
 // Whole numbers with comma: "#,0"
 // Decimals with comma + 2 places: "#,0.00"
 
@@ -80,18 +95,24 @@ foreach (var m in targets)
     {
         m.FormatString = "#,0";
 
+```
+
 How awesome is this? Another use case is to see the dependent measures. To do it, you select a specific measure and right-click on it to see the object dependencies. Select the option to show objects on which the measure depends, and when you expand and hover them, you will see the base measure too, and its definition.
 
 [Image placeholder]
+
 Let's do something more interesting. We will analyse the data model in TE. Before we continue, check under the View tab at the top if you have all the required functions selected.
 
 [Image placeholder]
+
 Once you have all of them selected, close the view tab and head to the relationships under the model. You will notice all the relationships that were made in Power BI are available here as well. Select one of them and you will see it is actually a replica of the manage model. You can do everything like you do in manage model - make a relationship inactive, delete a relationship...
 
 [Image placeholder]
+
 Last use case for today, and it is very commonly used to refresh an individual table. To do so, select the table that you need to refresh and right click, select script, select refresh, and choose the full refresh mode. Choose to the clipboard. This will generate a TMSL (Tabular Model Scripting Language) script.
 
 [Image placeholder]
+
 Once you have the TMSL script, we need to head to the SSMS (SQL Server Management Studio) and connect via the XMLA endpoint. Create a new query and paste the TMSL there. Run it and boom, your table got refreshed.
 
 This is a very basic guide but if you like to have an intermediate version of TE guide where we can cover - copying measures from one PBIX to another, make changes to the Power Query without going to transform data, deploy the semantic model in workspace...do drop us a comment and we will cover it in the future blogs.
