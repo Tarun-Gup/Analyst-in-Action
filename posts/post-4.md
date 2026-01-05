@@ -20,7 +20,7 @@ Note: This checklist comes from my day-to-day experience, and it should help Pow
 
 I will be referencing some detailed blog posts on some topics, which will give you a better understanding of each of the topics.
 
-
+---
 
 ✅ Data Modelling Checks
 
@@ -39,7 +39,7 @@ Structuring the view: One of my favourites, generally, I have a dedicated measur
 
 Hiding primary keys: You can only hide your columns in the model view; ideally, you should be hiding the primary keys. Why? Your primary keys are generally the high cardinal field, meaning if you drag it in one of your visuals, it will be bad for the performance of that visual. Unless the users need to search based on the primary keys, then you don't hide it. 
 
-
+---
 
 ✅ DAX Checks
 
@@ -55,6 +55,7 @@ Correct format string for all measures: You can easily check it within Power BI,
 
 Avoid the use of iterator functions with IF functions: This combination tends to create callback IDs that are not good in terms of performance. Do check out the detailed blogpost
 
+---
 
 ✅ Layout and UX checks
 
@@ -89,6 +90,7 @@ Bookmarks: If you’re using bookmarks across the report, make sure only the rel
 Use of buttons: If your report uses buttons, make sure each one does exactly what users expect.
 Pay special attention to the Back buttons. They should take the user to the correct place, whether that’s the Start page or the page they were on before. A misplaced button action can confuse users quickly, so it’s worth clicking through each one once before publishing.
 
+---
 
 ✅ Security and Cleanup
 
