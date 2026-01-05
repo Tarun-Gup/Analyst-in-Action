@@ -10,10 +10,15 @@ Okay, since you are aware of the difference between distinct and unique, we can 
 
 Let's start with the Values function in DAX. Values allow us to get the distinct values for a specific column or a table, depending on the argument you have passed, keeping the filter context. Okay, we will be creating another column in the dummy table using Values. 
 
+
+
 Class values =
   VALUES ( 'Blank dummy'[Class] )
 
+
+
 [Image placeholder]
+
 Oh ERROR! But why? To debug this, we need to understand the behaviour of Values. It only returns a table of distinct values and not a single value. What is the correct approach then? We can try this DAX for the calculated column. With this measure, we are making things simpler and asking to populate the Class Values column with Class, and in case of blanks and empty strings, populate it with class D.
 
 We have covered both scenarios by using 2 conditions with IF. ISBlank will tackle the actual blanks, meaning no values are available for that cell, while there are cases like we have of false blanks, meaning nothing is typed in, and gives us a 0-length string.
@@ -26,12 +31,14 @@ Class Values =
   )
 
 [Image placeholder]
+
 Now we have learnt a lesson of not using Values in a calculated column. Let's try to use the Values function with a measure. 
 
 Class values =
 VALUES ( 'Blank dummy'[Class] )
 
 [Image placeholder]
+
 Oh, not again! Okay, let's figure this out. By using this measure, we are asking to return a table as a scalar value, which is not allowed for a measure. To correct this, we can use the following measure. We are asking to return a list of classes with a comma separator. Coalesce allows us to tackle the blank with an empty string "".
 
 Class Values = 
@@ -42,6 +49,7 @@ CONCATENATEX(
 )
 
 [Image placeholder]
+
 Isn't that amazing?? Let's discuss one more use case that can be tackled with Values. The idea is to get the order value for the selected class. For the demo, we will be visualising in a matrix. First, DAX will give you the correct results, but if you have understood the basics of filter, all, and keep filters, you will definitely go for the optimised version of DAX. If you want to know more about Keepfilters function, here is a quick read.
 
 With the dirty version of DAX, we are using the ALL function unnecessarily, but why? We are removing the filters from Blank dummy table and then reapplying them only for the Class with the use of In Values. Hence, we opt for the optimised version where we use Keepfilters that allow us to keep the current filter, and In Values can help to add a filter condition for the class.
@@ -62,6 +70,7 @@ CALCULATE(
 )
 
 [Image placeholder]
+
 Protip: There is a subtle difference between the Values and Distinct. Values and Distinct can return the same results if you have no blank rows, but if you have blank rows, Values will consider the blank rows in the result, while Distinct removes the blank rows. But there's a catch with Distinct.
 
 What catch? We will see this with the use case of Distinct. Okay, let's start with a similar case as we tried with Values. If you closely notice, we are getting the same result that we got with Values, but why? Doesn't Distinct function as the default to remove the blank rows?
@@ -87,6 +96,7 @@ CONCATENATEX(
     )
 
 [Image placeholder]
+
 Let's wrap today's intense blog with a lighter note. We will see how Value can be used in a practical use case. Wait what? Didn't we start with Values? Value and Values are 2 different functions in the DAX world, and they serve a different purpose altogether. 
 
 Value allows you to convert a text to a numeric data type. Why can't I change directly in the query editor? Is this needed? Yes, you can easily change the data type in the query editor, but this would mean you are making this change before you load the data in the data model. But there are instances where you just need to convert a text column to a numeric column inside a measure.
@@ -96,6 +106,7 @@ We have added another column with customer class stored in a text data type by j
 Order Value in numeric = VALUE('Blank dummy'[Order Value text])
 
 [Image placeholder]
+
 Ah, not again! Another error! Okay, this is a common error. We are using the Value function with an empty string. If your column contains non-numeric text such as
 - "N/A", 
 - Empty String "", 
