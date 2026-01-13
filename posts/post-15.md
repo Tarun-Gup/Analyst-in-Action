@@ -1,4 +1,4 @@
-#Going a level beyond with DAX Studio
+# Going a level beyond with DAX Studio
 
 *Published on October 2024*
 
