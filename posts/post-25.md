@@ -1,4 +1,4 @@
-# POST TITLE
+# Use Relationship in DAX
 
 *Published on July 2023*
 
