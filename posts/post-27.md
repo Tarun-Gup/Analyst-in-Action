@@ -1,6 +1,6 @@
-# POST TITLE
+# Do we really need Keepfilters in DAX?
 
-*Published on DATE*
+*Published on June 2023*
 
 Writing a DAX can be tricky at times and making it efficient for the system is always a challenge for a BI Developer. The most prominent example is the use of filters in DAX. There are zillion ways to filter something in DAX and attain the same result but when you look behind the scenes you will get to know what effect it makes on performance.
 
