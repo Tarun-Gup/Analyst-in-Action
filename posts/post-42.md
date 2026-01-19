@@ -1,6 +1,6 @@
-# POST TITLE
+# Difference between Related and Lookupvalue in Power BI?
 
-*Published on DATE*
+*Published on February 2022*
 
 You must be aware of the purpose and significance of Vlookup in Excel. But when it comes to Microsoft Power BI there is no Vlookup in it. Power BI provides you Related and Lookupvalue which is quite similar to Vlookup in Excel. If you aren't familiar with the Vlookup kindly refer to our blog*.
 
