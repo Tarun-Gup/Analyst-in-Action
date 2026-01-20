@@ -72,7 +72,7 @@ Here are a few examples you can try on
 
 ```C#Script
 
-///Fill missing measure descriptions
+//Fill missing measure descriptions
 
 foreach (var m in Model.AllMeasures)
 {
@@ -84,7 +84,7 @@ foreach (var m in Model.AllMeasures)
 
 ```C#Script
 
-///C# Script: Normalize and prefix measure names
+//C# Script: Normalize and prefix measure names
 
 foreach (var m in Model.AllMeasures)
 {
@@ -101,11 +101,11 @@ We can answer everything related to the platform. Questions like which reports a
 
 ---
 
-Power BI REST APIs
+# Power BI REST APIs
 
 Final advice is to start with the core, document with the help of DAX Studio, and develop it as a habit. Slowly improve this with Tabular Editor and REST API layers instead of trying to perfect everything on day one.
 
-Can I automate this completely?
+# Can I automate this completely?
 
 Yes, this is a tricky one. In most cases, documentation can only be automated up to a point. The parts that work well are the ones Power BI already stores for you, such as tables, columns, measures, relationships, and which reports use a dataset. Instead of writing these down manually, you can simply pull them from the model and the Power BI service.
 
@@ -119,7 +119,7 @@ The result is documentation that stays accurate but doesn’t fix itself. Automa
 
 ---
 
-Practical Setup from Scratch 
+# Practical Setup from Scratch 
 
 This looks like a big task, and a literal add-on, but you will realise what exactly you are missing if you haven't started documenting yet. The biggest mistake is with such things are we are looking to perfect this from day 1 itself, but documentation is a thing that will improve day by day. You can start with something very basic and get in the habit of doing this. At this point, don't think about the automation.
 
@@ -143,5 +143,3 @@ The biggest gains come when documentation is generated directly from the model a
 Power BI documentation works best when it comes from the model itself instead of from someone’s experience or memory. When it’s generated from the dataset and the Power BI service, it stays current as things change and doesn’t rely on constant upkeep. That makes it easier to understand what’s in a model, safer to make changes, and much less likely that important details get lost over time.
 
 
-
-- Bullet three
