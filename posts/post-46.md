@@ -72,7 +72,7 @@ Here are a few examples you can try on
 
 ```C#Script
 
-//Fill missing measure descriptions
+### Fill missing measure descriptions
 
 foreach (var m in Model.AllMeasures)
 {
@@ -84,7 +84,7 @@ foreach (var m in Model.AllMeasures)
 
 ```C#Script
 
-//C# Script: Normalize and prefix measure names
+### C# Script: Normalize and prefix measure names
 
 foreach (var m in Model.AllMeasures)
 {
