@@ -20,5 +20,5 @@ If you need to share an example, use fake numbers or remove anything sensitive f
 - **LinkedIn Newsletter:** [BI Bits](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960)
 
 I try to read every message, but I can’t promise detailed help on every individual project.  
-That said, many questions turn into future blog posts — so they’re always welcome.
+That said, many questions turn into future blog posts, so they’re always welcome.
 
