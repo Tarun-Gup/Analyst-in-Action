@@ -19,8 +19,8 @@ I see knowledge a bit like good food: it’s better when it’s shared.
 
 If you have questions, ideas, or feedback, feel free to:
 - Leave a comment on any post  
-- Reach out via [email](guptatarun130@gmail.com)
-- Connect with me on [LinkedIn](www.linkedin.com/in/tarun-gupta-3a0082141)
+- Reach out via email - guptatarun130@gmail.com
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/tarun-gupta-3a0082141/)
 
 ## LinkedIn Newsletter
 
