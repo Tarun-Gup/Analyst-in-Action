@@ -1,0 +1,11 @@
+{
+  "name": "analyst-in-action",
+  "private": true,
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
