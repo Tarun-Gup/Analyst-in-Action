@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>From One Big PBIX to a Shared Dataset + Thin Reports</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>From One Big PBIX to a Shared Dataset + Thin Reports</h1>
+    <p><em>Published on DATE</em></p>
+
+    <p>Most BI developers begin their Power BI journey the same way: one PBIX file that does absolutely everything. It holds the data model, the queries, the measures, and all the report pages on top. It’s simple, self-contained, and easy to understand. That's normal, no? Yes, absolutely, but let's imagine a scenario where there are different teams, and they want the same dataset but tweaked in a different way for their purpose.</p>
+
+    <p>Since your semantic model is quite big in terms of size. Generally, you can just make the adjustments and create multiple PBIX files for different audiences. This solution will work, but let's understand what we are doing. After a few months, what started as one neat, well-understood PBIX turns into a small family of very similar files:</p>
+
+    <ul>
+      <li>Multiple PBIX files containing almost the same model</li>
+      <li>KPIs that should mean the same thing but don’t quite match</li>
+      <li>A growing fear that changing a core measure might break someone else’s report</li>
+      <li>A file so heavy that opening it feels like loading a small video game</li>
+    </ul>
+
+    <p>This is the point where many teams realise they aren’t just maintaining reports anymore, they’re maintaining variations of the same model. And that is usually when it’s time to step back and restructure things. The solution isn’t complicated: Split the big PBIX into a shared dataset and build thin reports on top of it.</p>
+
+    <p>When we make this shift, you will make your life a lot easier:</p>
+
+    <ul>
+      <li>Your measures are defined in one place</li>
+      <li>Different teams can have tailored reports without duplicating the model</li>
+      <li>Fixes and enhancements flow automatically to all reports</li>
+      <li>The overall setup becomes easier to maintain and scale</li>
+      <li>You won't be consuming the fabric capacity multiple times for the same model</li>
+    </ul>
+
+    <p>In today's blog, we will walk through what a shared dataset actually is, how thin reports work, when it’s worth splitting your PBIX, and a practical way to migrate without turning your project upside down.</p>
+
+    <h2>What do Shared Dataset and Thin Report mean?</h2>
+
+    <p>Okay, let's define them clearly before we move further. These terms sound quite technical and are used interchangeably. But are they really the same thing? Not entirely.</p>
+
+    <p>In simple terms, the Shared Dataset generally contains the data model - tables, relationships, measures, and doesn't contain the visuals. This is the one source of truth that everyone should be using across teams because all the base KPIs are defined here.</p>
+
+    <p>When we talk about the Thin Reports, these are reports that are connecting to the Shared Dataset instead of importing their own data.</p>
+
+    <h2>When do I need to move to Shared Datasets?</h2>
+
+    <p>Not every report needs a shared dataset. A simple dashboard or a quick analysis for a team can live happily inside a single PBIX. But as soon as a report becomes useful to more than one group, and you can see your dataset growing, this is the sign that you should be moving towards a Shared Dataset.</p>
+
+    <p>Here are the signs I look for that usually tell me it’s time to stop duplicating PBIX files and start centralising the model.</p>
+
+    <ul>
+      <li><strong>When you are maintaining multiple versions of the same PBIX:</strong> Same underlying data used in multiple reports. Maybe a different set of measures depending on the audience. This is clearly creating multiple versions of the same model.</li>
+      <li><strong>When different teams have the same KPIs but in their own report:</strong> This is the most frustrating stuff for maintaining multiple truths. Such situations can lead to a mismatch between the KPIs, and then they ask you to debug the difference.</li>
+      <li><strong>When your PBIX is getting heavier day by day:</strong> Your PBIX takes ages to load, and every change takes too long because of the lag. It would make sense to reduce the size of the report by splitting the data model from the visuals.</li>
+      <li><strong>And the most important part is governing:</strong> When everyone has their own version of the same thing, it is very difficult to ensure the same KPI definitions. Eventually, if you are thinking of going towards Dev/Test/Prd with consistent KPI definitions, a shared dataset is the way to go.</li>
+    </ul>
+
+    <p><strong>Protip:</strong> From experience, I can say shared datasets are not the ultimate cure to all the issues, but this will be a stepping stone in the direction of maintenance and governance.</p>
+
+    <h2>Step-by-Step guide to move from PBIX to Shared Dataset</h2>
+
+    <ol>
+      <li><strong>Step 1:</strong> First, we need to create a duplicate of the PBIX. Then, rename the duplicate PBIX to something like <code>Report_Name_Shared_Dataset</code>.</li>
+      <li><strong>Step 2:</strong> Open the Shared Dataset version and delete all pages and only keep the data model, measures, and the tables. This way, we will have the base for the shared dataset.</li>
+      <li><strong>Step 3:</strong> Now, it is time to publish the dataset to the workspace. You can now connect any of the reports with it.</li>
+      <li><strong>Step 4:</strong> Time to create a thin report. Open a blank PBIX and go to <strong>Get data</strong> &gt; <strong>Power BI Semantic Model</strong>, and you can now directly create the report without worrying about the data modelling. Or if you need the same visuals as they are in the original report, then just copy and paste them.</li>
+    </ol>
+
+    <p>How simple it is? It is actually very simple to set it up, but this can also lead to some problems if best practices aren't followed.</p>
+
+    <h2>Best practices</h2>
+
+    <ul>
+      <li><strong>Clear distinction between the model and reports:</strong> As a rule of thumb, your dataset is only where your model and logic lie. It will serve as a foundation where you can create thin reports.</li>
+      <li><strong>Your dataset will be the one source of truth:</strong> This will ensure all the reports that are based on this dataset will have the same KPI definitions, and if KPI definitions change in the future, you don't need to change it in all places.</li>
+      <li><strong>Don't overburden your thin reports:</strong> Try not to create too much in thin reports and keep the calculations in the shared dataset itself.</li>
+      <li><strong>Make your Shared Dataset presentable:</strong> Do a basic cleanup (deleting unused measures and columns). Give business-friendly names to all your columns and measures.</li>
+    </ul>
+
+    <p>My checks generally include:</p>
+    <ul>
+      <li>Running a Best Practice Analyzer</li>
+      <li>Using Measure Killer to remove unused columns and measures</li>
+      <li>Using Tabular Editor to organize all the measures in folders and subfolders</li>
+      <li>Double-checking data type and column name in all tables</li>
+    </ul>
+
+    <ul>
+      <li><strong>Clear ownership required:</strong> The whole team shouldn't be owning a shared dataset. You need a specific person to approve the changes.</li>
+      <li><strong>Improving shared dataset over time:</strong> New measures, columns, and tables can be added in the future, and it won't hurt as long as you are doing all these changes in one place.</li>
+      <li><strong>Set up the security in the dataset:</strong> You can't set up security on thin reports; thin reports inherit security from the shared dataset. Also, you can't test roles in thin reports.</li>
+    </ul>
+
+    <p>Once your shared dataset is in place and different teams start using it, it often becomes the default source for the numbers everyone cares about. And they begin asking, “Is this coming from the main model?” or “Is this the official measure?” When that starts happening, you’re moving beyond the shared dataset and into something with more weight and responsibility. That’s where the idea of a golden dataset really starts to make sense.</p>
+
+    <h2>Where “Golden Datasets” Fit In?</h2>
+
+    <p>If you’ve spent any time around Power BI conversations, you’ve probably heard people talk about “golden datasets.” The term sounds fancier than it really is. In most organisations, a golden dataset is simply a shared dataset that has grown into the official source of truth for a particular business area.</p>
+
+    <p>You don’t start by declaring something a golden dataset. It becomes one organically as people rely on it, and it proves itself reliable over time. This tag is normally earned by a dataset when it meets these criteria:</p>
+
+    <ul>
+      <li>Multiple reports and teams depend on it</li>
+      <li>Someone is clearly responsible for maintaining it</li>
+      <li>Key business measures are defined there</li>
+      <li>The organisation agrees it’s the trusted source</li>
+    </ul>
+
+    <p>Once a dataset reaches that point, the business typically wants to protect it a bit more. That can mean:</p>
+
+    <ul>
+      <li>Putting it in a dedicated “data” workspace</li>
+      <li>Restricting who can edit it</li>
+      <li>Marking it as endorsed, promoted, or certified in the Power BI Service</li>
+      <li>Documenting measures and definitions</li>
+      <li>Adding proper approval for changes</li>
+    </ul>
+
+    <p>None of this has to be heavy governance. Even simple recognition helps people understand that this dataset isn’t just another report, but it’s the official version of sales numbers, or finance metrics, or customer data.</p>
+
+    <p>The general path looks like this:</p>
+
+    <ol>
+      <li>One big PBIX</li>
+      <li>Split into model + thin reports</li>
+      <li>The model is used more widely</li>
+      <li>Model becomes trusted</li>
+      <li>And it’s treated as a golden dataset</li>
+    </ol>
+
+    <p>So the idea of a golden dataset isn’t something different, I see it as a normal progression model and thin reports. There are a few things to keep in mind when you are in this transition.</p>
+
+    <ul>
+      <li><strong>Don't rush for the 'Golden' label:</strong> This label will eventually come if your shared dataset is being used in multiple thin reports and users trust the logics that you have put in place.</li>
+      <li><strong>Clear communication:</strong> Open communication to be done, in case of the KPI definitions change. All the business users should be aware of such changes.</li>
+    </ul>
+
+    <h2>Wrap up</h2>
+
+    <p>To wrap today's blog, here are the final words of advice. A single PBIX file is a perfectly fine starting point. But once you find yourself copying the file for different teams, adjusting KPIs in multiple places, or worrying about whether a change will break another version, that’s usually the sign it’s time to separate the model from the report layer.</p>
+
+    <p>A shared dataset gives you one place to define business logic and one place to maintain it. Thin reports let each audience have its own view without turning into another model you need to look after. The result is cleaner updates, consistent numbers, and less time spent searching for the “right” version of a measure.</p>
+
+    <p>You don’t have to adopt all the enterprise features on day one. Most teams start with a simple split, get used to maintaining the model in one PBIX, and gradually build better habits around naming, ownership, security, and change management. Over time, the shared dataset naturally becomes something the organisation trusts, and that’s how many golden datasets are born.</p>
+
+    <p>If you’re already juggling several PBIX files that look suspiciously similar, you’ve probably outgrown the one-file approach. A shared dataset with thin reports isn’t a big architectural leap; it’s just the next sensible step.</p>
+
+    <p><a href="/blog.html">Back to blog</a></p>
+  </body>
+</html>
+

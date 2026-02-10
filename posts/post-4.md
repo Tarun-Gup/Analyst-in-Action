@@ -1,3 +1,10 @@
+---
+title: Post 4
+tags: post
+---
+
+
+
 # Power BI: Checklist I run before publishing any report
 
 *Published on August 2025*

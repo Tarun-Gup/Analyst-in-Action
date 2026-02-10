@@ -1,3 +1,10 @@
+---
+title: Post 6
+tags: post
+---
+
+
+
 # Common pitfalls with Values, Distinct, and Value
 
 *Published on August 2025*
