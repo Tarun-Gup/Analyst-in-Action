@@ -1,0 +1,46 @@
+---
+layout: base.njk
+---
+
+<article class="blog-post">
+  <header class="post-header">
+    <h1 class="post-title">{{ title or page.fileSlug }}</h1>
+
+    {% if description %}
+      <p class="post-subtitle">{{ description }}</p>
+    {% endif %}
+
+    {% if date %}
+      <p class="post-meta">{{ date | readableDate }}</p>
+    {% endif %}
+
+    {% if tags and tags.length %}
+      <div class="post-tags">
+        {% for tag in tags %}
+          {% if tag != "posts" and tag != "all" and tag != "nav" %}
+            <a class="tag" href="/tags/{{ tag | slug }}/">
+              {{ tag | replace("-", " ") }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+

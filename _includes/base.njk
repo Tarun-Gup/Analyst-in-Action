@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title or "Analyst in Action" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  {% if page.url == "/" %}
+    <!-- HOMEPAGE HERO -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Analyst in Action</h1>
+        <p>Everything here comes from real Power BI projects, not textbooks</p>
+
+        <nav>
+          <a href="/">HOME</a>
+          <a href="/blog/">BLOG</a>
+          <a href="/start-here/">START HERE</a>
+          <a href="/about/">ABOUT</a>
+          <a href="/contact/">CONTACT</a>
+          <a href="/terms/">TERMS OF USE</a>
+          <a href="/privacy/">PRIVACY POLICY</a>
+        </nav>
+      </div>
+    </header>
+
+  {% else %}
+    <!-- SIMPLE HEADER (All other pages including posts) -->
+    <header class="simple-header">
+      <nav>
+        <a href="/">HOME</a>
+        <a href="/blog/">BLOG</a>
+        <a href="/start-here/">START HERE</a>
+        <a href="/about/">ABOUT</a>
+        <a href="/contact/">CONTACT</a>
+      </nav>
+    </header>
+  {% endif %}
+
+  <!-- MAIN CONTENT -->
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Analyst in Action</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+

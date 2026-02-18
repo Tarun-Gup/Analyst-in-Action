@@ -1,13 +1,372 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Analyst in Action</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <h1>Analyst in Action</h1>
-    <p>This is my new website.</p>
-    <p><a href="/blog.html">Read the blog</a></p>
-  </body>
-</html>
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #3e3e3e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================= */
+/* HERO HEADER (Homepage Only) */
+/* ============================= */
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px 100px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 0 0 40px;
+  opacity: 0.95;
+}
+
+.hero nav a {
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.hero nav a:hover {
+  opacity: 0.75;
+}
+
+/* ============================= */
+/* SIMPLE HEADER */
+/* ============================= */
+
+.simple-header {
+  background: white;
+  padding: 18px 0;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.simple-header nav a {
+  color: #333;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.simple-header nav a:hover {
+  color: #0077ff;
+}
+
+/* ============================= */
+/* MAIN CONTENT CARD */
+/* ============================= */
+
+main {
+  max-width: 980px;
+  margin: 60px auto;
+  background: white;
+  padding: 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+/* ============================= */
+/* HOMEPAGE INTRO */
+/* ============================= */
+
+.homepage-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homepage-intro h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.homepage-intro p {
+  color: #666;
+}
+
+/* ============================= */
+/* POST GRID */
+/* ============================= */
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.post-card {
+  border: 1px solid #eee;
+  padding: 25px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.post-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.post-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: #111;
+}
+
+.post-card a:hover {
+  color: #0077ff;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Blog/Home card description + read more */
+
+.post-desc {
+  font-size: 15px;
+  color: #555;
+  margin: 10px 0 15px;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  font-weight: 600;
+  color: #0077ff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* BLOG POST PAGE */
+/* ============================= */
+
+.blog-post {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* Post Header */
+
+.post-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.post-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+  margin: 8px 0 12px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* TAGS */
+
+.post-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  margin: 0 8px 8px 0;
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: #f0f0f0;
+  border-color: #ddd;
+}
+
+/* ============================= */
+/* POST CONTENT */
+/* ============================= */
+
+.post-content {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 22px;
+}
+
+.post-content h2 {
+  margin-top: 48px;
+  margin-bottom: 14px;
+  font-size: 26px;
+  color: #222;
+  font-weight: 700;
+}
+
+.post-content h3 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0 0 20px;
+  padding-left: 22px;
+}
+
+.post-content li {
+  margin-bottom: 10px;
+}
+
+.post-content a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* CODE BLOCKS (DAX / SQL etc.) */
+/* ============================= */
+
+.post-content pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 24px 0;
+}
+
+.post-content code {
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95em;
+}
+
+.post-content p code,
+.post-content li code {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 60px;
+}
+/* ============================= */
+/* PAGINATION */
+/* ============================= */
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pagination a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0077ff;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+.pagination span {
+  color: #666;
+}
+
+
+
+
+
+
 
