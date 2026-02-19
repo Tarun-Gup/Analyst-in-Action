@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://analystinaction.netlify.app/sitemap.xml
+
+

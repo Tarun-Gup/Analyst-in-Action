@@ -3,16 +3,19 @@ module.exports = function (eleventyConfig) {
   // 🚫 Ignore disabled pages folder
   eleventyConfig.ignores.add("_pages_disabled/**");
 
-  // Copy CSS into _site
+  // Copy static files into _site
   eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
-  // Date format filter
+  // Date format filter (Exact format: 19 Feb 2026)
   eleventyConfig.addFilter("readableDate", function(dateObj) {
-    return new Date(dateObj).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
+    const date = new Date(dateObj);
+
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = date.toLocaleString("en-GB", { month: "short" });
+    const year = date.getFullYear();
+
+    return `${day} ${month} ${year}`;
   });
 
   /* ============================= */
@@ -22,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("./posts/*.md")
-      .sort((a, b) => b.date - a.date);   // ✅ Proper date sorting
+      .sort((a, b) => b.date - a.date);
   });
 
   /* ============================= */
@@ -98,6 +101,9 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+
+
+
 
 
 
