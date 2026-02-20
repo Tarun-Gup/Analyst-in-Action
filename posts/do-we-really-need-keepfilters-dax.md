@@ -1,7 +1,7 @@
 ---
 title: "Do We Really Need KEEPFILTERS in DAX?"
 layout: post.njk
-date: 2023-06-01
+date: 2023-06-23
 description: "An explanation of how KEEPFILTERS works in DAX, when it is necessary, and how it affects filter context in Power BI calculations."
 tags:
   - posts

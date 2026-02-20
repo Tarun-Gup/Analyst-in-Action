@@ -1,7 +1,7 @@
 ---
 title: "7 Commonly Used DAX Expressions in Power BI"
 layout: post.njk
-date: 2021-06-01
+date: 2021-06-02
 description: "A practical overview of seven commonly used DAX expressions in Power BI and how they are applied in real-world reporting scenarios."
 tags:
   - posts

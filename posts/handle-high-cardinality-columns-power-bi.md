@@ -1,7 +1,7 @@
 ---
 title: "How to Handle High Cardinality Columns in Power BI"
 layout: post.njk
-date: 2024-04-01
+date: 2024-04-12
 description: "A practical explanation of high cardinality columns in Power BI, why they affect performance, and strategies to optimize your data model."
 tags:
   - posts

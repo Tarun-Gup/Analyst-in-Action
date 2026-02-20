@@ -1,7 +1,7 @@
 ---
 title: "Append vs Merge in Power BI: What’s the Difference?"
 layout: post.njk
-date: 2022-02-01
+date: 2022-02-13
 description: "A clear explanation of the difference between Append and Merge in Power BI, including when to use each in Power Query transformations."
 tags:
   - posts

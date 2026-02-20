@@ -1,7 +1,7 @@
 ---
 title: "Rolling Totals vs Running Totals in Power BI: What’s the Difference?"
 layout: post.njk
-date: 2023-04-01
+date: 2023-04-28
 description: "A clear explanation of the difference between rolling totals and running totals in Power BI, including practical examples and common use cases."
 tags:
   - posts

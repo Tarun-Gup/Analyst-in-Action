@@ -1,7 +1,7 @@
 ---
 title: "Using Variables in DAX (Power BI Guide)"
 layout: post.njk
-date: 2022-09-01
+date: 2022-09-02
 description: "A practical guide to using variables in DAX to improve readability, performance, and maintainability of Power BI calculations."
 tags:
   - posts

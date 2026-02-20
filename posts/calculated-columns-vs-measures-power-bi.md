@@ -1,7 +1,7 @@
 ---
 title: "Calculated Columns vs Measures in Power BI"
 layout: post.njk
-date: 2022-02-01
+date: 2022-02-27
 description: "A clear explanation of the difference between calculated columns and measures in Power BI, including when to use each and how they impact performance."
 tags:
   - posts

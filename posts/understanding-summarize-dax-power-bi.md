@@ -1,7 +1,7 @@
 ---
 title: "Understanding SUMMARIZE in DAX (Power BI Guide)"
 layout: post.njk
-date: 2022-10-01
+date: 2022-10-08
 description: "A practical guide to understanding the SUMMARIZE function in DAX, how it works, and when to use it in Power BI data models."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "New KPI Card Visual in Power BI: Features and Use Cases"
 layout: post.njk
-date: 2023-06-01
+date: 2023-06-30
 description: "An overview of the new KPI Card visual in Power BI, including its features, improvements, and practical use cases for building better dashboards."
 tags:
   - posts

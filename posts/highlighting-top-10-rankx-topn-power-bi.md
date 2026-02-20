@@ -1,7 +1,7 @@
 ---
 title: "Highlighting Top N Results Using RANKX and TOPN in Power BI"
 layout: post.njk
-date: 2024-05-01
+date: 2024-05-31
 description: "A practical guide to using RANKX and TOPN in Power BI to dynamically highlight top N values and build more insightful reports."
 tags:
   - posts

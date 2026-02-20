@@ -7,13 +7,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
-  // Date format filter (Exact format: 19 Feb 2026)
+  // ✅ Date format filter (Exact format: 19 Feb 2026)
+  // Handles both Date objects and date strings safely.
   eleventyConfig.addFilter("readableDate", function(dateObj) {
-    const date = new Date(dateObj);
+    if (!dateObj) return "";
 
-    const day = String(date.getDate()).padStart(2, "0");
-    const month = date.toLocaleString("en-GB", { month: "short" });
-    const year = date.getFullYear();
+    const d = (dateObj instanceof Date) ? dateObj : new Date(dateObj);
+    if (isNaN(d.getTime())) return "";
+
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = d.toLocaleString("en-GB", { month: "short" });
+    const year = d.getFullYear();
 
     return `${day} ${month} ${year}`;
   });
@@ -25,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("./posts/*.md")
+      .slice() // ✅ avoid mutating original
       .sort((a, b) => b.date - a.date);
   });
 
@@ -32,8 +37,10 @@ module.exports = function (eleventyConfig) {
   /* TAG-BASED COLLECTIONS (Newest First) */
   /* ============================= */
 
-  function sortByDateDesc(collection) {
-    return collection.sort((a, b) => b.date - a.date);
+  function sortByDateDesc(items) {
+    return items
+      .slice() // ✅ avoid mutating original
+      .sort((a, b) => b.date - a.date);
   }
 
   eleventyConfig.addCollection("dax", (api) =>
@@ -44,6 +51,7 @@ module.exports = function (eleventyConfig) {
     sortByDateDesc(api.getFilteredByTag("powerbi"))
   );
 
+  // Collection name: dataModeling | tag in posts: data-modeling
   eleventyConfig.addCollection("dataModeling", (api) =>
     sortByDateDesc(api.getFilteredByTag("data-modeling"))
   );
@@ -72,6 +80,7 @@ module.exports = function (eleventyConfig) {
     sortByDateDesc(api.getFilteredByTag("capacity"))
   );
 
+  // Collection name: bestPractices | tag in posts: best-practices
   eleventyConfig.addCollection("bestPractices", (api) =>
     sortByDateDesc(api.getFilteredByTag("best-practices"))
   );

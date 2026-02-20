@@ -1,7 +1,7 @@
 ---
 title: "Power BI: Checklist I run before publishing any report"
 layout: post.njk
-date: 2025-08-01
+date: 2025-11-22
 description: "A practical checklist I follow before publishing any Power BI report to ensure clarity, performance, and stakeholder value."
 tags:
   - posts

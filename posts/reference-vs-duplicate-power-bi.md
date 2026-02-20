@@ -1,7 +1,7 @@
 ---
 title: "Reference vs Duplicate in Power BI: What’s the Difference?"
 layout: post.njk
-date: 2022-02-01
+date: 2022-02-06
 description: "A practical explanation of the difference between Reference and Duplicate in Power BI Power Query, including when to use each approach."
 tags:
   - posts

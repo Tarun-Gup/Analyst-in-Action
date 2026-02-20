@@ -1,7 +1,7 @@
 ---
 title: "Power BI Bookmarks: Beginner’s Guide"
 layout: post.njk
-date: 2023-06-01
+date: 2023-06-16
 description: "A beginner-friendly guide to understanding and using bookmarks in Power BI to create dynamic and interactive reports."
 tags:
   - posts

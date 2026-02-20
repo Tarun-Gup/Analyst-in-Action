@@ -1,7 +1,7 @@
 ---
 title: "How to Copy Bookmarks from One Power BI Report to Another"
 layout: post.njk
-date: 2025-02-01
+date: 2025-02-15
 description: "A step-by-step explanation of how to copy bookmarks between Power BI reports and avoid common issues when reusing report interactions."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Field Parameters in Power BI"
 layout: post.njk
-date: 2023-02-01
+date: 2023-02-10
 description: "An introduction to field parameters in Power BI, how they work, and how they enable dynamic switching of dimensions and measures in reports."
 tags:
   - posts

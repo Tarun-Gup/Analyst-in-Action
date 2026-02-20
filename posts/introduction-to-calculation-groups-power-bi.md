@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Calculation Groups in Power BI"
 layout: post.njk
-date: 2023-03-01
+date: 2023-03-10
 description: "An introduction to calculation groups in Power BI, how they work, and how they simplify time intelligence and reusable DAX logic."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "Playing with Totals in Power BI"
 layout: post.njk
-date: 2025-04-01
+date: 2025-04-19
 description: "A practical guide to understanding and controlling totals in Power BI, including common mistakes and techniques to get accurate results."
 tags:
   - posts

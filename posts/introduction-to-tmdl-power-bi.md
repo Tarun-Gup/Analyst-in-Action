@@ -1,7 +1,7 @@
 ---
 title: "Introduction to TMDL in Power BI"
 layout: post.njk
-date: 2025-02-01
+date: 2025-02-08
 description: "An introduction to TMDL (Tabular Model Definition Language) in Power BI, what it is, why it matters, and how it changes model development workflows."
 tags:
   - posts

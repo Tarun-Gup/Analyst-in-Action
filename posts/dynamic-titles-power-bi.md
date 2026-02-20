@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Titles in Power BI"
 layout: post.njk
-date: 2022-11-01
+date: 2022-11-18
 description: "A practical guide to creating dynamic titles in Power BI using DAX to make reports more interactive and context-aware."
 tags:
   - posts

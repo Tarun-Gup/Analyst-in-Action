@@ -1,7 +1,7 @@
 ---
 title: "How to Automate Power BI Documentation"
 layout: post.njk
-date: 2026-01-01
+date: 2026-01-18
 description: "A practical guide to automating Power BI documentation using tools and best practices to improve governance, transparency, and maintainability."
 tags:
   - posts

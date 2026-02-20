@@ -1,7 +1,7 @@
 ---
 title: "RELATED vs LOOKUPVALUE in Power BI: What’s the Difference?"
 layout: post.njk
-date: 2022-02-01
+date: 2022-02-20
 description: "A practical comparison of RELATED and LOOKUPVALUE in Power BI, explaining how each function works and when to use them in DAX calculations."
 tags:
   - posts

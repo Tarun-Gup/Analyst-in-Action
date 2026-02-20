@@ -1,7 +1,7 @@
 ---
 title: "Tips and Tricks for Data Labels in Power BI"
 layout: post.njk
-date: 2022-12-01
+date: 2022-12-02
 description: "Practical tips and tricks for formatting and customizing data labels in Power BI to improve readability and visual clarity."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "PBIX vs PBIT: Understanding the Difference in Power BI"
 layout: post.njk
-date: 2024-02-01
+date: 2024-02-16
 description: "A clear explanation of the difference between PBIX and PBIT files in Power BI, when to use each format, and how they impact collaboration and deployment."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "Ultimate Beginner’s Guide to DAX Studio"
 layout: post.njk
-date: 2024-02-01
+date: 2024-02-09
 description: "A complete beginner-friendly guide to using DAX Studio for analyzing queries, improving performance, and understanding your Power BI data model."
 tags:
   - posts

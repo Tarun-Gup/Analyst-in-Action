@@ -1,7 +1,7 @@
 ---
 title: "FILTER vs KEEPFILTERS in DAX (Power BI Guide)"
 layout: post.njk
-date: 2022-08-01
+date: 2022-08-22
 description: "A practical comparison of FILTER and KEEPFILTERS in DAX, explaining how each function affects filter context and when to use them in Power BI."
 tags:
   - posts

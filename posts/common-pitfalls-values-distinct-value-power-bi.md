@@ -1,7 +1,7 @@
 ---
 title: "Common Pitfalls with VALUES, DISTINCT, and VALUE in Power BI"
 layout: post.njk
-date: 2025-08-01
+date: 2025-08-09
 description: "A practical explanation of common mistakes developers make when using VALUES, DISTINCT, and VALUE in Power BI, and how to avoid unexpected results."
 tags:
   - posts

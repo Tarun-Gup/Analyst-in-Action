@@ -1,7 +1,7 @@
 ---
 title: "Going Beyond with Field Parameters in Power BI"
 layout: post.njk
-date: 2025-07-01
+date: 2025-07-12
 description: "How to take Field Parameters beyond the basics in Power BI and use them effectively for dynamic reporting and better user interaction."
 tags:
   - posts

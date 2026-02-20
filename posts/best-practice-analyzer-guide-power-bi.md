@@ -1,7 +1,7 @@
 ---
 title: "Best Practice Analyzer (BPA) Guide for Power BI"
 layout: post.njk
-date: 2024-06-01
+date: 2025-08-23
 description: "A practical guide to using Best Practice Analyzer (BPA) in Power BI to improve model quality, enforce standards, and maintain clean semantic models."
 tags:
   - posts

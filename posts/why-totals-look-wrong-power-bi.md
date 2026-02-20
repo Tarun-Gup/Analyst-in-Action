@@ -1,7 +1,7 @@
 ---
 title: "Why Totals Look Wrong in Power BI (And How to Fix Them)"
 layout: post.njk
-date: 2023-03-01
+date: 2023-03-24
 description: "An explanation of why totals sometimes appear incorrect in Power BI and practical techniques to fix common DAX and context-related issues."
 tags:
   - posts

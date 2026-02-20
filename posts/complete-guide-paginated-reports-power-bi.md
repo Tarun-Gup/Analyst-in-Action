@@ -1,7 +1,7 @@
 ---
 title: "Everything You Need to Know About Paginated Reports in Power BI"
 layout: post.njk
-date: 2024-08-01
+date: 2024-08-31
 description: "A complete guide to Paginated Reports in Power BI, including when to use them, how they differ from interactive reports, and best practices for implementation."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "How to Use USERELATIONSHIP in DAX (Power BI Guide)"
 layout: post.njk
-date: 2023-07-01
+date: 2023-07-07
 description: "A practical explanation of how USERELATIONSHIP works in DAX, when to use it, and how to handle multiple relationships in Power BI."
 tags:
   - posts

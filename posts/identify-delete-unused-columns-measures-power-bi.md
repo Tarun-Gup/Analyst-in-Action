@@ -1,7 +1,7 @@
 ---
 title: "How to Identify and Delete Unused Columns and Measures in Power BI"
 layout: post.njk
-date: 2024-07-01
+date: 2024-07-27
 description: "A practical guide to identifying and safely removing unused columns and measures in Power BI to improve model performance and maintainability."
 tags:
   - posts

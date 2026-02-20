@@ -1,7 +1,7 @@
 ---
 title: "Why Every Power BI Report Needs a Proper Description"
 layout: post.njk
-date: 2025-09-01
+date: 2025-03-29
 description: "Why adding clear descriptions to measures, reports, and datasets in Power BI improves usability, governance, and long-term maintainability."
 tags:
   - posts

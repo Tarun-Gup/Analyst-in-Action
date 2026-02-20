@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Power Ops"
 layout: post.njk
-date: 2025-06-01
+date: 2025-06-14
 description: "An introduction to Power Ops, what it means in the Power BI ecosystem, and why operational discipline is becoming essential for modern BI teams."
 tags:
   - posts

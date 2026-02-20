@@ -1,7 +1,7 @@
 ---
 title: "Implicit vs Explicit Measures in Power BI"
 layout: post.njk
-date: 2022-09-01
+date: 2022-09-09
 description: "A clear explanation of the difference between implicit and explicit measures in Power BI, and why explicit measures are recommended for better model control."
 tags:
   - posts

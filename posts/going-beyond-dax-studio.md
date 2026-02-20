@@ -1,7 +1,7 @@
 ---
 title: "Going Beyond with DAX Studio"
 layout: post.njk
-date: 2024-10-01
+date: 2024-10-05
 description: "How to move beyond basic usage of DAX Studio and use it effectively for performance analysis, query testing, and deeper model insights."
 tags:
   - posts

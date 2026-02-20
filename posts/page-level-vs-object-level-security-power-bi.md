@@ -1,7 +1,7 @@
 ---
 title: "Page Level Security vs Object Level Security in Power BI"
 layout: post.njk
-date: 2025-05-01
+date: 2025-05-31
 description: "A clear explanation of Page Level Security and Object Level Security in Power BI, how they differ, and when to use each approach."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "ALL vs ALLSELECTED vs ALLEXCEPT in DAX (Power BI Guide)"
 layout: post.njk
-date: 2022-08-01
+date: 2022-08-26
 description: "A clear explanation of the differences between ALL, ALLSELECTED, and ALLEXCEPT in DAX, including how they affect filter context in Power BI."
 tags:
   - posts

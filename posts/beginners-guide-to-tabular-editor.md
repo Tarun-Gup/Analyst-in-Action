@@ -1,7 +1,7 @@
 ---
 title: "Beginner’s Guide to Tabular Editor"
 layout: post.njk
-date: 2025-08-01
+date: 2025-09-24
 description: "A beginner-friendly guide to understanding and using Tabular Editor for managing measures, improving model structure, and applying best practices in Power BI."
 tags:
   - posts

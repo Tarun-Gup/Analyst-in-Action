@@ -1,7 +1,7 @@
 ---
 title: "Optimizing Measures with DAX Studio in Power BI"
 layout: post.njk
-date: 2024-04-01
+date: 2024-04-19
 description: "A practical guide to using DAX Studio to analyze and optimize measures in Power BI for better performance and cleaner model design."
 tags:
   - posts

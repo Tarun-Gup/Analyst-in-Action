@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the Slicer Panel in Power BI"
 layout: post.njk
-date: 2023-04-01
+date: 2023-04-21
 description: "An introduction to the slicer panel in Power BI, including how it works, when to use it, and how it improves report usability."
 tags:
   - posts

@@ -1,7 +1,7 @@
 ---
 title: "How to Handle Blanks Effectively in Power BI"
 layout: post.njk
-date: 2024-05-01
+date: 2024-05-17
 description: "A practical guide to understanding and handling blank values in Power BI, including common pitfalls and techniques to avoid incorrect calculations."
 tags:
   - posts
