@@ -25,16 +25,20 @@ module.exports = class {
         const loc = `${baseUrl}${p.url}`;
         const lastmod = p.date ? new Date(p.date).toISOString() : null;
 
-        return `  <url>
-    <loc>${loc}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}
-  </url>`;
+        return [
+          "  <url>",
+          `    <loc>${loc}</loc>`,
+          lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
+          "  </url>"
+        ].filter(Boolean).join("\n");
       })
       .join("\n");
 
-    return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urlNodes}
-</urlset>
-`;
+    return [
+      `<?xml version="1.0" encoding="UTF-8"?>`,
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
+      urlNodes,
+      `</urlset>`
+    ].join("\n");
   }
 };
