@@ -544,8 +544,65 @@ footer {
   background: #e5e7eb;
   transform: translateY(-1px);
 }
+/* ============================= */
+/* NAV + SEARCH */
+/* ============================= */
 
+.main-nav {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;   /* 👈 stack links and search vertically */
+  align-items: center;
+  gap: 16px;
+}
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.site-search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.site-search input {
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 30px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  outline: none;
+  min-width: 240px;
+}
+
+.site-search input::placeholder {
+  color: rgba(255,255,255,0.8);
+}
+
+.site-search button {
+  padding: 10px 16px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 30px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.site-search button:hover {
+  background: rgba(255,255,255,0.35);
+}
 
 
 

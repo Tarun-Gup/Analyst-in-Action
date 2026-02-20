@@ -13,24 +13,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Meta Description -->
   {% if description %}
     <meta name="description" content="{{ description }}">
   {% else %}
     <meta name="description" content="Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.">
   {% endif %}
 
-  <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url }}">
 
-  <!-- Open Graph (Social Sharing) -->
   <meta property="og:title" content="{% if title %}{{ title }} | Analyst in Action{% else %}Analyst in Action{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ page.url }}">
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.{% endif %}">
   <meta property="og:site_name" content="Analyst in Action">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if title %}{{ title }} | Analyst in Action{% else %}Analyst in Action{% endif %}">
   <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.{% endif %}">
@@ -39,23 +35,12 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-
   {% if hero == "home" %}
     <header class="hero home-hero">
       <div class="hero-content">
         <h1>Analyst in Action</h1>
         <p>Everything here comes from real Power BI projects, not textbooks</p>
-
-        <nav>
-          <a href="/">HOME</a>
-          <a href="/blog/">BLOG</a>
-          <a href="/start-here/">START HERE</a>
-          <a href="/about/">ABOUT</a>
-          <a href="/contact/">CONTACT</a>
-          <a href="/terms/">TERMS OF USE</a>
-          <a href="/privacy/">PRIVACY POLICY</a>
-        </nav>
+        {% include "nav.njk" %}
       </div>
     </header>
 
@@ -64,39 +49,20 @@
       <div class="hero-content">
         <h1>Blog</h1>
         <p>Insights on Business Intelligence &amp; Power BI</p>
-
-        <nav>
-          <a href="/">HOME</a>
-          <a href="/blog/">BLOG</a>
-          <a href="/start-here/">START HERE</a>
-          <a href="/about/">ABOUT</a>
-          <a href="/contact/">CONTACT</a>
-          <a href="/terms/">TERMS OF USE</a>
-          <a href="/privacy/">PRIVACY POLICY</a>
-        </nav>
+        {% include "nav.njk" %}
       </div>
     </header>
 
   {% else %}
     <header class="simple-header">
-      <nav>
-        <a href="/">HOME</a>
-        <a href="/blog/">BLOG</a>
-        <a href="/start-here/">START HERE</a>
-        <a href="/about/">ABOUT</a>
-        <a href="/contact/">CONTACT</a>
-        <a href="/terms/">TERMS OF USE</a>
-        <a href="/privacy/">PRIVACY POLICY</a>
-      </nav>
+      {% include "nav.njk" %}
     </header>
   {% endif %}
 
-  <!-- MAIN CONTENT -->
   <main>
     {{ content | safe }}
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2026 Analyst in Action</p>
   </footer>
