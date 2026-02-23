@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   // Copy static files into _site
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("assets"); // ✅ THIS FIXES YOUR HERO IMAGE
 
   // ✅ Date format filter (Exact format: 19 Feb 2026)
   // Handles both Date objects and date strings safely.
@@ -29,7 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("./posts/*.md")
-      .slice() // ✅ avoid mutating original
+      .slice()
       .sort((a, b) => b.date - a.date);
   });
 
@@ -39,7 +40,7 @@ module.exports = function (eleventyConfig) {
 
   function sortByDateDesc(items) {
     return items
-      .slice() // ✅ avoid mutating original
+      .slice()
       .sort((a, b) => b.date - a.date);
   }
 
@@ -51,7 +52,6 @@ module.exports = function (eleventyConfig) {
     sortByDateDesc(api.getFilteredByTag("powerbi"))
   );
 
-  // Collection name: dataModeling | tag in posts: data-modeling
   eleventyConfig.addCollection("dataModeling", (api) =>
     sortByDateDesc(api.getFilteredByTag("data-modeling"))
   );
@@ -80,7 +80,6 @@ module.exports = function (eleventyConfig) {
     sortByDateDesc(api.getFilteredByTag("capacity"))
   );
 
-  // Collection name: bestPractices | tag in posts: best-practices
   eleventyConfig.addCollection("bestPractices", (api) =>
     sortByDateDesc(api.getFilteredByTag("best-practices"))
   );

@@ -603,7 +603,156 @@ footer {
 .site-search button:hover {
   background: rgba(255,255,255,0.35);
 }
+.hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/assets/images/hero.jpg");
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 140px 20px 120px;
+  position: relative;
+}
+.site-footer {
+  background: #111;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-main,
+.footer-legal {
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.7;
+}
+/* ============================= */
+/* FOOTER (FINAL CLEAN VERSION) */
+/* ============================= */
+
+.site-footer {
+  background: #0d0d0d;
+  color: #ccc;
+  padding: 70px 20px 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 16px;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
+
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-main {
+  margin-bottom: 18px;
+}
+
+.footer-legal {
+  opacity: 0.7;
+}
+
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+/* ============================= */
+/* HOMEPAGE FEATURED POST */
+/* ============================= */
+
+.featured-post {
+  margin-bottom: 30px;
+}
+
+.featured-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 34px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.featured-title {
+  margin: 10px 0 12px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.featured-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.featured-title a:hover {
+  color: #0077ff;
+}
+
+.featured-desc {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 14px;
+}
+
+.view-all {
+  margin-top: 26px;
+}
+
+.view-all a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0077ff;
+}
+
+.view-all a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .featured-card {
+    padding: 22px;
+  }
+
+  .featured-title {
+    font-size: 22px;
+  }
+}
 
 
 

@@ -18,7 +18,10 @@ layout: base.njk
 
     {% if date %}
       <p class="post-meta">
-        {{ date | readableDate }}
+        Published {{ date | readableDate }}
+        {% if updated %}
+          • Updated {{ updated | readableDate }}
+        {% endif %}
       </p>
     {% endif %}
 

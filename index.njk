@@ -1,53 +1,65 @@
 ---
 layout: base.njk
 title: Home
-hero: home
 ---
-
 
 <section class="homepage-intro">
   <h2>Latest Power BI & Data Insights</h2>
   <p>Real-world lessons from actual Power BI projects.</p>
 </section>
 
-{% if collections.posts and (collections.posts | length) > 0 %}
+{% if collections.posts and collections.posts.length > 0 %}
 
-  <div class="post-grid">
+  {# ✅ Featured = newest post #}
+  {% set featured = collections.posts[0] %}
+
+  <section class="featured-post">
+    <article class="featured-card">
+      <p class="post-date">{{ featured.date | readableDate }}</p>
+
+      <h3 class="featured-title">
+        <a href="{{ featured.url }}">{{ featured.data.title }}</a>
+      </h3>
+
+      {% if featured.data.description %}
+        <p class="featured-desc">{{ featured.data.description }}</p>
+      {% endif %}
+
+      <a class="read-more" href="{{ featured.url }}">Read More →</a>
+    </article>
+  </section>
+
+  {# ✅ Rest of posts as cards (skip first one) #}
+  <section class="post-grid">
+    {% set shown = 0 %}
     {% for post in collections.posts %}
-      {% if loop.index0 < 6 %}
+      {% if loop.index0 > 0 and shown < 8 %}
+        {% set shown = shown + 1 %}
 
         <article class="post-card">
+          <p class="post-date">{{ post.date | readableDate }}</p>
 
-          <p class="post-date">
-            {{ post.date | readableDate }}
-          </p>
-
-          <h3 class="post-title">
-            <a href="{{ post.url }}">{{ post.data.title or "Untitled" }}</a>
+          <h3>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
           </h3>
 
           {% if post.data.description %}
-            <p class="post-desc">
-              {{ post.data.description }}
-            </p>
+            <p class="post-desc">{{ post.data.description }}</p>
           {% endif %}
 
           <a class="read-more" href="{{ post.url }}">Read More →</a>
-
         </article>
 
       {% endif %}
     {% endfor %}
-  </div>
+  </section>
 
-  <div class="homepage-more">
-    <a class="button" href="/blog/">View all posts →</a>
-  </div>
+  <p class="view-all">
+    <a href="/blog/">View all posts →</a>
+  </p>
 
 {% else %}
-
-  <p>No posts found yet.</p>
-
+  <p>No posts found.</p>
 {% endif %}
 
 

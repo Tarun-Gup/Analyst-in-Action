@@ -19,52 +19,63 @@
     <meta name="description" content="Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.">
   {% endif %}
 
-  <link rel="canonical" href="{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="{% if title %}{{ title }} | Analyst in Action{% else %}Analyst in Action{% endif %}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.{% endif %}">
   <meta property="og:site_name" content="Analyst in Action">
+  <meta property="og:image" content="{{ site.url }}/assets/images/og.jpg">
 
-  <meta name="twitter:card" content="summary">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if title %}{{ title }} | Analyst in Action{% else %}Analyst in Action{% endif %}">
   <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Practical insights on Power BI, DAX, data modeling, and real-world Business Intelligence projects.{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/og.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico">
 
   <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
-  {% if hero == "home" %}
-    <header class="hero home-hero">
-      <div class="hero-content">
-        <h1>Analyst in Action</h1>
-        <p>Everything here comes from real Power BI projects, not textbooks</p>
-        {% include "nav.njk" %}
-      </div>
-    </header>
-
-  {% elif hero == "blog" %}
-    <header class="hero blog-hero">
-      <div class="hero-content">
-        <h1>Blog</h1>
-        <p>Insights on Business Intelligence &amp; Power BI</p>
-        {% include "nav.njk" %}
-      </div>
-    </header>
-
-  {% else %}
-    <header class="simple-header">
-      {% include "nav.njk" %}
-    </header>
-  {% endif %}
+  <header class="hero">
+    {% include "nav.njk" %}
+    <div class="hero-content">
+      <h1>Practical Power BI. Real Business Impact.</h1>
+      <p>
+        Real-world lessons from dashboards, reporting challenges,
+        and business data projects.
+      </p>
+    </div>
+  </header>
 
   <main>
     {{ content | safe }}
   </main>
 
-  <footer>
-    <p>© 2026 Analyst in Action</p>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <div class="footer-main">
+        <a href="/blog/">Blog</a>
+        <a href="/starthere/">Start Here</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+      </div>
+    </div>
+
+    <p class="footer-copy">
+      © 2026 Analyst in Action. All rights reserved.
+    </p>
   </footer>
 
 </body>

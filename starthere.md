@@ -6,13 +6,16 @@ permalink: /start-here/
 
 # Start Here
 
-Welcome to **Analyst in Action**.
+If you work with Power BI in real business environments, this page will help you find what’s relevant quickly.
 
-Below you’ll find posts grouped by topic.
+This site focuses on practical implementation: performance issues, modeling decisions, architecture trade-offs, deployment discipline, and real-world BI challenges.
+
+Posts are grouped below by topic.  
+Start with the area you're currently working on and explore from there.
 
 ---
 
-## 🧠 DAX & Calculations
+## DAX & Calculations
 Advanced DAX patterns, filter context behavior, time intelligence, totals logic, and writing clean, maintainable measures.
 
 {% if collections.dax and collections.dax.size > 0 %}
@@ -25,7 +28,7 @@ _No posts yet._
 
 ---
 
-## 🏗 Data Modeling
+## Data Modeling
 Structuring tables, managing relationships, handling cardinality, and building scalable semantic models.
 
 {% if collections.dataModeling and collections.dataModeling.size > 0 %}
@@ -38,7 +41,7 @@ _No posts yet._
 
 ---
 
-## ⚡ Performance & Optimization
+## Performance & Optimization
 Measure optimization, query tuning, model efficiency, and diagnosing performance bottlenecks in real-world Power BI projects.
 
 {% if collections.performance and collections.performance.size > 0 %}
@@ -51,7 +54,7 @@ _No posts yet._
 
 ---
 
-## 🛠 Tools (DAX Studio, Tabular Editor, BPA)
+## Tools (DAX Studio, Tabular Editor, BPA)
 Using DAX Studio, Tabular Editor, Best Practice Analyzer, and other external tools to build, analyze, and maintain robust BI models.
 
 {% if collections.tools and collections.tools.size > 0 %}
@@ -64,7 +67,7 @@ _No posts yet._
 
 ---
 
-## 🏛 Architecture
+## Architecture
 Dataset strategy, shared models, semantic layer design, and structural decisions that scale beyond a single PBIX file.
 
 {% if collections.architecture and collections.architecture.size > 0 %}
@@ -77,7 +80,7 @@ _No posts yet._
 
 ---
 
-## 🚀 Deployment & Governance
+## Deployment & Governance
 Publishing discipline, documentation standards, security decisions, lifecycle management, and operational maturity in BI environments.
 
 {% if collections.deployment and collections.deployment.size > 0 %}
@@ -90,7 +93,7 @@ _No posts yet._
 
 ---
 
-## 🔥 Fabric
+## Fabric
 Understanding Microsoft Fabric concepts, ecosystem evolution, and architectural implications for modern BI teams.
 
 {% if collections.fabric and collections.fabric.size > 0 %}
@@ -103,7 +106,7 @@ _No posts yet._
 
 ---
 
-## 📈 Capacity
+## Capacity
 Diagnosing capacity spikes, managing workloads, and preventing unexpected performance degradation in Fabric environments.
 
 {% if collections.capacity and collections.capacity.size > 0 %}
