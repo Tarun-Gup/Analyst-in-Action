@@ -3,6 +3,7 @@ title: "Playing with Totals in Power BI"
 layout: post.njk
 date: 2025-04-19
 description: "A practical guide to understanding and controlling totals in Power BI, including common mistakes and techniques to get accurate results."
+featuredImage: /assets/images/playing-with-totals-power-bi/cover.png
 tags:
   - posts
   - dax
@@ -33,7 +34,7 @@ IF (
     )
 )
 ```
-<!-- IMAGE: describe-what-the-image-will-show -->
+
 
 We have utilized HASONEVALUE to define this condition. HASONEVALUE checks if a particular column has a single value if not then it returns FALSE. We have taken advantage of the FALSE scenario of HASONEVALUE. We would recommend, to refer the DAX Guide for HASONEVALUE to know in detail what else can be achieved with this function.
 
@@ -61,9 +62,9 @@ CALCULATE (
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/playing-with-totals-power-bi/step-1.png)
 
-What is going on here 😵‍💫??? Okay, let's debunk the DAX step by step. To understand the Correct Subtotals measure wewill first need to understand the function ISINSCOPE. In simple words, ISINSCOPE allows us to detect if a particular field is in the row or column of a visual. To understand ISINSCOPE in detail we would recommend visiting [DAXGUIDE](https://example.com)
+What is going on here 😵‍💫??? Okay, let's debunk the DAX step by step. To understand the Correct Subtotals measure wewill first need to understand the function ISINSCOPE. In simple words, ISINSCOPE allows us to detect if a particular field is in the row or column of a visual. To understand ISINSCOPE in detail we would recommend visiting [DAXGUIDE](https://dax.guide)
 
 ```DAX
 Correct Subtotals DEBUNKED =
@@ -92,10 +93,12 @@ SWITCH (
 
 )
 ```
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/playing-with-totals-power-bi/step-2.png)
+
 It's too confusing now. Okay, let's create a debunk measure for it then. We are using the same ISINSCOPE function which will return TRUE if a particular field is used in the row or column in a visual (matrix in this case). Otherwise, it will return FALSE.
 
 Protip: Using all these measures is fun but beware that by default matrix will only show totals as the label for the column and row subtotals. To change it select the matrix and go to the Column Subtotal and Row Subtotal to change it. Also, if you do not want to provide a label just click on the Subtotal label and provide a space.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/playing-with-totals-power-bi/step-3.png)
+
 Isn't it amazing?? In this blog, we have only explored 3 scenarios but there can be more such scenarios. Most of such scenarios can be tackled with a slight tweaking to the measures provided above. We would strongly recommend before you try these measures have a basic understanding of HASONEVALUE and ISINSCOPE. 

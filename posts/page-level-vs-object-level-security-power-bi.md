@@ -3,6 +3,7 @@ title: "Page Level Security vs Object Level Security in Power BI"
 layout: post.njk
 date: 2025-05-31
 description: "A clear explanation of Page Level Security and Object Level Security in Power BI, how they differ, and when to use each approach."
+featuredImage: /assets/images/page-level-security-vs-object-level-security-in-power-bi/cover.png
 tags:
   - posts
   - powerbi
@@ -21,29 +22,28 @@ Before we begin, we are using our favorite Sample SuperStore data and we will se
 
 Let's get our hands dirty! We have 3 segments - Corporate, Consumer, and Home Office. We have 3 users and each of them should only access their segment data. We have to first define which user should be seeing what. Head to the query editor and create a new table. Select enter data and this will open a pop-up tab where we need to fill user's email address, user name, and segment they will be accessing. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
 
 Hit close & apply and now we need to head to our data modeling pane. Since your newly created Users table is currently a stand-alone table. We need to connect it with the fact table in this case. In real-life scenarios, it will be your dim table where this Users table needs to be connected. Our key will be segments so ensure in the users table segments name is the same as your fact table.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-1.png)
 
 Protip - We have a many-to-one relationship between the users and the fact table. From experience, I can say it won't be many to one relationship every time. But why? Okay, let's assume I add one more user in the users table, and that user needs access to 2 segments together. This would make your relationship many to many. Always remember that the filter direction should be from your user table towards your fact/dim. Avoid bi-directional filtering as a best practice.
 
 We have created 4 pages - a landing page and 3 different pages for different segments. We need to ensure only the landing page shouldn't be hidden rest of the pages need to be hidden. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-2.png)
 
 Let's check what we have on the selection page aka landing page. We have mainly 2 things - a button slicer and a blank button leading to different pages. Behind the blank button, we have provided the action for page navigation. To go to the correct page we have created a basic measure with Selected Value. This measure needs to be placed behind the fx in the destination.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-3.png)
 
 Now since our setup is almost ready one of the last steps is to define a role for security. Go to modeling and select manage roles. We will create a very basic role with UserPrincipleName, this will consider the email address of the user and give the access accordingly. The role is defined on the user table. Now is the time for the moment of truth. We will test the role for one user.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-4.png)
 
 Hit OK and you will see on the landing page we only have one segment selected on the button slicer and to access the data the blank button needs to be clicked. When you click the button it will take you to one of the hidden pages in this case it is Consumer. Isn't it amazing???
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-5.png)
 
 How cool is this? But wait, there are 2 questions that as a BI developer, you should know. If I introduce this page-level security on my existing report this will change the user experience. Yes, it does change the user experience since this type of security is not a dedicated feature of Power BI, we are taking advantage of the existing features of Power BI to set this up.
 
@@ -53,22 +53,22 @@ First, we need to understand, what OLS can do. With OLS, we can easily remove a 
 
 To set it up, we will use the same users table, and this time we need to create another role "Page Block". In this case, I am giving the same user principal name for testing purposes but in ideal scenarios, you just need to define a new role.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-6.png)
 
 Once you have the new role set up, we would need to go to one of our favorite external tools - Tabular Editor. Head to the column, Profit available in your fact table. Under Object-level security we need to provide a default for the new role - Page block and none for the PLS role.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-7.png)
 
 Protip - Giving none for PLS will make that security setup ineffective. But why do we want to do so? If you don't switch to none this would mean both OLS and PLS are effective. As a limitation, you can't use both OLS and PLS together in the same report.
 
 Hit save both in tabular editor and in Power BI and we test this. We have considered users from the Corporate segment. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-8.png)
 
 The ideal scenario will be if this user lands up on the consumer page he/she shouldn't be seeing anything. We are getting a blank table this is what we needed. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-9.png)
 
 In cases, where we need to hide a column from this table it would throw an error such as "specific column can't be found or may not be used in this expression". The moment the user clicks on fix this Power BI is smart enough and it removes the specific column from the table.
 
-Pro tip - If you publish your report in Power BI Service, with both these roles we need to ensure the same set of users shouldn't be available in both roles. 
+> **Pro tip:** If you publish your report in Power BI Service, with both these roles we need to ensure the same set of users shouldn't be available in both roles. 

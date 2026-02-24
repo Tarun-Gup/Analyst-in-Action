@@ -3,6 +3,8 @@ title: "Understanding Fabric Capacity Spikes: What’s Really Causing Them"
 layout: post.njk
 date: 2025-12-30
 description: "A practical breakdown of why Fabric capacity spikes happen, what typically causes them, and how to diagnose and prevent unexpected performance issues."
+featuredImage: /assets/images/understanding-capacity-spikes/cover.png
+featuredImageAlt: Fabric capacity usage spike analysis dashboard
 tags:
   - posts
   - powerbi

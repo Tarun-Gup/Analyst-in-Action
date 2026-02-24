@@ -3,6 +3,7 @@ title: "How to Automate Power BI Documentation"
 layout: post.njk
 date: 2026-01-18
 description: "A practical guide to automating Power BI documentation using tools and best practices to improve governance, transparency, and maintainability."
+featuredImage: /assets/images/automate-documentation/cover.png
 tags:
   - posts
   - powerbi
@@ -10,6 +11,7 @@ tags:
   - best-practices
   - deployment
 ---
+
 
 
 This is the first Analyst in Action post of 2026, and it starts with a problem most Power BI teams know well and still tend to avoid. Documenting a Power BI model often feels like labeling boxes while the warehouse is still being rebuilt. You might get everything neatly written down today, but by next week, half of it no longer matches what’s actually on the floor. Before long, documentation starts to feel like an admin task, and it quietly drops to the bottom of the list.

@@ -1,15 +1,23 @@
 module.exports = function (eleventyConfig) {
 
-  // 🚫 Ignore disabled pages folder
+  /* ============================= */
+  /* IGNORE UNUSED FOLDERS */
+  /* ============================= */
+
   eleventyConfig.ignores.add("_pages_disabled/**");
 
-  // Copy static files into _site
+  /* ============================= */
+  /* PASSTHROUGH COPY (STATIC FILES) */
+  /* ============================= */
+
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("assets"); // ✅ THIS FIXES YOUR HERO IMAGE
+  eleventyConfig.addPassthroughCopy("assets");
 
-  // ✅ Date format filter (Exact format: 19 Feb 2026)
-  // Handles both Date objects and date strings safely.
+  /* ============================= */
+  /* DATE FILTER (19 Feb 2026) */
+  /* ============================= */
+
   eleventyConfig.addFilter("readableDate", function(dateObj) {
     if (!dateObj) return "";
 
@@ -35,7 +43,7 @@ module.exports = function (eleventyConfig) {
   });
 
   /* ============================= */
-  /* TAG-BASED COLLECTIONS (Newest First) */
+  /* HELPER: SORT BY DATE DESC */
   /* ============================= */
 
   function sortByDateDesc(items) {
@@ -43,6 +51,10 @@ module.exports = function (eleventyConfig) {
       .slice()
       .sort((a, b) => b.date - a.date);
   }
+
+  /* ============================= */
+  /* TAG-BASED COLLECTIONS */
+  /* ============================= */
 
   eleventyConfig.addCollection("dax", (api) =>
     sortByDateDesc(api.getFilteredByTag("dax"))
@@ -85,7 +97,7 @@ module.exports = function (eleventyConfig) {
   );
 
   /* ============================= */
-  /* Allowed Topic Tags */
+  /* ALLOWED TOPIC TAGS */
   /* ============================= */
 
   eleventyConfig.addGlobalData("topicTags", [
@@ -105,8 +117,8 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: ".",
       includes: "_includes",
-      output: "_site",
-    },
+      output: "_site"
+    }
   };
 };
 

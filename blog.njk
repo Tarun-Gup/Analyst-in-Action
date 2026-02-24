@@ -8,7 +8,6 @@ pagination:
   alias: posts
 ---
 
-
 <section class="homepage-intro">
   <h2>Latest Articles</h2>
   <p>Practical insights from real Power BI projects.</p>
@@ -19,6 +18,15 @@ pagination:
   {% for post in posts %}
   
     <article class="post-card">
+
+      {% if post.data.featuredImage %}
+        <a href="{{ post.url }}">
+          <img 
+            class="post-card-image"
+            src="{{ post.data.featuredImage }}" 
+            alt="{{ post.data.title }}">
+        </a>
+      {% endif %}
 
       <p class="post-date">
         {{ post.date | readableDate }}

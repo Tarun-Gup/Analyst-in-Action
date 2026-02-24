@@ -3,6 +3,7 @@ title: "Beginner’s Guide to Tabular Editor"
 layout: post.njk
 date: 2025-09-24
 description: "A beginner-friendly guide to understanding and using Tabular Editor for managing measures, improving model structure, and applying best practices in Power BI."
+featuredImage: /assets/images/beginners-guide-to-tabular-editor/cover.png
 tags:
   - posts
   - tools
@@ -33,15 +34,13 @@ Let's start with the simplest of the lot. I like structuring my report a lot sin
 
 Select the measures that you want to group. In my case, I need to group my base measures. Once you select, you can see the display folder section to the right, just type the name that you want to give to this folder.
 
-[Image placeholder]
-
 Once you have done this, hit save. It's the icon below the edit on top, or you can do Ctrl+S. Now we head to our PBIX to see the magic.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-1.png)
 
 Awesome! Now that we have the folder, we would like to create a sub-folder under this to create a distinction between quantity and sales measures. To do this, just select the measure that needs to be in the Quantity subfolder. In this case, it is Total Quantity. Under the display folder, you just type Base\Quantity. Do note that we need to use the forward slash and not the backward slash to create a subfolder.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-2.png)
 
 How cool is this? Let's go to my favourite use case. Editing a measure and specifically bulk editing measures across the PBIX. If you think of this in Power BI, it's so boring to fix errors across tons of measures. With TE, it is so simple.
 
@@ -65,7 +64,7 @@ This C# script will go across all the measures in the model and check if it is u
 
 To run any sort of C#script, go to the advanced scripting or C#script option and copy and paste. At first, after execution, if you closely observe, there will be a blue icon popping up with every measure. No need to worry, it is the sign to deploy the change, hit save, and these warnings will be gone.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-3.png)
 
 Here is the C# script you can use to format all your measures. C#scripts can help a lot when it comes to all boring and repetitive tasks.
 
@@ -110,19 +109,19 @@ foreach (var m in targets)
 
 How awesome is this? Another use case is to see the dependent measures. To do it, you select a specific measure and right-click on it to see the object dependencies. Select the option to show objects on which the measure depends, and when you expand and hover them, you will see the base measure too, and its definition.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-4.png)
 
 Let's do something more interesting. We will analyse the data model in TE. Before we continue, check under the View tab at the top if you have all the required functions selected.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-5.png)
 
 Once you have all of them selected, close the view tab and head to the relationships under the model. You will notice all the relationships that were made in Power BI are available here as well. Select one of them and you will see it is actually a replica of the manage model. You can do everything like you do in manage model - make a relationship inactive, delete a relationship...
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-6.png)
 
 Last use case for today, and it is very commonly used to refresh an individual table. To do so, select the table that you need to refresh and right click, select script, select refresh, and choose the full refresh mode. Choose to the clipboard. This will generate a TMSL (Tabular Model Scripting Language) script.
 
-[Image placeholder]
+![![Tabular Editor interface overview](/assets/images/beginners-guide-to-tabular-editor/step-7.png)
 
 Once you have the TMSL script, we need to head to the SSMS (SQL Server Management Studio) and connect via the XMLA endpoint. Create a new query and paste the TMSL there. Run it and boom, your table got refreshed.
 

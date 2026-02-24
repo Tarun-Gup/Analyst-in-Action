@@ -3,6 +3,7 @@ title: "Best Practice Analyzer (BPA) Guide for Power BI"
 layout: post.njk
 date: 2025-08-23
 description: "A practical guide to using Best Practice Analyzer (BPA) in Power BI to improve model quality, enforce standards, and maintain clean semantic models."
+featuredImage: /assets/images/best-practice-analyzer-guide-power-bi/cover.png
 tags:
   - posts
   - tools
@@ -20,7 +21,7 @@ Best Practice Analyser allows to define or import best practices. It will make s
 
 Before we start make sure you already have Tabular Editor version 2.24.1 installed on your system. To install it do visit this link and select the link for windows installer. Once Tabular Editor is installed it will reflect in your PBIX file under external tool.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-1.png)
 
 Also, we need to define the standard rules. To do so in your advanced scripting or C# script copy this and save it via Ctrl+S. And reopen the tabular editor.
 
@@ -36,21 +37,21 @@ w.DownloadFile(url, downloadLoc);
 
 To see the rules you need to go to tools and select Manage BPA rules.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-2.png)
 
 Pop-up will appear where we need to select Rules from the local user and you will see the long list of rules.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-3.png)
 
 What are these rules? These are standard best practices that can help you to optimise the data model. If you want to know the definition of each rule select a rule and go to edit rule to read the full description.
 
 Open your PBIX file and select Tabular Editor. We are using dummy dataset for the article. Tabular Editor will open a pop up with loads of different icons. Also, if we look at the bottom then you see 131 BP Issues. What????? It means we have violated the standard rules at 131 instances.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-4.png)
 
 Rule of thumb here is to reduce the number of these issues. To do it you need to go over the complete list and see what is going behind the scenes. For instance, we are calculating Sales YoY% with a divide operator "/" instead of DIVIDE function. We are lucky because in this long list of rules this issue is highlighted. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-5.png)
 
 There are 4 instances where we violated this rule to correct it just double click on Sales YoY% and replace the divide operator with DIVIDE function. And do not forget to save it. Bang!!!! we have come down to 130 issues. 
 
@@ -58,7 +59,7 @@ Let's check another example I am using floating data type which can impact the p
 
 To know why to avoid floating data types do read this [interesting article from SQL BI](https://www.sqlbi.com/articles/choosing-numeric-data-types-in-dax/).
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-6.png)
 
 Similarly we need to check other 129 instances where BPA rules are getting violated. These are the standard rules there can be a scenarios where you can ignore a rule for formatting, naming conventions but always try to check all performance, DAX expressions and error preventions issues.
 

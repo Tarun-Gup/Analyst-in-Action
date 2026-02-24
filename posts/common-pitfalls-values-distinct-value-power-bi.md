@@ -3,6 +3,7 @@ title: "Common Pitfalls with VALUES, DISTINCT, and VALUE in Power BI"
 layout: post.njk
 date: 2025-08-09
 description: "A practical explanation of common mistakes developers make when using VALUES, DISTINCT, and VALUE in Power BI, and how to avoid unexpected results."
+featuredImage: /assets/images/common-pitfalls-values-distinct-value-power-bi/cover.png
 tags:
   - posts
   - dax
@@ -28,7 +29,7 @@ Class values =
 
 
 
-[Image placeholder]
+![VALUES vs DISTINCT example in Power BI](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-1.png)
 
 Oh ERROR! But why? To debug this, we need to understand the behaviour of Values. It only returns a table of distinct values and not a single value. What is the correct approach then? We can try this DAX for the calculated column. With this measure, we are making things simpler and asking to populate the Class Values column with Class, and in case of blanks and empty strings, populate it with class D.
 
@@ -43,7 +44,7 @@ Class Values =
   )
 ```
 
-[Image placeholder]
+![Behavior difference between VALUES and DISTINCT](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-2.png)
 
 Now we have learnt a lesson of not using Values in a calculated column. Let's try to use the Values function with a measure. 
 
@@ -52,7 +53,7 @@ Class values =
 VALUES ( 'Blank dummy'[Class] )
 ```
 
-[Image placeholder]
+![Using VALUE function in DAX example](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-3.png)
 
 Oh, not again! Okay, let's figure this out. By using this measure, we are asking to return a table as a scalar value, which is not allowed for a measure. To correct this, we can use the following measure. We are asking to return a list of classes with a comma separator. Coalesce allows us to tackle the blank with an empty string "".
 
@@ -65,7 +66,7 @@ CONCATENATEX(
 )
 
 ```
-[Image placeholder]
+![Step 4](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-4.png)
 
 Isn't that amazing?? Let's discuss one more use case that can be tackled with Values. The idea is to get the order value for the selected class. For the demo, we will be visualising in a matrix. First, DAX will give you the correct results, but if you have understood the basics of filter, all, and keep filters, you will definitely go for the optimised version of DAX. If you want to know more about Keepfilters function, here is a quick read.
 
@@ -94,7 +95,7 @@ CALCULATE(
 
 ```
 
-[Image placeholder]
+
 
 Protip: There is a subtle difference between the Values and Distinct. Values and Distinct can return the same results if you have no blank rows, but if you have blank rows, Values will consider the blank rows in the result, while Distinct removes the blank rows. But there's a catch with Distinct.
 
@@ -112,8 +113,8 @@ CONCATENATEX(
 )
 
 ```
+![Step 5](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-5.png)
 
-[Image placeholder]
 
 ```DAX
 
@@ -128,7 +129,7 @@ CONCATENATEX(
 
 ```
 
-[Image placeholder]
+![Step 6](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-6.png)
 
 Let's wrap today's intense blog with a lighter note. We will see how Value can be used in a practical use case. Wait what? Didn't we start with Values? Value and Values are 2 different functions in the DAX world, and they serve a different purpose altogether. 
 
@@ -136,9 +137,13 @@ Value allows you to convert a text to a numeric data type. Why can't I change di
 
 We have added another column with customer class stored in a text data type by just adding "" to the customer class. Now, we will try to convert this text customer class to a numeric value. For this, we are creating a calculated column and using Value.
 
+```DAX
+
 Order Value in numeric = VALUE('Blank dummy'[Order Value text])
 
-[Image placeholder]
+```
+
+![Step 7](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-7.png)
 
 Ah, not again! Another error! Okay, this is a common error. We are using the Value function with an empty string. If your column contains non-numeric text such as
 - "N/A", 
@@ -160,5 +165,5 @@ IF (
 
 ```
 
-[Image placeholder]
+![Step 8](/assets/images/common-pitfalls-values-distinct-value-power-bi/step-8.png)
 

@@ -3,6 +3,8 @@ title: "Power BI: Checklist I run before publishing any report"
 layout: post.njk
 date: 2025-11-22
 description: "A practical checklist I follow before publishing any Power BI report to ensure clarity, performance, and stakeholder value."
+featuredImage: /assets/images/power-bi-checklist/cover.png
+featuredImageAlt: Power BI report publishing checklist dashboard
 tags:
   - posts
   - powerbi

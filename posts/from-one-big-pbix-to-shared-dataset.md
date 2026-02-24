@@ -3,6 +3,8 @@ title: From One Big PBIX to a Shared Dataset + Thin Reports
 description: How to move from a single heavy PBIX file to a shared dataset architecture in Power BI.
 date: 2025-12-06
 layout: post.njk
+featuredImage: /assets/images/from-one-big-pbix-to-shared-dataset-thin-reports/cover.png
+featuredImageAlt: Power BI shared dataset and thin reports architecture
 tags:
   - posts
   - powerbi

@@ -62,12 +62,19 @@ layout: base.njk
 
   </header>
 
+  <!-- FEATURED IMAGE (optional if defined in markdown later) -->
+  {% if featuredImage %}
+    <img 
+      src="{{ featuredImage }}" 
+      alt="{{ featuredImageAlt or title }}" 
+      class="post-featured-image">
+  {% endif %}
+
   <div class="post-content">
     {{ content | safe }}
   </div>
 
 </article>
-
 
 
 
