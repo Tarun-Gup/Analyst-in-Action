@@ -20,19 +20,19 @@ Performance of report is a great factor in improving in the user experience and 
 
 Let's get our hands dirty and see how you can evaluate your DAX formulas. To do so I have created a basic DAX with help of Filter function 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-2.png)
 
 Now, we have included this measure in a table along with the year coming from date table. Also, we have started recording with the help of Performance Analyser. Since our table is taking the most time to render let's evaluate the query running behind our DAX.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-3.png)
 
 To do so you can copy query and go to DAX Studio with the connection to the same PBIX. Once you paste the copied query enable the server timings and query plan from top.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-4.png)
 
 Now run the copied query and go to the server timings. What the heck is going on here? FE? SE? If you are not a fan of acronyms like me then FE stands for Formula engine while the SE stands for Storage Engine.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-5.png)
 
 What does the FE and SE do? Here I would like to quote Data Mozart aka [Nikola](https://www.linkedin.com/in/nikola-ilic-data-mozart/). Here is the link to the detailed article focusing on the concepts of SE and FE.
 
@@ -43,7 +43,7 @@ When you send the query to get data for your Power BI report, here is what happe
 
 In simpler language FE act as a first layer and execute the DAX query as a rule of thumb do keep an eye on the number of queries generated in both Formula engine (FE) and Storage engine (SE). In this case, we have 3 queries running in background for this DAX. You can check the background query by clicking on every query. Now, let's optimise this by removing the Filter function in the DAX and repeat the same exercise. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-6.png)
 
 With a slight change in the DAX we have reduced the number of background queries also we have reduced the total duration from 17ms to 7ms. What has changed in the DAX?
 
@@ -71,7 +71,7 @@ SUMX (
 
 Once we have copied the query with the help of Performance analyser we will check the server timings and query plans running in background.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/optimizing-measures-dax-studio-power-bi/step-7.png)
 
 To identify the queries that are generating the call back data ID once you check all the queries the one having the call back data ID it should be highlighted like mentioned in the image above. Also, note the total duration and the number of queries running in the background.
 
