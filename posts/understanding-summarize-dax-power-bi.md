@@ -34,9 +34,9 @@ SUMMARIZE (
 
 ```
 
-ProTip- In the above-mentioned image you can arrange the order of columns in the formula itself. Arrange them as per your need. Also, if you critically observe we have provided different names for quantity as units sold. As it is text it needs to be in double quotes and before the field. 
+> **Pro tip:** In the above-mentioned image you can arrange the order of columns in the formula itself. Arrange them as per your need. Also, if you critically observe we have provided different names for quantity as units sold. As it is text it needs to be in double quotes and before the field. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/understanding-summarize-dax-power-bi/step-1.png)
 
 Isn't it simple?? Now let's move a step further and I am introducing segment also in this table. As an exercise, you can try it on your own. Once you get the segment we need to only showcase data for the Corporate segment. I have to introduce a filter in the DAX but the question is where should we insert it? To know more about filters in DAX refer to one of our old blogs (link)*
 
@@ -57,7 +57,7 @@ SUMMARIZE (
 
 So now we have our answer. Keep in mind all the parentheses and commas while writing long formulas like the one mentioned above.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/understanding-summarize-dax-power-bi/step-2.png)
 
 Let's add a bit more complexity to it. When you will write summarize you can see there is a function called "Rollup" which is quite an essential part of Summarize family. What is the purpose of this function? It is mainly used to get subtotals and totals inside your table. You will get blank values that highlight the subtotals and totals.
 
@@ -102,11 +102,11 @@ SUMMARIZE (
 
 To get a better idea we will go to the visualize mode and take the table and pull all the geographical fields and units sold. Make sure there should not be any summarization happening. We don't need any implicit measures in the table (Implicit measures vs Explicit measures).
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/understanding-summarize-dax-power-bi/step-3.png)
 
 We have particularly filtered it for the region "West" and the city "Albuquerque". In the left table, we can see duplicate rows representing the same data. These duplicate rows represent the subtotals.
 
-Protip- Rollup can only be used as part of Summarize. Also, make sure the order you provide to the Rollup function. In our case, I have provided the Postal code as the first base to get our rollup values. Hence you see blanks in the Postal Codes column in the left table.
+> **Pro tip:**  Rollup can only be used as part of Summarize. Also, make sure the order you provide to the Rollup function. In our case, I have provided the Postal code as the first base to get our rollup values. Hence you see blanks in the Postal Codes column in the left table.
 
 Summarize is a bit different from Summarize columns as the latter only gives filter context and only be used in particular scenarios but summarize can be used in both filter and row context and hence can be used in almost every scenario.
 

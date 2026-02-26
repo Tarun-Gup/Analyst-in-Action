@@ -20,7 +20,7 @@ How does calculation group? It is actually available in an external tool called 
 
 Under external tools, you can find Tabular Editor. Once you open it you can see the tables you are using. To create a calculation group you can right-click on the table and under create you can find the calculation group or you can do the same with the help of the shortcut (Alt+7). I am naming the group Time Intelligence. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/introduction-to-calculation-groups-power-bi/step-1.png)
 
 There will be different calculation items that are part of a particular calculation group. Right now we only created a calculation group now we will create items. You can do it just by right-clicking the first item will be MTD. For this, the expression will look something like the below DAX.
 
@@ -46,7 +46,7 @@ Protip- Ordinal refers to the sorting of your calculation items and generally, t
 
 Let's take a look at how you can use the calculation group in the dashboard. I have a table with sales associated with every category. I have created a slicer that includes the calculation items we created once you select MTD the values in the table get adjusted to MTD values and similarly for YTD. Just to double-check whether we are getting the right results I have created basic DAX for MTD and YTD.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/introduction-to-calculation-groups-power-bi/step-2.png)
 
 The value in the card is calculated via DAX in Power BI and the value in the table is calculated via the calculation group. The calculation group does work but what if I need to format it using a specific expression. It can be done in Tabular Editor too. We will cover this in future blogs. 
 

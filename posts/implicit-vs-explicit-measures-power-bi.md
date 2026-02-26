@@ -19,11 +19,11 @@ Let's dig deeper into all the fields with some symbols such as sigma called Impl
 
 I am using the SampleSuperstore dataset. We will be checking the profit associated with different categories. I am taking both category and profit in the table. In the below-mentioned image, you can see we are getting profit with every category.  
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/implicit-vs-explicit-measures-power-bi/step-1.png)
 
 Easy peasy!!!! in such a case default does the job but what if we don't want a sum. To obtain that go to the columns and select the dropdown menu and you can see a variety of options also there is an option that allows you to not summarize that particular field.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/implicit-vs-explicit-measures-power-bi/step-2.png)
 
 It is quite easy to use implicit measures but surprisingly according to the best practices in Power BI you should try to avoid using implicit measures. But why?? There will be no significant change in the performance but every time you use an implicit measure you need to select the correct option (average or sum) and the options are limited. 
 
@@ -31,7 +31,7 @@ So what should be considered good practice in Power BI? Generally Power BI devel
 
 Let's see the example of what an explicit measure looks like. We will consider the SampleSuperstore data and we will calculate the profit associated with different categories.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/implicit-vs-explicit-measures-power-bi/step-3.png)
 
 In the above-mentioned image, we are getting the same result as the implicit measure but by using a basic DAX expression. (How to create DAX?)
 

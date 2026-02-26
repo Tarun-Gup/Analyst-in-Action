@@ -27,11 +27,11 @@ The DAX is quite simple in this case if we consider the selected value first we 
 
 Go to the formatting pane on the right and in the title section of the visual, you can see the conditional formatting. It will take you to a pop-up as mentioned below.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/dynamic-titles-power-bi/step-1.png)
 
 As mentioned in the above image we have selected the measure in the field section. Click on OK and you can see if you select any of the cities it will show the city name in the visual. If you clear the selection in the slicer the title will show "Sales for the US".
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/dynamic-titles-power-bi/step-2.png)
 
 Isn't it simple?? Let's take it a step further if someone does multiple selections in the slicer then this measure won't show the right result to do so we need to create another measure.
 
@@ -47,11 +47,11 @@ RETURN
 
 The idea behind this DAX is to get concatenate a list of values in this case city and return a text (last line). Now if we select multiple cities in the slicer the visual title will adjust according to the measure. After creating the measure we need to put it in the field section in conditional formatting. Same as it was in the previous case.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/dynamic-titles-power-bi/step-3.png)
 
 We can do the same using quick measures for that create a quick measure and in the calculation, we need to select the concatenated list of values, in the field we will take the city.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/dynamic-titles-power-bi/step-4.png)
 
 It will create a measure and we need to put it in the field in the conditional formatting of the title. Isn't interesting?? You can use dynamic titles to take your reports to next level.
 

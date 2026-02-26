@@ -17,15 +17,15 @@ Data modeling is an essential part of creating perfect visuals. While creating c
 
 Use relationship can be added to your DAX and act as a modifier or enhancer for calculation. It activates the inactive relation. But make sure you have an inactive relationship in place before using the use relationship function. Let's see how it works on Sample Superstore data. In my fact table I have two dates- Order date and Ship date. I am making the two relations between my date table and fact table.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/how-to-use-userelationship-dax-power-bi/step-1.png)
 
 The relation between the sample superstore (date) to date table (date) is active while the relation between the sample superstore (ship date) to date table (date) is inactive which is quite predictable behavior. The latter is represented by dotted lines.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/how-to-use-userelationship-dax-power-bi/step-2.png)
 
 I am looking to calculate the sales amount based on the shipping date. Is it possible with inactive relationships? Yes, we will make use of the relation along with the calculation. Our DAX will look like this.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/how-to-use-userelationship-dax-power-bi/step-3.png)
 
 ```DAX
 
@@ -39,7 +39,7 @@ CALCULATE (
 
 Total sales is an explicit measure that calculates the sum of sales amount. To get a better understanding of implicit and explicit measures we recommend reading this article(Link). Using relationship is helping to activate the inactive relation we created between the sample superstore and the date table based on the shipping date. Let's see how it looks when compared with total sales.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/how-to-use-userelationship-dax-power-bi/step-4.png)
 
 The difference between Total Sales and Total Shipping Sales is evident because of the different relationships being used while calculating total shipping sales. This is the power of use relationship and is heavily used when you have lots of inactive relationships.
 

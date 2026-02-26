@@ -14,7 +14,7 @@ tags:
 
 Writing a DAX can be tricky at times and making it efficient for the system is always a challenge for a BI Developer. The most prominent example is the use of filters in DAX. There are zillion ways to filter something in DAX and attain the same result but when you look behind the scenes you will get to know what effect it makes on performance.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/do-we-really-need-keepfilters-dax/step-1.png)
 
 Looking at the above image it all looks the same. In this blog, we will cover the most common scenarios to use filters including the use of filter with all, filter with values, and keepfilters. I am using the sample superstore data for demonstration. The idea is to get sales for "Tables". The DAX is as follows.
 
@@ -75,19 +75,19 @@ CALCULATE (
 
 Now we are clear with the DAX let's take a look at the performance of every DAX in DAX Studio. BTS time!! To do so I have connected my Power BI report to DAX Studio and defined the measures there. How to do it? Just right-click on the specific measure and you will get an option to define your measure. We will be publishing a detailed blog on how to use DAX Studio soon.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/do-we-really-need-keepfilters-dax/step-2.png)
 
 On line 12 I have included an evaluate function to get the same result as in Power BI. Now we will take a glimpse at the server timings.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/do-we-really-need-keepfilters-dax/step-3.png)
 
 The first thing I noticed is using filters generates 2 queries in the background which will affect the load time at the end. Also, the number of rows the DAX scans to give the result. Similarly, I did this exercise with a filter with values and the server timings are as follows.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/do-we-really-need-keepfilters-dax/step-4.png)
 
 The number of queries is still the same but the number of rows gets reduced which is a good sign for the performance. Let's see the ultimate result for the keepfilters. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/do-we-really-need-keepfilters-dax/step-5.png)
 
 Magic!! the number of queries is reduced to 1. When comparing all of these DAX the first consideration is always the performance and the use of keepfilters turns out to be the most efficient method to get the sales for tables. As a BI developer, you should be aware of the performance of your DAX having said that there is no hard rule to use keepfilters every time it depends on the use case ultimately.
 

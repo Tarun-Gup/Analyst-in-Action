@@ -16,7 +16,7 @@ If we talk about the level of detail then data labels can make your visuals stan
 
 Let's consider a use case where we are creating a basic line graph with the evolution of discount percentages over a period. We are considering Sample Superstore data. Also, we have enabled the data labels for the whole series.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/tips-tricks-data-labels-power-bi/step-1.png)
 
 You can play around with the formatting of your data labels. We can adjust the position, colors, and much more. If you focus on the title of the visual it's dynamic in nature and depends on the selection in the slicer. To know more about dynamic titles you can follow the link. From a visual point of view, the abovementioned visual is not so intuitive in nature. 
 
@@ -52,13 +52,13 @@ RETURN
 
 It's very basic and does the job so first disable the data labels from the formatting and put these measures in the Y axis. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/tips-tricks-data-labels-power-bi/step-2.png)
 
 Once you put these measures in the Y axis then you can format it. The most basic thing is to change the color. Generally, I put red for minimum and green for maximum. You can adjust it according to your needs. You can find it under colors in the formatting pane. 
 
 So back to the data labels enable it and you have to look for Apply settings to. Under that, you can see three options- Discount, Max Discount, and Min Discount. Select the Discount and disable the toggle to show data labels. Then select the Max discount and enable the toggle for data labels. You have to do the same for the Min discount.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/tips-tricks-data-labels-power-bi/step-3.png)
 
 Once you do that you can see the desired results. Only labels for the min and max discount are there on the line graph. Such tricks give an extra edge and add a level of detail to your visuals. For more tips and tricks do follow us.
 

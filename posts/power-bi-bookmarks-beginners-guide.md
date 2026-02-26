@@ -16,7 +16,7 @@ Bookmark you heard it right. Power BI provides a functionality to record the sta
 
 Let's get started with the creation of bookmarks. To do so on the top ribbon you need to select View and under it, you can find bookmarks. It will open a separate pane on the side. Before you create the bookmark make sure all the changes are implemented on the page which you want to see in the bookmark. Once the bookmark is created every change you make on the particular page you need to update the bookmark with the help of the three dots available next to the bookmark. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/power-bi-bookmarks-beginners-guide/step-1.png)
 
 Isn't it easy? Let's take it to the next level. I am using the Sample Superstore data. I have created a simple overview of all the KPIs in a matrix with categories and sub-categories. Also, I have created a detailed table where I consider everything. Our use case is to show both the visuals on the same page with an option to switch between both of the visuals. 
 
@@ -26,11 +26,11 @@ Protip- Power BI bookmarks work well with the custom visuals which are certified
 
 Both the bookmarks are now created and we need an option to switch between them. To get that we need a bookmark navigator. It is available in insert under buttons. You can find the page navigator and bookmark navigator. The Bookmark navigator will create tiles out of your bookmark. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/power-bi-bookmarks-beginners-guide/step-2.png)
 
 Smart work!! It is one of the tricks BI developers use.  You can achieve the same with the help of buttons. To learn more tricks associated with bookmarks visit the blog (link) on the slicer panel. In this case, we only have 2 bookmarks but you can have multiple bookmarks. It is always advised to group your bookmarks because by default the bookmark navigator will always show all the bookmarks you created. To change this grouping of bookmarks help under formatting you need to select the respective group.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/power-bi-bookmarks-beginners-guide/step-3.png)
 
 When it comes to the disadvantages of using bookmarks the first one is to handle them when you have plenty. It can be bewildering at times and with the updates Power BI is receiving shortly bookmarks will be completely discarded. The most annoying part is to update the bookmarks if there is a change in the visual or the page itself.
 

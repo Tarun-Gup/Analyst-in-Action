@@ -27,7 +27,7 @@ RETURN
 ```
 We want the total sales where the current date is less than or equal to the maximum date. It will cover all data points in the past. In the below-mentioned image you can see values in the last column for 2012 is actually the sum of sales in 2011 and 2012.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/rolling-totals-vs-running-totals-power-bi/step-1.png)
 
 Isn't it amazing!! Running totals can help you analyze the trends over a long period of time. In the example, we saw the trend from 2011 to 2014. Let's take a deep dive and analyze the trends for the last 3 months.
 
@@ -46,7 +46,7 @@ CALCULATE (
 
 I am using DATESINPERIOD and taking the current date to 3 months back. There are different ways by which you can achieve the same for eg you can also use DATESBETWEEN instead of DATESINPERIOD. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/rolling-totals-vs-running-totals-power-bi/step-2.png)
 
 With the DAX we are getting the results that include the current month as well. So, the sum at last is actually the sum of months 10,11, and 12. But we need to exclude the current month.
 
@@ -68,12 +68,12 @@ CALCULATE (
 
 You need to exclude the current month using EOMONTH. Rest DAX remains the same.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/rolling-totals-vs-running-totals-power-bi/step-3.png)
 
 Next and the most crucial aspect is to visualize the rolling total. It is actually the trend over a certain period so the user wants to see this along with the total sales. You can use Line and stack column charts. You can also do the same for 12 months.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/rolling-totals-vs-running-totals-power-bi/step-4.png)
 
-Protip- You can also use quick measures to get the running total. To know more about quick measures follow the link.
+> **Pro tip:**  You can also use quick measures to get the running total. To know more about quick measures follow the link.
 
 
