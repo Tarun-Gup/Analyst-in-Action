@@ -62,7 +62,7 @@ layout: base.njk
 
   </header>
 
-  <!-- FEATURED IMAGE (optional if defined in markdown later) -->
+  <!-- Featured Image -->
   {% if featuredImage %}
     <img 
       src="{{ featuredImage }}" 
@@ -72,6 +72,43 @@ layout: base.njk
 
   <div class="post-content">
     {{ content | safe }}
+
+    <!-- SUBSCRIBE (inline, clean card) -->
+    <div class="subscribe-inline">
+      {% include "subscribe.njk" %}
+    </div>
+
+    <hr>
+
+    <div class="comments-section">
+      <h3>Comments</h3>
+
+      <p class="comment-note">
+        Prefer not to sign in? Share your thoughts on
+        <a href="https://www.linkedin.com/in/tarun-gupta-3a0082141/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+        I reply fastest there.
+      </p>
+
+      <script src="https://giscus.app/client.js"
+        data-repo="Tarun-Gup/Analyst-in-Action"
+        data-repo-id="R_kgDOQv_RYQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQv_RYc4C3WqG"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+
+    </div>
+
   </div>
 
 </article>

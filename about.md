@@ -2,38 +2,75 @@
 layout: base.njk
 title: About Me | Analyst in Action
 permalink: /about/
-description: About Tarun Gupta — Business Intelligence developer sharing practical Power BI, DAX, and data modeling learnings on Analyst in Action.
+description: About Tarun Gupta — Business Intelligence professional sharing practical Power BI, DAX, and data modeling learnings.
 ---
 
 # About Me
 
-Hi, I’m Tarun Gupta 👋
+Hi, I’m Tarun.
 
-I’m a Business Intelligence (BI) developer with a background in both management and engineering. I’ve been working with BI tools like Power BI and Tableau for about seven years, mostly helping teams turn messy data into something they can actually use.
+I work in Business Intelligence, mostly with Power BI, DAX, and data modeling. For the past 5+ years, I’ve been building reports, fixing broken models, optimizing slow measures, and trying to make data actually useful for decision-making.
 
-Somewhere along the way, I got hooked on statistics, DAX, and data modelling. This blog is where I share what I’ve learned the things that worked, the mistakes I made, and the little tricks that save time in real projects.
+Most of what I share here comes from real project work not documentation summaries.
 
-## What You’ll Find on Analyst in Action
+Over time, I found myself going deeper into things like:
+- Why a DAX measure behaves unexpectedly  
+- Why totals don’t match row values  
+- Why a model works fine… until it scales  
+- Why performance suddenly drops  
 
-On Analyst in Action, you’ll mostly find:
+Instead of keeping those lessons to myself, I started documenting them.
 
-- Practical, hands-on tutorials  
-- Examples from real-life BI problems  
-- Tips on tools like Power BI, Power Query, DAX Studio, Tabular Editor, and more  
+That’s how Analyst in Action was born.
 
-I see knowledge a bit like good food: it’s better when it’s shared.
+---
+
+## What This Blog Is About?
+
+This isn’t a news site.  
+It’s not marketing content.
+
+It’s a working notebook of practical BI knowledge.
+
+Here you’ll find:
+
+- Step-by-step Power BI tutorials  
+- Clear breakdowns of DAX logic  
+- Data modeling principles that actually matter  
+- Performance tips that save hours  
+- Tools like Power Query, DAX Studio, and Tabular Editor used in real scenarios  
+
+If you work with Power BI professionally, this content is for you.
+
+---
+
+## Why I Write?
+
+Because I’ve made mistakes.
+
+- I’ve written inefficient measures.  
+- Built messy models.  
+- Overcomplicated solutions.  
+
+And fixing those mistakes taught me more than any course ever did.
+
+This blog is my way of sharing those hard-earned lessons so others can move faster.
+
+---
 
 ## Get in Touch
 
-If you have questions, ideas, or feedback, feel free to:
+If something here helped you or if you have a question, feel free to reach out:
 
-- Leave a comment on any post  
-- Reach out via email – [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
-- Connect with me on [LinkedIn](https://www.linkedin.com/in/tarun-gupta-3a0082141/)
+- Email: [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
+- LinkedIn: [Connect with me here](https://www.linkedin.com/in/tarun-gupta-3a0082141/)  
+
+---
 
 ## LinkedIn Newsletter
 
-If you’d like to get new posts and tips from me, you can also follow my  
-[LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960)  
-for regular Power BI content.
+I also share shorter Power BI insights through my  
+[LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960).
+
+If you prefer bite-sized learning, that’s a good place to follow along.
 
