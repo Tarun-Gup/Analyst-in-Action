@@ -31,9 +31,8 @@ SUMX ( Orders, Orders[Sales] - Orders[Profit] )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/7-commonly-used-dax-expressions-power-bi/step-1.png)
 
 - Average and AverageX- It is responsible for taking an average to all the values present in a column and AverageX is similar to SumX because it focuses on averaging the expressions for each row in the table. To get a better understanding of AverageX we will calculate avg sales per day.
 
@@ -51,9 +50,9 @@ AVERAGEX ( VALUES ( Orders[Order Date].DATE ), [Sum of Sales] )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/7-commonly-used-dax-expressions-power-bi/step-2.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/7-commonly-used-dax-expressions-power-bi/step-3.png)
 
 - Minimum and Maximum- Min function is responsible for returning the minimum value in the column or expression similarly Max function is responsible for returning the maximum value in the column or expression. We are taking the minimum for sales according to the subcategory.
 
@@ -64,7 +63,7 @@ MIN ( Orders[Sales] )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/7-commonly-used-dax-expressions-power-bi/step-4.png)
 
 - Calculate and Filter- These are the important and fundamental DAX. By using calculate function you can evaluate any functions by applying some specific filters. Both of them are interrelated where both of them result in an aggregated measure. To get a better understanding of it we are calculating binders (one of the subcategory) sales.
 
@@ -94,6 +93,6 @@ SWITCH (
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/7-commonly-used-dax-expressions-power-bi/step-5.png)
 
 If you only apply the ship mode color measure then you won't get different colors for different ship modes. To get that you need to do conditional formatting based on the field value which is ship mode color. There can be more DAX expressions that can be used often but all the above-mentioned DAX is heavily used by me. 

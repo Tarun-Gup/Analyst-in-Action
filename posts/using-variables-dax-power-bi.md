@@ -37,7 +37,7 @@ RETURN
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/using-variables-dax-power-bi/step-1.png)
 
 Now, I am looking to get the percentage of sales for the west region by dividing the west sales by the overall sales. We can do this using basic calculation and dividing but let's explore how can we do the same using VAR. 
 
@@ -53,14 +53,14 @@ RETURN
 
 As you can see we defined two variables SalesTotal and West Sales also. Let's take all the sub-categories in the matrix and let's see how much percentage of sales is contributed by West.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/using-variables-dax-power-bi/step-2.png)
 
 Yes, that's how variable functions in DAX but if you can achieve the same result without Var then why should we opt for this? Yes, you can achieve the same without Var but let's consider a scenario where you have to create lots of measures with the same fields. Generally, it occurs when you are trying to create YoY, MoM, and so on.
 
 In such case you have to use the same field such as Sales or it can be Profit then it will be a cumbersome and repetitive task to write the same DAX again and again with a slight change. To avoid that you can use Var and define your basic DAX such as Sales last year. You can use the same variable over and over which makes the length of DAX much shorter but also improves the performance of your report. You can use the Variable to define a table or you can introduce a new calculated column using it
 
 
-Pro Tip- The most important thing to keep in mind is when we are using the VAR it provides a fixed value that is not affected by a filter context.
+> **Pro tip:** The most important thing to keep in mind is when we are using the VAR it provides a fixed value that is not affected by a filter context.
 
 Using VAR always proves to be beneficial as it reduces the repetitive tasks of creating the same measure over and over but you have to be very clear and decisive when you are defining the naming convention of your variables. 
 

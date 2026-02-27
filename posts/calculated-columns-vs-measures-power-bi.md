@@ -18,11 +18,11 @@ You can easily increase the table size by adding calculated columns to it and yo
 
 Let's see how the calculated column works. I am considering the sample superstore data and I will be creating a column name cost which is the difference between the sales and the profit.  
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/calculated-columns-vs-measures-power-bi/step-1.png)
 
 You can easily rename the column. One great and key learning which I came across is you can easily apply calculated columns in the page level filters but not the measures. I am creating a table that consists of an Order ID, sales, cost, and profit.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/calculated-columns-vs-measures-power-bi/step-2.png)
 
 Now I want to see only the Order IDs where the cost is greater than 100 USD and that filter needs to be applied on page level which can be done by calculated column.
 What if I don't want to calculate values on row level but I want to see the aggregated values for multiple rows? In such cases, you can use the measures. What do I mean by aggregated values so let's suppose I am writing a DAX for SUM(Orders[Cost]) so it will provide a sum for all the rows that are aggregated under this but if you use the same DAX in the calculated column it will provide you different value based on the row you are referring to. 

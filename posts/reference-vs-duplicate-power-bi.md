@@ -18,29 +18,29 @@ Creating bridge tables can be achieved in the Power Query Editor. There are main
 
 The reference query always points to the main table and does not copy any of the applied steps to the main query. Let's see how does it work in Power BI. I am currently using the Sample Superstore Data. You just need to right-click on the main table and you will see both duplicate and reference. 
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-1.png)
 
 At first, we are creating a reference table out of the orders table and to avoid many to many relationships we will remove duplicates from the segment column. I have removed all other columns because I will set up a segment table and create relationships with other tables.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-2.png)
 
 If you do that you will get a column with only three rows. Now let's see the m-script and query dependencies behind this reference. To see that you need to go to the view tab and there you can find both the options.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-3.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-4.png)
 
 You can see the process and steps working in the background and it is evident that the reference tables always point to the main table. Now let's do the same thing with duplicates. You will get the duplicate table just following the same steps you just need to select the duplicate instead of reference. Let's see the query dependencies and the m-script for it.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-5.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-6.png)
 
 As you can see from the query dependencies when you create a duplicate table it doesn't point out to the main table but if you check the applied steps in duplicate you can see every step that has been applied to the main table is visible over there.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-7.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/reference-vs-duplicate-power-bi/step-8.png)
 
 Duplicate tables require more processing time as compared to the reference tables as it occupies the space in memory. The main question is when to use this duplicate option. You can use this when you want to create a mirror image of the big flat table with all the applied steps. The purpose of both duplicate and reference is quite different and depends on what you want to achieve in the end.
 

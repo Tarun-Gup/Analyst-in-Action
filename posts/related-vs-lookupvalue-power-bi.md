@@ -19,9 +19,8 @@ Let's get started with the purpose of both functions. You will be shocked to kno
 
 The question that comes to my mind is when to use the related functions? So there are certain criteria to be met before creating a column with related. One of the conditions is that both the tables (one where we are creating a column and the other will be from where the value will come from) should have an active relationship between them. When we talk about relationships in Power BI you have to discuss the cardinality of every relationship. In this case, you will require many to one or one to one relationships to make this function work. We are considering the orders table and return table. The idea is to get the return status in the order table.
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/related-vs-lookupvalue-power-bi/step-1.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
 
 As you can see we created many to one relationship between both tables and it is an active relationship. We met the basic criteria and now we will create a calculated column with the help of related.
 
@@ -32,9 +31,9 @@ RELATED ( Returns[Returned] )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/related-vs-lookupvalue-power-bi/step-2.png)
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/related-vs-lookupvalue-power-bi/step-3.png)
 
 Currently, we are filtering the blank values in the return status column which is something I do not like about using related because it does not provide any options for giving an alternate result. This is my opinion but if you consider the performance of this function it is much better than the lookup value as it only uses one parameter. It's always a better option if you can establish relationships between different tables.
 
@@ -52,7 +51,7 @@ LOOKUPVALUE ( Returns[Returned], Returns[Order ID], Orders[Order ID] )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/related-vs-lookupvalue-power-bi/step-4.png)
 
 We will provide "Not Available" to all the blank values in the return status. The only addition is the text to the alternate result. It is optional but I would prefer to provide it.
 
@@ -67,7 +66,7 @@ LOOKUPVALUE (
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/related-vs-lookupvalue-power-bi/step-5.png)
 
 In many cases, you will get the blank because there are no matches available for that particular field. When it comes to the performance the former is quite faster than the lookup value but if you see the query behind both of them lookup value has a more optimized query running behind it. I would choose lookup value anyway as there are no specific criteria to be met and also I can avoid blank values by providing an alternate result.
 

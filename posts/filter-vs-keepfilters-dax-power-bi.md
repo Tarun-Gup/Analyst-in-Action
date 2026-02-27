@@ -25,7 +25,7 @@ CALCULATE ( SUM ( Orders[Sales] ), 'Orders'[Segment] = "Corporate" )
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/filter-vs-keepfilters-dax-power-bi/step-1.png)
 
 The above-mentioned formula is the basic approach where you just specify the field (sales in this case) and the filter you need to apply to that field but if you are considering the performance of this formula then I would say there are better formulas that will perform much better when the dataset is quite large (millions of rows). What if I need another filter that is based on the region?? Another drawback is you can only refer to a single column filter in this formula but if you need to add multiple filter conditions then this formula won't provide the desired result.
 
@@ -41,11 +41,11 @@ CALCULATE (
 
 ```
 
-<!-- IMAGE: describe-what-the-image-will-show -->
+![](/assets/images/filter-vs-keepfilters-dax-power-bi/step-2.png)
 
 You can another filter condition apart from the segment just by adding && and the 'Orders'[Region]="East" {another condition}. This is suitable to compare different columns and measures
 
-ProTip- If you are a beginner you should know the difference between filter and filters in DAX. Filters will return the whole table based on the applied filter so if I am applying this formula Filers('Orders'[Region]) then you will get only the different regions in that table. The values will be distinct. For more pro tips do follow us.
+> **Pro tip:** If you are a beginner you should know the difference between filter and filters in DAX. Filters will return the whole table based on the applied filter so if I am applying this formula Filers('Orders'[Region]) then you will get only the different regions in that table. The values will be distinct. For more pro tips do follow us.
 
 The last formula to achieve the same result is Keepfilters which is the most efficient and faster formula even with the multiple filter scenarios. It will keep the current filter and does not result in blank values. This can be look upon as an alternative to filter and all but the performance of keep filters is much better. Let's check how does the formula for keep filters look like.
 
@@ -59,6 +59,8 @@ CALCULATE (
 
 
 ```
+
+![](/assets/images/filter-vs-keepfilters-dax-power-bi/step-3.png)
 
 All the three formulas provide the same result but when it comes to the performance I will prefer the keep filters but this choice can be subjective according to the situation. Keep filters is not a good choice when it comes to comparing the different columns. But it is more precise as compared to others on larger datasets.
 
