@@ -8,9 +8,7 @@ module.exports = class {
   }
 
   render(data) {
-    const baseUrl = (data.site && data.site.url)
-      ? data.site.url.replace(/\/$/, "")
-      : "https://analystinaction.netlify.app";
+    const baseUrl = (data.site?.url || "https://analystinaction.netlify.app").replace(/\/$/, "");
 
     const ignore = new Set([
       "/sitemap.xml",
@@ -19,7 +17,7 @@ module.exports = class {
       "/posts/TEMPLATE/"
     ]);
 
-    const pages = (data.collections && data.collections.all) ? data.collections.all : [];
+    const pages = data.collections?.all || [];
 
     const urlNodes = pages
       .filter(p => p.url && !ignore.has(p.url) && !p.data?.eleventyExcludeFromCollections)
