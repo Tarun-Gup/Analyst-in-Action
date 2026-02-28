@@ -8,7 +8,9 @@ module.exports = class {
   }
 
   render(data) {
-    const baseUrl = data.site?.url || "https://analystinaction.netlify.app";
+    const baseUrl = (data.site && data.site.url)
+      ? data.site.url.replace(/\/$/, "")
+      : "https://analystinaction.netlify.app";
 
     const ignore = new Set([
       "/sitemap.xml",
@@ -17,10 +19,10 @@ module.exports = class {
       "/posts/TEMPLATE/"
     ]);
 
-    const pages = data.collections?.all || [];
+    const pages = (data.collections && data.collections.all) ? data.collections.all : [];
 
     const urlNodes = pages
-      .filter(p => p.url && !ignore.has(p.url))
+      .filter(p => p.url && !ignore.has(p.url) && !p.data?.eleventyExcludeFromCollections)
       .map(p => {
         const loc = `${baseUrl}${p.url}`;
         const lastmod = p.date ? new Date(p.date).toISOString() : null;
@@ -35,10 +37,10 @@ module.exports = class {
       .join("\n");
 
     return [
-      `<?xml version="1.0" encoding="UTF-8"?>`,
-      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
       urlNodes,
-      `</urlset>`
+      "</urlset>"
     ].join("\n");
   }
 };
