@@ -14,7 +14,7 @@ tags:
 
 We have several types of ALL available in the DAX and it is quite difficult to write a DAX using any of them if you aren't aware of each of them and the purpose they serve in different situations. In today's article, we will mainly focus on ALL, ALLSelected, and AllExcept. I will highlight the purpose of each of them and the difference between them.
 
-Let's get started with the basic DAX which every BI Analyst or DAX expert is familiar with. Before diving into the DAX let's define the use case. We are currently using the Sample Superstore data. The idea is to look for corporate sales in the east region. If you want to know how to calculate Corporate Sales using filters and keep filters you can refer to one of our old blogs (link)*
+Let's get started with the basic DAX which every BI Analyst or DAX expert is familiar with. Before diving into the DAX let's define the use case. We are currently using the Sample Superstore data. The idea is to look for corporate sales in the east region. If you want to know how to calculate Corporate Sales using filters and keep filters you can refer to one of our old blogs [Filter vs KEEPFILTERS in Power BI](/posts/filter-vs-keepfilters-dax-power-bi/).
 
 ```DAX
 

@@ -7,60 +7,74 @@ description: About Tarun Gupta — Business Intelligence professional sharing pr
 
 # About Me
 
-Hi, I’m Tarun.
+I’m Tarun Gupta, a Business Intelligence professional focused on building reliable, scalable Power BI solutions that actually support business decisions.
 
-I work in Business Intelligence, mostly with Power BI, DAX, and data modeling. For the past 5+ years, I’ve been building reports, fixing broken models, optimizing slow measures, and trying to make data actually useful for decision-making.
+For the past 5+ years, I’ve worked hands-on with Power BI, DAX, and data modeling, building reports, optimizing slow measures, fixing broken totals, and redesigning models that stopped working once data volumes grew.
 
-Most of what I share here comes from real project work not documentation summaries.
+I don’t write from theory.
 
-Over time, I found myself going deeper into things like:
-- Why a DAX measure behaves unexpectedly  
-- Why totals don’t match row values  
-- Why a model works fine… until it scales  
-- Why performance suddenly drops  
+Everything on this site comes from real project work:
+- Debugging DAX that behaves unexpectedly  
+- Fixing totals that don’t match row-level logic  
+- Improving performance when queries take seconds instead of milliseconds  
+- Cleaning up models that became fragile as complexity increased  
 
-Instead of keeping those lessons to myself, I started documenting them.
+Over time, I realized most BI problems aren’t about visuals.
 
-That’s how Analyst in Action was born.
+They’re about logic, structure, and performance.
 
----
-
-## What This Blog Is About?
-
-This isn’t a news site.  
-It’s not marketing content.
-
-It’s a working notebook of practical BI knowledge.
-
-Here you’ll find:
-
-- Step-by-step Power BI tutorials  
-- Clear breakdowns of DAX logic  
-- Data modeling principles that actually matter  
-- Performance tips that save hours  
-- Tools like Power Query, DAX Studio, and Tabular Editor used in real scenarios  
-
-If you work with Power BI professionally, this content is for you.
+That’s why Analyst in Action exists.
 
 ---
 
-## Why I Write?
+## Who This Is For
 
-Because I’ve made mistakes.
+This blog is for professionals who already work with Power BI and want to go deeper.
 
-- I’ve written inefficient measures.  
-- Built messy models.  
-- Overcomplicated solutions.  
+If you:
+- Write DAX regularly  
+- Build semantic models  
+- Care about performance  
+- Want cleaner, more maintainable solutions  
 
-And fixing those mistakes taught me more than any course ever did.
+You’ll find practical, experience-driven content here.
 
-This blog is my way of sharing those hard-earned lessons so others can move faster.
+This is not marketing content.  
+It’s not surface-level tutorials.
+
+It’s applied Business Intelligence.
 
 ---
 
-## Get in Touch
+## What You’ll Find Here
 
-If something here helped you or if you have a question, feel free to reach out:
+- Clear breakdowns of DAX patterns and context behavior  
+- Data modeling principles that scale  
+- Performance tuning using DAX Studio and Tabular Editor  
+- Real-world mistakes and how to avoid them  
+- Practical techniques I use in production environments  
+
+Every article is written to make you sharper, not just informed.
+
+---
+
+## Why I Write
+
+Because I’ve made the mistakes.
+
+I’ve written inefficient measures.
+Built messy models.
+Over-engineered solutions.
+
+Fixing those mistakes taught me more than any documentation ever could.
+
+This blog is my working notebook, shared publicly so others can learn faster.
+
+---
+
+## Connect
+
+If something here helped you or you’d like to connect:
 
 - Email: [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
 - LinkedIn: [Connect with me here](https://www.linkedin.com/in/tarun-gupta-3a0082141/)  
@@ -72,5 +86,5 @@ If something here helped you or if you have a question, feel free to reach out:
 I also share shorter Power BI insights through my  
 [LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960).
 
-If you prefer bite-sized learning, that’s a good place to follow along.
+If you prefer focused, bite-sized learning, that’s a good place to start.
 

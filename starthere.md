@@ -6,18 +6,24 @@ permalink: /start-here/
 
 # Start Here
 
-If you work with Power BI in real business environments, this page will help you find what’s relevant quickly.
+If you work with Power BI in real business environments, this page will help you navigate the content efficiently.
 
-This site focuses on practical implementation: performance issues, modeling decisions, architecture trade-offs, deployment discipline, and real-world BI challenges.
+This site focuses on practical implementation and not surface-level tutorials.  
+Everything here is rooted in real project work: debugging DAX, fixing broken totals, redesigning models, optimizing performance, and making BI solutions scalable.
 
-Posts are grouped below by topic.  
-Start with the area you're currently working on and explore from there.
+If you're new here, follow the paths below.
 
 ---
 
-## DAX & Calculations
-Advanced DAX patterns, filter context behavior, time intelligence, totals logic, and writing clean, maintainable measures.
+## If You’re Struggling With DAX
 
+Start here if:
+- Your totals don’t match row values
+- Measures behave differently inside visuals
+- Context is confusing
+- Performance is inconsistent
+
+### Recommended Reading
 {% if collections.dax and collections.dax.size > 0 %}
 {% for post in collections.dax limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -28,9 +34,15 @@ _No posts yet._
 
 ---
 
-## Data Modeling
-Structuring tables, managing relationships, handling cardinality, and building scalable semantic models.
+## If You’re Building or Fixing Models
 
+Start here if:
+- Your model works… until it scales
+- Relationships feel fragile
+- You’re unsure about star schema discipline
+- You want cleaner, maintainable structure
+
+### Recommended Reading
 {% if collections.dataModeling and collections.dataModeling.size > 0 %}
 {% for post in collections.dataModeling limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -41,9 +53,15 @@ _No posts yet._
 
 ---
 
-## Performance & Optimization
-Measure optimization, query tuning, model efficiency, and diagnosing performance bottlenecks in real-world Power BI projects.
+## If Performance Is a Problem
 
+Start here if:
+- Reports are slow
+- Measures take seconds to evaluate
+- You want to understand query behavior
+- You use DAX Studio or Tabular Editor
+
+### Recommended Reading
 {% if collections.performance and collections.performance.size > 0 %}
 {% for post in collections.performance limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -55,8 +73,8 @@ _No posts yet._
 ---
 
 ## Tools (DAX Studio, Tabular Editor, BPA)
-Using DAX Studio, Tabular Editor, Best Practice Analyzer, and other external tools to build, analyze, and maintain robust BI models.
 
+### Recommended Reading
 {% if collections.tools and collections.tools.size > 0 %}
 {% for post in collections.tools limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -68,8 +86,8 @@ _No posts yet._
 ---
 
 ## Architecture
-Dataset strategy, shared models, semantic layer design, and structural decisions that scale beyond a single PBIX file.
 
+### Recommended Reading
 {% if collections.architecture and collections.architecture.size > 0 %}
 {% for post in collections.architecture limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -81,8 +99,8 @@ _No posts yet._
 ---
 
 ## Deployment & Governance
-Publishing discipline, documentation standards, security decisions, lifecycle management, and operational maturity in BI environments.
 
+### Recommended Reading
 {% if collections.deployment and collections.deployment.size > 0 %}
 {% for post in collections.deployment limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -94,8 +112,8 @@ _No posts yet._
 ---
 
 ## Fabric
-Understanding Microsoft Fabric concepts, ecosystem evolution, and architectural implications for modern BI teams.
 
+### Recommended Reading
 {% if collections.fabric and collections.fabric.size > 0 %}
 {% for post in collections.fabric limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -107,8 +125,8 @@ _No posts yet._
 ---
 
 ## Capacity
-Diagnosing capacity spikes, managing workloads, and preventing unexpected performance degradation in Fabric environments.
 
+### Recommended Reading
 {% if collections.capacity and collections.capacity.size > 0 %}
 {% for post in collections.capacity limit:5 %}
 - [{{ post.data.title }}]({{ post.url }})
@@ -116,3 +134,19 @@ Diagnosing capacity spikes, managing workloads, and preventing unexpected perfor
 {% else %}
 _No posts yet._
 {% endif %}
+
+---
+
+
+## My Suggestion
+
+If you’re unsure where to start:
+
+1. Pick one DAX article  
+2. Pick one modeling article  
+3. Pick one performance article  
+
+That combination alone will sharpen how you approach Power BI projects.
+
+If you prefer shorter insights, I also share focused Power BI ideas through my  
+[LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960).
