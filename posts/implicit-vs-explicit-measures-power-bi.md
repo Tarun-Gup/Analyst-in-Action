@@ -33,7 +33,7 @@ Let's see the example of what an explicit measure looks like. We will consider t
 
 ![](/assets/images/implicit-vs-explicit-measures-power-bi/step-3.png)
 
-In the above-mentioned image, we are getting the same result as the implicit measure but by using a basic DAX expression. (How to create DAX?)
+In the above-mentioned image, we are getting the same result as the implicit measure but by using a basic DAX expression. [How to create DAX?](/posts/7-commonly-used-dax-expressions-power-bi/)
 
 There are a lot of pros associated with explicit measures but it can be a tiresome task to create several explicit measures one by one. But what if I tell you can create explicit measures in a matter of few clicks!!! Yes, you can do it using tools such as Tabular Editor. To know more about [Tabular Editor](https://tabulareditor.com/).
 

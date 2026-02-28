@@ -18,7 +18,7 @@ Tabular Editor (TE), I have heard this name before. Yes, you probably had it if 
 
 There are tons of articles and videos explaining the UI of TE, so we won't be touching it. We will be focusing on different use cases that I normally do with all my Power BI reports. First things first, we will be focusing on the TE version 2 since it's a free tool. You can also opt for version 3, which is a much-improved version than version 2, but I would recommend starting with version 2 and seeing if it suits your needs. Version 3 is a paid version.
 
-To download TE Version 2 from this very well known git hub page. Also, do check a small comparison done between the two versions on the TE official website.
+To download TE Version 2 from this very well known [GitHub page](https://github.com/TabularEditor/TabularEditor). Also, do check a small comparison done between the two versions on the TE official [website](https://docs.tabulareditor.com/?tabs=TE3).
 
 Okay let's get started, we will be covering these use cases -
 - Creating folders and subfolders of your measures 
@@ -26,8 +26,8 @@ Okay let's get started, we will be covering these use cases -
 - Applying format strings also applying it in bulk
 - Formatting all your measures with a click.
 - Refresh a specific table
-- We have covered Best Practice Analyzer in this detailed blog
-- We have covered Calculation Groups in this detailed blog
+- We have covered [Best Practice Analyzer in this detailed blog](/posts/best-practice-analyzer-guide-power-bi/)
+- We have covered [Calculation Groups in this detailed blog](/posts/introduction-to-calculation-groups-power-bi/)
 
 
 Let's start with the simplest of the lot. I like structuring my report a lot since it is easy to debug and maintain. Creating folders and subfolders comes in handy there. You can easily segregate the base measures and time intelligence measures. Or group all the sales measures into one folder called sales. To do this in Power BI, you have to go to the data model, and it takes a bit longer. TE made it so simple. 

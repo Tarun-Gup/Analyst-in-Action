@@ -97,7 +97,7 @@ SWITCH (
 
 It's too confusing now. Okay, let's create a debunk measure for it then. We are using the same ISINSCOPE function which will return TRUE if a particular field is used in the row or column in a visual (matrix in this case). Otherwise, it will return FALSE.
 
-Protip: Using all these measures is fun but beware that by default matrix will only show totals as the label for the column and row subtotals. To change it select the matrix and go to the Column Subtotal and Row Subtotal to change it. Also, if you do not want to provide a label just click on the Subtotal label and provide a space.
+> **Pro tip:** Using all these measures is fun but beware that by default matrix will only show totals as the label for the column and row subtotals. To change it select the matrix and go to the Column Subtotal and Row Subtotal to change it. Also, if you do not want to provide a label just click on the Subtotal label and provide a space.
 
 ![](/assets/images/playing-with-totals-power-bi/step-3.png)
 

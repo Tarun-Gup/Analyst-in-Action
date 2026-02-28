@@ -13,7 +13,7 @@ tags:
 
 
 
-You must be aware of the purpose and significance of Vlookup in Excel. But when it comes to Microsoft Power BI there is no Vlookup in it. Power BI provides you Related and Lookupvalue which is quite similar to Vlookup in Excel. If you aren't familiar with the Vlookup kindly refer to our blog*.
+You must be aware of the purpose and significance of Vlookup in Excel. But when it comes to Microsoft Power BI there is no Vlookup in it. Power BI provides you Related and Lookupvalue which is quite similar to Vlookup in Excel.
 
 Let's get started with the purpose of both functions. You will be shocked to know that both of them will give you the same result. Because it follows the same principle of Vlookup i.e. searching for a particular value in a column and returns a value from a different column (different table). In this blog, we will showcase how and when to use related and lookup values. We will be using Sample Superstore data.
 

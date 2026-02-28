@@ -22,7 +22,7 @@ How to do it? Okay, let's start by providing a description of the tables. I am u
 
 Easy peasy lemon squeezy!! That's basic and at Analyst in Action, we always strive to go beyond the basic knowledge. Let's take it to the next level, if you scroll a bit you will observe the row label and Key column. What does it mean? The key column is the one that contains a unique value in your table. In my case, I have an Index column but in real-life scenarios, it can be - Order IDs, Product IDs...
 
-If you are an Excel user you can easily tell your row label. Any column that can be identified as a row can act as a row label. If you have selected your key column and row label, and provided a description of a particular table that table can be treated as a featured table. Here is a quick read that will you a glimpse of featured tables.
+If you are an Excel user you can easily tell your row label. Any column that can be identified as a row can act as a row label. If you have selected your key column and row label, and provided a description of a particular table that table can be treated as a featured table. 
 
 ![](/assets/images/why-every-power-bi-report-needs-description/step-1.png)
 
@@ -34,11 +34,11 @@ Let's move to the next step and provide the description of one of the columns. W
 
 ![](/assets/images/why-every-power-bi-report-needs-description/step-3.png)
 
-That's one of the approaches, you can do the same with TMDL view and you can use external tools such as Tabular Editor to do the same. What is TMDL? Here is a quick read on the introduction to the TMDL view. This article will provide you with everything you can do with TMDL view. Let's see how we can provide a description in Tabular Editor. FYI, I am using Tabular Editor version 2. Select the column (Segment) and you can provide the description in the highlighted area by double-clicking on it. Hit save and the changes will be reflected in your report.
+That's one of the approaches, you can do the same with TMDL view and you can use external tools such as Tabular Editor to do the same. What is TMDL? Here is a quick read on the [introduction to the TMDL view](/posts/uintroduction-to-tmdl-power-bi/). This article will provide you with everything you can do with TMDL view. Let's see how we can provide a description in Tabular Editor. FYI, I am using Tabular Editor version 2. Select the column (Segment) and you can provide the description in the highlighted area by double-clicking on it. Hit save and the changes will be reflected in your report.
 
 ![](/assets/images/why-every-power-bi-report-needs-description/step-4.png)
 
-Protip- To make your report to be more self-service-ready, it is always advisable to provide a user-friendly to all the columns. Either you change it directly in the backend or you can do it in Power BI itself.
+> **Pro tip:**  To make your report to be more self-service-ready, it is always advisable to provide a user-friendly to all the columns. Either you change it directly in the backend or you can do it in Power BI itself.
 
 One of the fastest and easiest ways to do so, head to the query editor and just double-click on the column header. This will add a step in the applied step pane. The core idea is to provide these names in a single step instead of adding them in different steps. You can double-click on each and every column and change the names.
 
@@ -73,7 +73,7 @@ SUMX (
 
 To provide the description, you can follow the same approach as we did for tables and columns. Go to the model view. Select the measure and provide the description under the properties pane. 
 
-Protip- To make your report, as organized as it can be you can try to group your measures under a folder. To do so, go to the data model view and select all the measures by holding Ctrl. Under properties, provide a name in the display folder.
+> **Pro tip:**  To make your report, as organized as it can be you can try to group your measures under a folder. To do so, go to the data model view and select all the measures by holding Ctrl. Under properties, provide a name in the display folder.
 
 ![](/assets/images/why-every-power-bi-report-needs-description/step-7.png)
 

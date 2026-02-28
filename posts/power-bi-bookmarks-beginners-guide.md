@@ -22,13 +22,13 @@ Isn't it easy? Let's take it to the next level. I am using the Sample Superstore
 
 How to do this? Once you have created both the visuals place them on top of each other with the exact dimensions. Now create the bookmark where the table is hidden. How to hide a visual? Under view next to bookmark you can choose the selection and a separate pane will open where you can hide and unhide a specific visual. Create the first bookmark I have named it Matrix and under the selection pane hide the table. Similarly, hide the matrix for the other bookmark. 
 
-Protip- Power BI bookmarks work well with the custom visuals which are certified by Microsoft. If you are not using any of the certified visuals try to avoid the use of bookmarks.
+> **Pro tip:** Power BI bookmarks work well with the custom visuals which are certified by Microsoft. If you are not using any of the certified visuals try to avoid the use of bookmarks.
 
 Both the bookmarks are now created and we need an option to switch between them. To get that we need a bookmark navigator. It is available in insert under buttons. You can find the page navigator and bookmark navigator. The Bookmark navigator will create tiles out of your bookmark. 
 
 ![](/assets/images/power-bi-bookmarks-beginners-guide/step-2.png)
 
-Smart work!! It is one of the tricks BI developers use.  You can achieve the same with the help of buttons. To learn more tricks associated with bookmarks visit the blog (link) on the slicer panel. In this case, we only have 2 bookmarks but you can have multiple bookmarks. It is always advised to group your bookmarks because by default the bookmark navigator will always show all the bookmarks you created. To change this grouping of bookmarks help under formatting you need to select the respective group.
+Smart work!! It is one of the tricks BI developers use.  You can achieve the same with the help of buttons. To learn more tricks associated with bookmarks visit the [blog](/posts/introduction-to-slicer-panel-power-bi/) on the slicer panel. In this case, we only have 2 bookmarks but you can have multiple bookmarks. It is always advised to group your bookmarks because by default the bookmark navigator will always show all the bookmarks you created. To change this grouping of bookmarks help under formatting you need to select the respective group.
 
 ![](/assets/images/power-bi-bookmarks-beginners-guide/step-3.png)
 

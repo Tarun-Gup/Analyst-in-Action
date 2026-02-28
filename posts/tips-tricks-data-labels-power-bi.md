@@ -18,7 +18,7 @@ Let's consider a use case where we are creating a basic line graph with the evol
 
 ![](/assets/images/tips-tricks-data-labels-power-bi/step-1.png)
 
-You can play around with the formatting of your data labels. We can adjust the position, colors, and much more. If you focus on the title of the visual it's dynamic in nature and depends on the selection in the slicer. To know more about dynamic titles you can follow the link. From a visual point of view, the abovementioned visual is not so intuitive in nature. 
+You can play around with the formatting of your data labels. We can adjust the position, colors, and much more. If you focus on the title of the visual it's dynamic in nature and depends on the selection in the slicer. To know more about dynamic titles you can follow the [link](/posts/dynamic-titles-power-bi/). From a visual point of view, the abovementioned visual is not so intuitive in nature. 
 
 To make it more intuitive we can reduce the number of labels and just show the minimum and maximum discount percentages. This will take the normal line graph a step ahead. How to do it? If you consider other BI tools such as Tableau this feature is just a toggle but in Power BI you can do it with the help of basic DAX.
 

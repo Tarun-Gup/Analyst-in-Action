@@ -13,7 +13,7 @@ tags:
 
 
 
-DAX Studio has proved to be a great external tool for Power BI and we have prepared a beginner's guide on the most common use cases that one can encounter while using it. This week we will focus on going a level beyond and discover a bit more advanced use cases that will help you to use DAX Studio in a better way. Ultimate goal for today's article is to surpass the beginner level and reach advanced level of DAX Studio.
+DAX Studio has proved to be a great external tool for Power BI and we have prepared a [beginner's guide](/posts/ultimate-beginners-guide-dax-studio/) on the most common use cases that one can encounter while using it. This week we will focus on going a level beyond and discover a bit more advanced use cases that will help you to use DAX Studio in a better way. Ultimate goal for today's article is to surpass the beginner level and reach advanced level of DAX Studio.
 
 We would recommend to first have a quick read on the beginner's guide before continuing here. In this article we will focus on running benchmark on your queries, formatting queries both short line and long line, defining dependent measures and lastly and one of my favourite importing performance data in DAX Studio.
 

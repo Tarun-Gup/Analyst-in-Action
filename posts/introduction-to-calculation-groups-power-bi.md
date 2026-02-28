@@ -42,7 +42,7 @@ CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'DateTable'[Date] ) )
 
 Once you created this just save it from the top and refresh your Power BI report. You can see we now have another table named "Time Intelligence". Let's see the fields in this table. We have 2 fields Name and ordinal. The name refers to the calculation item you created in the external tool.
 
-Protip- Ordinal refers to the sorting of your calculation items and generally, this column is hidden. 
+> **Pro tip:** Ordinal refers to the sorting of your calculation items and generally, this column is hidden. 
 
 Let's take a look at how you can use the calculation group in the dashboard. I have a table with sales associated with every category. I have created a slicer that includes the calculation items we created once you select MTD the values in the table get adjusted to MTD values and similarly for YTD. Just to double-check whether we are getting the right results I have created basic DAX for MTD and YTD.
 
@@ -50,6 +50,6 @@ Let's take a look at how you can use the calculation group in the dashboard. I h
 
 The value in the card is calculated via DAX in Power BI and the value in the table is calculated via the calculation group. The calculation group does work but what if I need to format it using a specific expression. It can be done in Tabular Editor too. We will cover this in future blogs. 
 
-Using this can help you to reduce the redundant task of creating measures but also it will affect the performance of the report. One key thing you should keep in mind while using the calculation group is it only works with explicit measures, not with the implicit measures that are already created by Power BI. To know more about explicit and implicit measures you can refer to this link*. 
+Using this can help you to reduce the redundant task of creating measures but also it will affect the performance of the report. One key thing you should keep in mind while using the calculation group is it only works with explicit measures, not with the implicit measures that are already created by Power BI. To know more about explicit and implicit measures you can refer to this [link](/posts/implicit-vs-explicit-measures-power-bi/). 
 
 

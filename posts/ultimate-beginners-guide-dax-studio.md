@@ -41,7 +41,7 @@ In your output section, you can see the option for Vertipaq analyzer. This will 
 
 If you are working with DAX Studio you should definitely check commonly used DAX queries. It is available on the DAX Studio [official website](https://daxstudio.org/docs/tutorials/writing-dax-queries/).
 
-Protip - It is always recommended to clear the cache before running a query in DAX Studio. You can do it via a single click.
+> **Pro tip:** It is always recommended to clear the cache before running a query in DAX Studio. You can do it via a single click.
 
 ![](/assets/images/ultimate-beginners-guide-dax-studio/step-5.png)
 
@@ -49,5 +49,5 @@ Can we see how your DAX is performing? We can see the server timings for your me
 
 ![](/assets/images/ultimate-beginners-guide-dax-studio/step-6.png)
 
-SE refers to storage engine and FE refers to formula engine. The basic rule is that your DAX should use the storage engine as it is much faster than the formula engine. To learn more about SE and FE you can read a great article from SQL BI.
+SE refers to storage engine and FE refers to formula engine. The basic rule is that your DAX should use the storage engine as it is much faster than the formula engine. To learn more about SE and FE you can read a great [article](https://www.sqlbi.com/articles/formula-engine-and-storage-engine-in-dax/#:~:text=Differences%20between%20the%20formula%20engine,made%20by%20the%20formula%20engine.) from SQL BI.
 

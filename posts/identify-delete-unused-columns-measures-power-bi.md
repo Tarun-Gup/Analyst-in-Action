@@ -13,7 +13,7 @@ tags:
 
 
 
-Heavy dashboards and a bad data model is a nightmare for every BI Developer. Heavy dashboards can be slow due to multiple reasons. It is always advised to stick with best practices. Are you still figuring out about those best practices then you should definitely have a quick read on Best Practice Analyser (link). One of the most common issues with slow dashboards is unused columns and unused measures. 
+Heavy dashboards and a bad data model is a nightmare for every BI Developer. Heavy dashboards can be slow due to multiple reasons. It is always advised to stick with best practices. Are you still figuring out about those best practices then you should definitely have a quick read on [Best Practice Analyser](/posts/best-practice-analyzer-guide-power-bi/). One of the most common issues with slow dashboards is unused columns and unused measures. 
 
 It is very normal to load some extra columns and create some test measures in your dashboard but as a part of cleanup process those unused columns and unused measures should be removed. Why we are removing them? Because if you keep them then ultimately it will increase the size of your data model which is not a good practice. 
 

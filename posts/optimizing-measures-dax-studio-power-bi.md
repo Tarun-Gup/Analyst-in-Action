@@ -14,7 +14,7 @@ tags:
 
 
 
-Another week another blog!! This week we will be focusing on the optimising the bad performing measures and how to tackle the measures generating Call back ID. Before starting, this blog is intended for Users who are a bit familiar with DAX Studio if not then you can do a quick read on our most read blog on our website (link).
+Another week another blog!! This week we will be focusing on the optimising the bad performing measures and how to tackle the measures generating Call back ID. Before starting, this blog is intended for Users who are a bit familiar with DAX Studio if not then you can do a quick read on our most read blog on our [website](/posts/ultimate-beginners-guide-dax-studio/).
 
 Performance of report is a great factor in improving in the user experience and to check how well your visuals and DAX formulas are performing you can utilise the benefits of Performance Analyser. In my experience Performance analyser along with the DAX Studio is a match made in heaven. You can copy the query from Performance analyser and evaluate in DAX Studio. To know more about how performance analyser works do visit this [interesting article](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-performance-analyzer).
 
@@ -34,7 +34,7 @@ Now run the copied query and go to the server timings. What the heck is going on
 
 ![](/assets/images/optimizing-measures-dax-studio-power-bi/step-5.png)
 
-What does the FE and SE do? Here I would like to quote Data Mozart aka [Nikola](https://www.linkedin.com/in/nikola-ilic-data-mozart/). Here is the link to the detailed article focusing on the concepts of SE and FE.
+What does the FE and SE do? Here I would like to quote Data Mozart aka [Nikola](https://www.linkedin.com/in/nikola-ilic-data-mozart/). Here is the [link](https://data-mozart.com/vertipaq-brain-muscles-behind-power-bi/#:~:text=When%20you%20send%20the%20query,query%20generated%20by%20the%20Formula) to the detailed article focusing on the concepts of SE and FE.
 
 When you send the query to get data for your Power BI report, here is what happens:
 

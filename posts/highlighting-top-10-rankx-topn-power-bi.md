@@ -14,7 +14,7 @@ tags:
 
 Happy Friday!! If you have worked with other BI tools such as Tableau setting up the Top 10 is relatively easy but in Power BI you have dedicated functions such as RankX and Top N to do this. In this blog we will see how to highlight and filter out the TopN Sub Categories based on the Sales recorded in 2013.
 
-Before we start. Here are a few pre-requisites we are using Sample Superstore data and we have created an explicit measures called "Total Sales". If you aren't familiar with implicit and explicit measures do read this article. Total Sales is equivalent to Sum of Sales. 
+Before we start. Here are a few pre-requisites we are using Sample Superstore data and we have created an explicit measures called "Total Sales". If you aren't familiar with implicit and explicit measures do read this [article](/posts/implicit-vs-explicit-measures-power-bi/). Total Sales is equivalent to Sum of Sales. 
 
 We will start with RankX. The goal here is to highlight the Top 10 subcategories based on the Total Sales occurred in the year 2013. Refer to the image below.
 

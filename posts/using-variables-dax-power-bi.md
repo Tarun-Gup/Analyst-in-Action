@@ -25,7 +25,7 @@ CALCULATE ( SUM ( SampleSuperstore[Sales] ) )
 
 ```
 
-Now, I am looking for West Region Sales. You can achieve the same by using the Calculate and filters (How to use Calculate and Filters?)* but let's try to achieve it by Var. We will define a variable called "WestSales" for that.
+Now, I am looking for West Region Sales. You can achieve the same by using the Calculate and filters [How to use Calculate and Filters?](/posts/filter-vs-keepfilters-dax-power-bi/)but let's try to achieve it by Var. We will define a variable called "WestSales" for that.
 
 ```DAX
 

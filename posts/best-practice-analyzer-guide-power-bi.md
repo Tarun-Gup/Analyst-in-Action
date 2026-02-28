@@ -13,13 +13,13 @@ tags:
 ---
 
 
-Do you want to save tons of efforts to check if your data model and PBIX file follows the standard best practices and norms? Then this blog is for you. If you are a follower of our channel we already deep dive into the importance of the DAX Studio as an external tool. If you are a beginner I would highly recommend to visit this blog. In today's blog we will check how Tabular Editor can help to optimize the data model. 
+Do you want to save tons of efforts to check if your data model and PBIX file follows the standard best practices and norms? Then this blog is for you. If you are a follower of our channel we already deep dive into the importance of the DAX Studio as an external tool. If you are a beginner I would highly recommend to visit this [blog](/posts/ultimate-beginners-guide-dax-studio/). In today's blog we will check how Tabular Editor can help to optimize the data model. 
 
 Best Practice Analyser allows to define or import best practices. It will make sure that we do not violate the best practices while developing a dashboard. Isn't it exciting!! 
 
 <!-- IMAGE: describe-what-the-image-will-show -->
 
-Before we start make sure you already have Tabular Editor version 2.24.1 installed on your system. To install it do visit this link and select the link for windows installer. Once Tabular Editor is installed it will reflect in your PBIX file under external tool.
+Before we start make sure you already have Tabular Editor version 2.24.1 installed on your system. To install it do visit this [link](https://github.com/TabularEditor/TabularEditor) and select the link for windows installer. Once Tabular Editor is installed it will reflect in your PBIX file under external tool.
 
 ![Best Practice Analyzer overview](/assets/images/best-practice-analyzer-guide-power-bi/step-1.png)
 

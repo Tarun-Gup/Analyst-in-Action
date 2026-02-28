@@ -13,13 +13,13 @@ tags:
 
 Let's think of a scenario, where you want to copy the bookmarks from one report to another. Most obvious approach is to just do a copy paste of the bookmarks. What's wrong with this approach? This approach only works for all visuals but not for bookmarks and field parameters. 
 
-If you are not familiar with basics of bookmarks and field parameters do refer to the beginners guide for bookmarks and introduction to field parameters.
+If you are not familiar with basics of bookmarks and field parameters do refer to the [beginners guide for bookmarks](/posts/power-bi-bookmarks-beginners-guide/) and [introduction to field parameters](/posts/introduction-to-field-parameters-power-bi/).
 
 Then how do you copy the bookmarks? Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) will help you in achieving this. Let's check it out, I have 2 reports one contains the bookmark called Bookmarks PBIR Test (origin) and other one is Rolling Average PBIR Test (destination). 
 
-Before we get started, you have to enable Power BI Project save option under preview features. Once enabled, restart Power BI desktop. There is a TMDL icon appearing on the left pane. What is TMDL and what's in it for me? There's a lot of possibilities with TMDL and we have listed down in this article. 
+Before we get started, you have to enable Power BI Project save option under preview features. Once enabled, restart Power BI desktop. There is a TMDL icon appearing on the left pane. What is TMDL and what's in it for me? There's a lot of possibilities with TMDL and we have listed down in this [article](/posts/introduction-to-tmdl-power-bi/). 
 
-One last thing before we get our hands dirty, we also need VS Code installed on your system. You can download it from their website.
+One last thing before we get our hands dirty, we also need VS Code installed on your system. You can download it from their [website](https://code.visualstudio.com/Download) 
 
 Now, we have everything to start. Open the origin PBIX file and go to the File and save as PBIP file under a folder. I have a Test folder that is not part of my One drive but it is available in my local disk. There are many disadvantages of storing them on One drive we will list them down in our upcoming  articles.
 
@@ -79,7 +79,7 @@ Reopen the Rolling average PBIP file. Always ensure that while closing select do
 
 ![](/assets/images/copy-bookmarks-between-power-bi-reports/step-13.png)
 
-Protip- Whenever you copy and paste your code in the VS Code do not forget to save it by CTRL+S. If you are copying a page then always check the name under page.json. 
+> **Pro tip:** Whenever you copy and paste your code in the VS Code do not forget to save it by CTRL+S. If you are copying a page then always check the name under page.json. 
 
 This is one of the use cases that is quite useful if you want to avoid the redundant efforts. PBIR format has lot more capabilities if you want us to list them down, do leave a comment. We will cover them in our upcoming articles.
 

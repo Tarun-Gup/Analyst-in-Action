@@ -22,7 +22,7 @@ Let's start from the KPI cards with the updates dealing with blanks in the cards
 
 In the above example we are showcasing the total sales and total sales last year in the reference. Under the highlighted section we can provide the value that will be shown if the blank appears on the card. By default it is always -- that can be changed.
 
-If you are not familiar with the new KPI cards yet do check one of the most viewed article on it. We have covered all the basic functionalities that the new KPI cards come up with.
+If you are not familiar with the new KPI cards yet do check one of the most viewed [article](/posts/new-kpi-card-visual-power-bi/) on it. We have covered all the basic functionalities that the new KPI cards come up with.
 
 What if I am using the old KPI cards? How to deal with blanks in such scenarios? It can be done in the DAX itself by providing IF(ISBLANK(Measure),0, Measure).
 
@@ -34,7 +34,7 @@ But what if the user asked to include other categories as well in the matrix. Th
 
 ![](/assets/images/handle-blanks-effectively-power-bi/step-3.png)
 
-Protip - Show item with no data has its own limitations. One of the most common limitation is if the categories and sub categories are coming from 2 separate tables that aren' related then it will lead to an error. To know more about it do visit this [article](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-show-items-no-data).
+> **Pro tip:**  Show item with no data has its own limitations. One of the most common limitation is if the categories and sub categories are coming from 2 separate tables that aren' related then it will lead to an error. To know more about it do visit this [article](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-show-items-no-data).
 
 The user of the dashboard requested to show 0s instead of blanks for other categories. To do so we can use function called COLAESCE. It will return the first non blank argument. 
 
@@ -42,7 +42,7 @@ The user of the dashboard requested to show 0s instead of blanks for other categ
 
 First argument is the furniture sales measure and second argument is 0. You can also provide another measure as second argument. If you do it make sure out of the 2 measures one of them shows some value otherwise the end result will be blank. 
 
-Protip - Why blank with COALESCE? Basic purpose of this function is to provide the first non blank argument but if all arguments are blank then the end result will be blank. In such cases, it is advised to provide a value such as 0.
+> **Pro tip:**  Why blank with COALESCE? Basic purpose of this function is to provide the first non blank argument but if all arguments are blank then the end result will be blank. In such cases, it is advised to provide a value such as 0.
 
 The COALESCE and ISBLANK serves a common purpose. Let's see how ISBLANK works. I have created a matrix with total sales, total sales last year and YoY%. Since we do not have historical data before 2012 the total sales last year shows blank.
 

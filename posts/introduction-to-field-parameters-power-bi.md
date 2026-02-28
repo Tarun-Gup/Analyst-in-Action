@@ -30,7 +30,7 @@ Now, what if you want to add another field to the parameter or you want to edit 
 
 ![](/assets/images/introduction-to-field-parameters-power-bi/step-3.png)
 
-Pro tip- A very basic thing when you are using field parameters. Be aware that don't mix measures and columns in it. For eg, in our case, we took categories and sub-categories which are columns. I can add more columns to it but adding a measure to it can give you strange results.
+> **Pro tip:** A very basic thing when you are using field parameters. Be aware that don't mix measures and columns in it. For eg, in our case, we took categories and sub-categories which are columns. I can add more columns to it but adding a measure to it can give you strange results.
 
 Let's take the field parameter to the next level. Currently, we only have category and sub-category but I also want to see overall total sales and profit. To do it we are creating a calculated column " None" which contains only text. Let's adjust the parameter accordingly.
 
@@ -40,6 +40,6 @@ Isn't it easy? It will add another tile in your slicer and when you click it it 
 
 ![](/assets/images/introduction-to-field-parameters-power-bi/step-5.png)
 
-Field parameters improve the quality of your report. I prefer to use them as slicers but you can play around with them. But make sure you don't use implicit measures in field parameters always go for explicit measures. To know more about implicit and explicit measures read our blog (link)*.
+Field parameters improve the quality of your report. I prefer to use them as slicers but you can play around with them. But make sure you don't use implicit measures in field parameters always go for explicit measures. To know more about implicit and explicit measures read our [blog](/posts/implicit-vs-explicit-measures-power-bi/).
 
 

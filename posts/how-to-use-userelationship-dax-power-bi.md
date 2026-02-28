@@ -37,7 +37,7 @@ CALCULATE (
 
 ```
 
-Total sales is an explicit measure that calculates the sum of sales amount. To get a better understanding of implicit and explicit measures we recommend reading this article(Link). Using relationship is helping to activate the inactive relation we created between the sample superstore and the date table based on the shipping date. Let's see how it looks when compared with total sales.
+Total sales is an explicit measure that calculates the sum of sales amount. To get a better understanding of implicit and explicit measures we recommend reading this [article](/posts/implicit-vs-explicit-measures-power-bi/). Using relationship is helping to activate the inactive relation we created between the sample superstore and the date table based on the shipping date. Let's see how it looks when compared with total sales.
 
 ![](/assets/images/how-to-use-userelationship-dax-power-bi/step-4.png)
 
@@ -45,7 +45,7 @@ The difference between Total Sales and Total Shipping Sales is evident because o
 
 The next question that comes to mind is can I use this function in a calculated column? The perfect use case is to get a particular column from a different table into your fact with the help of related. Related function only works when you have an active relationship between the tables. The inactive relationship doesn't work with this function. It's better to achieve this with a lookup value.
 
-With lookup value, you do not need to create the relationship between two tables. To know more about how related and lookupvalue works do visit this article (Link). I would highly recommend visiting the article from [SQL BI on this topic](https://www.sqlbi.com/articles/using-userelationship-in-dax/).
+With lookup value, you do not need to create the relationship between two tables. To know more about how related and lookupvalue works do visit this [article](/posts/related-vs-lookupvalue-power-bi/). I would highly recommend visiting the article from [SQL BI on this topic](https://www.sqlbi.com/articles/using-userelationship-in-dax/).
 
 
 

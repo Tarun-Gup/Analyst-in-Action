@@ -16,9 +16,8 @@ tags:
 
 Let's explore the realm of security in Power BI. I am a great fan of Power BI as a BI tool that allows to create intuitive visuals with such ease. You can easily share your reports with a large audience across your organization. Let's think of a scenario - your report contains some sensitive data that should not be accessed by all users. Or there are cases where certain reports shouldn't be accessed across different multiple departments. Power BI has answers to all such questions. 
 
-Let's start from the very top and understand the different types of security that you can achieve in Power BI - Basic Row Level Security (RLS), Page Level Security (PLS), and Object Level Security (OLS). Row-level security allows to give access based on the defined role. If you are creating a Power BI report this is one of the crucial steps. Check this article from Microsoft to learn about RLS in detail. In this article, we will focus on the Page Level Security and Object Level Security.
+Let's start from the very top and understand the different types of security that you can achieve in Power BI - Basic Row Level Security (RLS), Page Level Security (PLS), and Object Level Security (OLS). Row-level security allows to give access based on the defined role. If you are creating a Power BI report this is one of the crucial steps. In this article, we will focus on the Page Level Security and Object Level Security.
 
-Before we begin, we are using our favorite Sample SuperStore data and we will set up PLS based on the different segments. You can download sample superstore data from here. Also, I will be using dummy email addresses.
 
 Let's get our hands dirty! We have 3 segments - Corporate, Consumer, and Home Office. We have 3 users and each of them should only access their segment data. We have to first define which user should be seeing what. Head to the query editor and create a new table. Select enter data and this will open a pop-up tab where we need to fill user's email address, user name, and segment they will be accessing. 
 
@@ -27,7 +26,7 @@ Hit close & apply and now we need to head to our data modeling pane. Since your 
 
 ![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-1.png)
 
-Protip - We have a many-to-one relationship between the users and the fact table. From experience, I can say it won't be many to one relationship every time. But why? Okay, let's assume I add one more user in the users table, and that user needs access to 2 segments together. This would make your relationship many to many. Always remember that the filter direction should be from your user table towards your fact/dim. Avoid bi-directional filtering as a best practice.
+> **Pro tip:**  We have a many-to-one relationship between the users and the fact table. From experience, I can say it won't be many to one relationship every time. But why? Okay, let's assume I add one more user in the users table, and that user needs access to 2 segments together. This would make your relationship many to many. Always remember that the filter direction should be from your user table towards your fact/dim. Avoid bi-directional filtering as a best practice.
 
 We have created 4 pages - a landing page and 3 different pages for different segments. We need to ensure only the landing page shouldn't be hidden rest of the pages need to be hidden. 
 
@@ -59,7 +58,7 @@ Once you have the new role set up, we would need to go to one of our favorite ex
 
 ![](/assets/images/page-level-security-vs-object-level-security-in-power-bi/step-7.png)
 
-Protip - Giving none for PLS will make that security setup ineffective. But why do we want to do so? If you don't switch to none this would mean both OLS and PLS are effective. As a limitation, you can't use both OLS and PLS together in the same report.
+> **Pro tip:**  Giving none for PLS will make that security setup ineffective. But why do we want to do so? If you don't switch to none this would mean both OLS and PLS are effective. As a limitation, you can't use both OLS and PLS together in the same report.
 
 Hit save both in tabular editor and in Power BI and we test this. We have considered users from the Corporate segment. 
 

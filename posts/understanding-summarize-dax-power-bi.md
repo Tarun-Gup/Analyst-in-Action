@@ -38,7 +38,7 @@ SUMMARIZE (
 
 ![](/assets/images/understanding-summarize-dax-power-bi/step-1.png)
 
-Isn't it simple?? Now let's move a step further and I am introducing segment also in this table. As an exercise, you can try it on your own. Once you get the segment we need to only showcase data for the Corporate segment. I have to introduce a filter in the DAX but the question is where should we insert it? To know more about filters in DAX refer to one of our old blogs (link)*
+Isn't it simple?? Now let's move a step further and I am introducing segment also in this table. As an exercise, you can try it on your own. Once you get the segment we need to only showcase data for the Corporate segment. I have to introduce a filter in the DAX but the question is where should we insert it? To know more about filters in DAX refer to one of our [old blogs](/posts/filter-vs-keepfilters-dax-power-bi/)
 
 ```DAX
 
@@ -100,7 +100,7 @@ SUMMARIZE (
 
 ```
 
-To get a better idea we will go to the visualize mode and take the table and pull all the geographical fields and units sold. Make sure there should not be any summarization happening. We don't need any implicit measures in the table (Implicit measures vs Explicit measures).
+To get a better idea we will go to the visualize mode and take the table and pull all the geographical fields and units sold. Make sure there should not be any summarization happening. We don't need any implicit measures in the table [Implicit measures vs Explicit measures](/posts/implicit-vs-explicit-measures-power-bi/)
 
 ![](/assets/images/understanding-summarize-dax-power-bi/step-3.png)
 

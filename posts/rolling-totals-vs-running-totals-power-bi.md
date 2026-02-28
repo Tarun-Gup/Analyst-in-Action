@@ -74,6 +74,6 @@ Next and the most crucial aspect is to visualize the rolling total. It is actual
 
 ![](/assets/images/rolling-totals-vs-running-totals-power-bi/step-4.png)
 
-> **Pro tip:**  You can also use quick measures to get the running total. To know more about quick measures follow the link.
+> **Pro tip:**  You can also use quick measures to get the running total
 
 

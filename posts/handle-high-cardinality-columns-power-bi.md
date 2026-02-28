@@ -20,7 +20,7 @@ Want to learn more about cardinality here is a [great article from Arno](https:/
 
 In this article, we will focus on a few easy steps to reduce the cardinality of the data model. The very fundamental and the simplest step will be to only include the fields that are necessary and identify the ones which are not used at all in the report. Discard them it will give your report a slight boost.
 
-How to identify unused column? You can do it via the help of external tools such as DAX Studio. If you are beginner to DAX Studio then do visit our most visited article on it. You can connect to DAX Studio and view the metrics that will give you this information.  
+How to identify unused column? You can do it via the help of external tools such as DAX Studio. If you are beginner to DAX Studio then do visit our most visited [article](/posts/ultimate-beginners-guide-dax-studio/) on it. You can connect to DAX Studio and view the metrics that will give you this information.  
 
 ![](/assets/images/handle-high-cardinality-columns-power-bi/step-1.png)
 

@@ -14,7 +14,7 @@ tags:
 
 
 
-We know all the multitudes of Power BI and how it evolved over the years but have you ever thought what if you do not require all those fancy visuals and features but you need a flat table fitting in a single page and can go on for more than 100s of pages. If you are looking for something like this then Paginated Reports is the answer for you. In today's blog we will pen down everything you need to know about Paginated Reports. To know more about the Paginated Reports do read this interesting article from Microsoft.
+We know all the multitudes of Power BI and how it evolved over the years but have you ever thought what if you do not require all those fancy visuals and features but you need a flat table fitting in a single page and can go on for more than 100s of pages. If you are looking for something like this then Paginated Reports is the answer for you. In today's blog we will pen down everything you need to know about Paginated Reports. To know more about the Paginated Reports do read this interesting [article](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder-power-bi) from Microsoft.
 
 Before we start you will require - [Report Builder (external tool but a FREE one)](https://www.microsoft.com/en-us/download/details.aspx?id=53613) and Power BI Pro license along with the contributor rights to publish the paginated reports to different workspaces. Also, we will be working with Sample Superstore dataset. We are aiming to create a paginated report which will look something like this.
 
@@ -31,7 +31,7 @@ Select the Add dataset that will open a dialog box with different options to nav
 
 ![](/assets/images/complete-guide-paginated-reports-power-bi/step-3.png)
 
-Before going to Query Design, we will heading back to our dashboard to get the query of the matrix which contains - Category, Subcategory, Total Sales, Total Sales LY & YoY%. Good part is you can evaluate the performance of different visuals with the help of these queries and DAX Studio. To know more about it do refer this blog where we covered all the basics on how to optimize your DAX.
+Before going to Query Design, we will heading back to our dashboard to get the query of the matrix which contains - Category, Subcategory, Total Sales, Total Sales LY & YoY%. Good part is you can evaluate the performance of different visuals with the help of these queries and DAX Studio. To know more about it do refer this [blog](/posts/optimizing-measures-dax-studio-power-bi/) where we covered all the basics on how to optimize your DAX.
 
 ![](/assets/images/complete-guide-paginated-reports-power-bi/step-4.png)
 

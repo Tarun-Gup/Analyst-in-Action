@@ -18,7 +18,7 @@ A new card with the recent update Power BI has released this visual. This is one
 
 Doesn't it look good? In old cards, it is always been a struggle to add an image and sparkline. With the new cards, you can do it just with a click. And the best part is it acts as a single visual so loading time is improved. There are cases where we want to visualize multiple cards and it should be part of a single text box or card.
 
-Let's check how to do it? The first step is to create the base measures- Furniture Sales, Office Supplies, and Technology Sales. How to write the DAX using filters? If you aren't familiar with writing DAX do visit our blog. Put all the measures in 3 different cards and fix the alignment. Now we will be introducing a text box with the background if needed. 
+Let's check how to do it? The first step is to create the base measures- Furniture Sales, Office Supplies, and Technology Sales. How to write the DAX using filters? If you aren't familiar with writing DAX do visit our [blog](/posts/do-we-really-need-keepfilters-dax/). Put all the measures in 3 different cards and fix the alignment. Now we will be introducing a text box with the background if needed. 
 
 ![](/assets/images/new-kpi-card-visual-power-bi/step-2.png)
 

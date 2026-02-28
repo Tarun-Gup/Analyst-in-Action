@@ -44,9 +44,9 @@ Using the correct data types: This is a manual check across all tables and colum
 
 Avoid bi-directional relationships: Heard it a lot? But this is something avoided very often just because you are getting the correct numbers, but if you have any of it, do question the need for it
 
-Avoid Summarize by as Sum: We have covered this multiple times. If you find any fields with a sigma sign in front that need to be addressed, mark the summarise by as none. Use explicit measures to do any type of calculation. Do check the detailed blogpost
+Avoid Summarize by as Sum: We have covered this multiple times. If you find any fields with a sigma sign in front that need to be addressed, mark the summarise by as none. Use explicit measures to do any type of calculation. Do check the [detailed blogpost](/posts/implicit-vs-explicit-measures-power-bi/)
 
-Structuring the view: One of my favourites, generally, I have a dedicated measure table, and all measures should be created only in this table. Also, create folders and subfolders to arrange your measures. Do check out the detailed blogpost 
+Structuring the view: One of my favourites, generally, I have a dedicated measure table, and all measures should be created only in this table. Also, create folders and subfolders to arrange your measures. Do check out the [detailed blogpost](/posts/beginners-guide-to-tabular-editor/)
 
 Hiding primary keys: You can only hide your columns in the model view; ideally, you should be hiding the primary keys. Why? Your primary keys are generally the high cardinal field, meaning if you drag it in one of your visuals, it will be bad for the performance of that visual. Unless the users need to search based on the primary keys, then you don't hide it. 
 
@@ -56,15 +56,15 @@ Hiding primary keys: You can only hide your columns in the model view; ideally, 
 
 Once you have the data model clean, then you move to the DAX, which gives you the most amount of surprises. Even a small mistake here can change the KPIs. This is what I check here- 
 
-Getting the totals right: Yes, this is a very common mistake, as a practice, if you have included the KPI in a table or matrix to allow users to export. Do check the totals in export if they match your numbers, and to get the total right, unfortunately, you have to deal with it in the measure itself. Do check out the detailed blogpost
+Getting the totals right: Yes, this is a very common mistake, as a practice, if you have included the KPI in a table or matrix to allow users to export. Do check the totals in export if they match your numbers, and to get the total right, unfortunately, you have to deal with it in the measure itself. Do check out the [detailed blogpost](/posts/playing-with-totals-power-bi/)
 
 Time intelligence measures: Do a final check if your TI measures are working as designed. As a practice, I tend to check the period that my TI measures are picking with a few test measures.
 
 Deleting the duplicates and test measures: Go over the measure table, and you can spot, you have created total sales, total sales final....always delete the duplicates and give a proper name to your measures that are business-friendly.
 
-Correct format string for all measures: You can easily check it within Power BI, or you can check it via external tools, but in the end, all the measures need to have a correct format string. Do check out the detailed blogpost 
+Correct format string for all measures: You can easily check it within Power BI, or you can check it via external tools, but in the end, all the measures need to have a correct format string. Do check out the [detailed blogpost](/posts/beginners-guide-to-tabular-editor/)
 
-Avoid the use of iterator functions with IF functions: This combination tends to create callback IDs that are not good in terms of performance. Do check out the detailed blogpost
+Avoid the use of iterator functions with IF functions: This combination tends to create callback IDs that are not good in terms of performance. Do check out the [detailed blogpost](/posts/ultimate-beginners-guide-dax-studio/)
 
 ---
 
@@ -109,9 +109,9 @@ Enough of UX and layout, let's wrap today's post with the most essential part. Y
 
 Test role for a few users: Before anything else, open the Model view and confirm that the tables used for RLS or permissions are connected properly. A broken relationship here means your security won’t work, no matter how perfect the DAX looks. Then test a few users with different roles, one who should be seeing everything, and the users who should be seeing limited data. After publishing, don’t forget to assign users or groups to the correct roles in the Power BI Service.
 
-Cleanup: My favourite from the lot, so once you have the beautiful report ready, it is time to clean up some mess that is lying in your data model, including unused columns, measures...I generally use Measure Killer and Tabular Editor to do the cleaning and organise my model. Do check out the detailed blogpost
+Cleanup: My favourite from the lot, so once you have the beautiful report ready, it is time to clean up some mess that is lying in your data model, including unused columns, measures...I generally use Measure Killer and Tabular Editor to do the cleaning and organise my model. Do check out the [detailed blogpost](/posts/identify-delete-unused-columns-measures-power-bi/)
 
-Best Practice Analyser: With your cleaned report, it is time to do a final test before we publish. This test will be the final verdict. The goal isn’t to fix every tiny warning, just pay attention to the important ones: missing format strings, unused fields, DAX patterns that might affect performance. This quick pass acts like a final verdict before the report goes live, and I normally do it with BPA in Tabular Editor with a set of rules that are in place. To know more about BPA and how to run it, do check out the detailed blog
+Best Practice Analyser: With your cleaned report, it is time to do a final test before we publish. This test will be the final verdict. The goal isn’t to fix every tiny warning, just pay attention to the important ones: missing format strings, unused fields, DAX patterns that might affect performance. This quick pass acts like a final verdict before the report goes live, and I normally do it with BPA in Tabular Editor with a set of rules that are in place. To know more about BPA and how to run it, do check out the [detailed blog](/posts/beginners-guide-to-tabular-editor/)
 
 
 

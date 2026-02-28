@@ -41,6 +41,6 @@ Now let's get back to our matrix. You can see now the total is corrected. But is
 
 With the new measure, you are creating an iterated sum on the level of the subgroup. 1764 in the furniture category shows the distinct count of order IDs and there can be two products in a category with the same order id. Thus, 1764 only shows the distinct order ID associated with a sub-category which is correct while on the other hand, 1984 can include the multiple order ID (can show wrong results). 
 
-If you are using the above method be cautious about the level you want to sum. Another method is not so common but you can create calculated columns(follow the link to learn more about calculated columns)* This is something a BI developer doesn't prefer because calculated columns can come up with their own disadvantages.
+If you are using the above method be cautious about the level you want to sum. Another method is not so common but you can create calculated columns(follow the [link](/posts/calculated-columns-vs-measures-power-bi/) to learn more about calculated columns)* This is something a BI developer doesn't prefer because calculated columns can come up with their own disadvantages.
 
 

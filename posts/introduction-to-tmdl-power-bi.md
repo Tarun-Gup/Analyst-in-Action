@@ -25,7 +25,7 @@ Once you click on the TMDL it will lead to a separate section with all the intro
 
 You can edit the none to Summarise by section for every column to Sum. Since we are in the world of automation let's do it like a PRO. Just select None and do Ctrl+F to find it everywhere in the view and replace it by Sum. Hit Apply and you will observe sigma sign appearing before all the columns.
 
-Note: Ideally, summarise by property should be set to None to avoid the use of Implicit measures. As a best practice always use explicit measures. To know more about Implicit and Explicit measures, refer to the detailed article (internal link).
+Note: Ideally, summarise by property should be set to None to avoid the use of Implicit measures. As a best practice always use explicit measures. To know more about Implicit and Explicit measures, refer to the [detailed article](/posts/implicit-vs-explicit-measures-power-bi/).
 
 Isn't it amazing? Let's play around with our measures table and create a measure to calculate the Furniture sales. Simple measure with a filter on the Category.
 
