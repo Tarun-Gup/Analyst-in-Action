@@ -1139,6 +1139,148 @@ footer {
 .inline-search .pagefind-ui__form::after{
   display: none !important;
 }
+/* ============================= */
+/* ACTIVE NAVIGATION STATE */
+/* ============================= */
+
+.main-nav .nav-links a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Bold active page */
+.main-nav .nav-links a[aria-current="page"] {
+  font-weight: 700;
+}
+
+/* Bottom underline effect */
+.main-nav .nav-links a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  background: #ffffff; /* white underline for dark hero */
+  opacity: 0.95;
+}
+/* ============================= */
+/* BLOG SEARCH IMPROVEMENT */
+/* ============================= */
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 45px 14px 18px; /* space on right */
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Remove left icon if any */
+.search-bar svg,
+.search-bar .search-icon {
+  left: auto !important;
+  right: 16px;
+}
+
+/* If icon is pseudo-element */
+.search-bar::after {
+  content: "🔍";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+/* ============================= */
+/* PAGEFIND SEARCH STYLING */
+/* ============================= */
+
+/* Make search container clean */
+#search {
+  margin-top: 24px;
+}
+
+/* Style the search input */
+#search .pagefind-ui__search-input {
+  border-radius: 14px !important;
+  padding: 14px 48px 14px 18px !important; /* space on right */
+  border: 1px solid #e5e5e5 !important;
+  font-size: 15px !important;
+  outline: none;
+}
+
+/* Move search icon to right */
+#search .pagefind-ui__search-input-wrapper {
+  position: relative;
+}
+
+#search .pagefind-ui__search-input-wrapper svg {
+  left: auto !important;
+  right: 16px !important;
+}
+
+/* Improve focus look */
+#search .pagefind-ui__search-input:focus {
+  border-color: #111 !important;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+/* ============================= */
+/* FORCE PAGEFIND ICON TO RIGHT  */
+/* ============================= */
+
+/* Make wrapper a predictable layout */
+.inline-search .pagefind-ui__search-input-wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Input should take full width */
+.inline-search .pagefind-ui__search-input {
+  flex: 1 1 auto !important;
+  width: 100% !important;
+
+  /* space for icon on right */
+  padding-right: 52px !important;
+  padding-left: 18px !important;
+
+  border-radius: 14px !important;
+  border: 1px solid #e5e5e5 !important;
+  font-size: 15px !important;
+  outline: none !important;
+}
+
+/* Pagefind often renders the icon in a button/span with this class */
+.inline-search .pagefind-ui__search-icon,
+.inline-search .pagefind-ui__search-input-wrapper > button,
+.inline-search .pagefind-ui__search-input-wrapper > span {
+  order: 2 !important;
+  margin-left: -44px !important;  /* pull into the input padding area */
+  margin-right: 16px !important;
+}
+
+/* If the icon is an SVG, force it to the right as well */
+.inline-search .pagefind-ui__search-icon svg,
+.inline-search .pagefind-ui__search-input-wrapper svg {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+/* Focus polish */
+.inline-search .pagefind-ui__search-input:focus {
+  border-color: #111 !important;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05) !important;
+}
 
 
 
