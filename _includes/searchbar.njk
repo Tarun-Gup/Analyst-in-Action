@@ -1,21 +1,22 @@
-{# Inline search bar for Blog page #}
-
 <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 
 <div class="inline-search">
-  <div id="pagefind-search" class="pagefind-search"></div>
+  <div id="search"></div>
 </div>
 
 <script src="/pagefind/pagefind-ui.js"></script>
 <script>
   window.addEventListener("DOMContentLoaded", () => {
-    new PagefindUI({
-      element: "#pagefind-search",
-      showSubResults: true,
-      resetStyles: false,
-      translations: {
-        placeholder: "Search posts..."
-      }
-    });
+    if (window.PagefindUI) {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: false,
+        pageSize: 6,
+        resetStyles: false,
+        translations: {
+          placeholder: "Search articles..."
+        }
+      });
+    }
   });
 </script>

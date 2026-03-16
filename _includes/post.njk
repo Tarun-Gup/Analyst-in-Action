@@ -2,11 +2,11 @@
 layout: base.njk
 ---
 
-<article class="blog-post">
+<article class="blog-post" data-pagefind-body>
 
   <header class="post-header">
 
-    <h1 class="post-title">
+    <h1 class="post-title" data-pagefind-meta="title">
       {{ title or page.fileSlug }}
     </h1>
 
@@ -67,7 +67,8 @@ layout: base.njk
     <img 
       src="{{ featuredImage }}" 
       alt="{{ featuredImageAlt or title }}" 
-      class="post-featured-image">
+      class="post-featured-image"
+      data-pagefind-meta="image[src], image_alt[alt]">
   {% endif %}
 
   <div class="post-content">
