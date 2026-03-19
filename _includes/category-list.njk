@@ -1,0 +1,9 @@
+<div class="category-list">
+  <a class="category-pill" href="/blog/">All</a>
+
+  {% for tag in topicTags %}
+    <a class="category-pill" href="/tags/{{ tag }}/">
+      {{ tag | tagLabel }}
+    </a>
+  {% endfor %}
+</div>

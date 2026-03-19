@@ -1,32 +1,38 @@
 ---
 layout: base.njk
 title: Blog
-hero: blog
 pagination:
   data: collections.posts
   size: 9
   alias: posts
 ---
 
-<section class="homepage-intro">
-  <h2>Latest Articles</h2>
-  <p>Practical insights from real Power BI projects.</p>
+<section class="blog-categories-wrap">
+  <h2>Browse by Category</h2>
+  <div class="blog-categories-list">
+    <a class="blog-category-pill" href="/blog/">All</a>
+
+    {% for tag in topicTags %}
+      <a class="blog-category-pill" href="/tags/{{ tag }}/">
+        {{ tag | tagLabel }}
+      </a>
+    {% endfor %}
+  </div>
 </section>
 
-{# Inline Search Bar (Blog Only) #}
-{% include "searchbar.njk" %}
+<section class="blog-search-wrap">
+  {% include "searchbar.njk" %}
+</section>
 
 <div class="post-grid">
-
   {% for post in posts %}
-  
     <article class="post-card" data-pagefind-ignore="all">
 
       {% if post.data.featuredImage %}
         <a href="{{ post.url }}">
-          <img 
+          <img
             class="post-card-image"
-            src="{{ post.data.featuredImage }}" 
+            src="{{ post.data.featuredImage }}"
             alt="{{ post.data.title }}">
         </a>
       {% endif %}
@@ -41,6 +47,16 @@ pagination:
         </a>
       </h3>
 
+      <div class="post-tags">
+        {% for tag in post.data.tags %}
+          {% if topicTags.includes(tag) %}
+            <a class="tag" href="/tags/{{ tag }}/">
+              {{ tag | tagLabel }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
       {% if post.data.description %}
         <p class="post-desc">
           {{ post.data.description }}
@@ -52,14 +68,11 @@ pagination:
       </a>
 
     </article>
-
   {% endfor %}
-
 </div>
 
 {% if pagination.pages.length > 1 %}
   <div class="pagination">
-
     {% if pagination.href.previous %}
       <a href="{{ pagination.href.previous }}">← Previous</a>
     {% endif %}
@@ -69,15 +82,5 @@ pagination:
     {% if pagination.href.next %}
       <a href="{{ pagination.href.next }}">Next →</a>
     {% endif %}
-
   </div>
 {% endif %}
-
-
-
-
-
-
-
-
-

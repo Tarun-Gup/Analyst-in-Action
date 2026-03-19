@@ -113,6 +113,27 @@ module.exports = function (eleventyConfig) {
     "best-practices"
   ]);
 
+  /* ============================= */
+  /* TAG LABEL HELPER */
+  /* ============================= */
+
+  eleventyConfig.addFilter("tagLabel", function(tag) {
+    const labels = {
+      "dax": "DAX",
+      "powerbi": "Power BI",
+      "data-modeling": "Data Modeling",
+      "performance": "Performance",
+      "tools": "Tools",
+      "architecture": "Architecture",
+      "deployment": "Deployment",
+      "fabric": "Fabric",
+      "capacity": "Capacity",
+      "best-practices": "Best Practices"
+    };
+
+    return labels[tag] || tag;
+  });
+
   return {
     dir: {
       input: ".",

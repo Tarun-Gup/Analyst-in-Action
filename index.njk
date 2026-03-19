@@ -3,83 +3,119 @@ layout: base.njk
 title: Home
 ---
 
-<section class="homepage-intro">
+<!-- FULL WIDTH HERO -->
+<section class="homepage-intro full-width">
   <h2>Latest Power BI & Data Insights</h2>
   <p>Real-world lessons from actual Power BI projects.</p>
 </section>
 
-{% if collections.posts and collections.posts.length > 0 %}
+<div class="page-layout">
 
-  {# ✅ Featured = newest post #}
-  {% set featured = collections.posts[0] %}
+  <!-- LEFT CONTENT -->
+  <div class="main-content">
 
-  <section class="featured-post">
-    <article class="featured-card">
+    {% if collections.posts and collections.posts.length > 0 %}
 
-      {% if featured.data.featuredImage %}
-        <a href="{{ featured.url }}">
-          <img 
-            class="featured-image"
-            src="{{ featured.data.featuredImage }}" 
-            alt="{{ featured.data.title }}">
-        </a>
-      {% endif %}
+      {% set featured = collections.posts[0] %}
 
-      <p class="post-date">{{ featured.date | readableDate }}</p>
+      <section class="featured-post">
+        <article class="featured-card">
 
-      <h3 class="featured-title">
-        <a href="{{ featured.url }}">{{ featured.data.title }}</a>
-      </h3>
-
-      {% if featured.data.description %}
-        <p class="featured-desc">{{ featured.data.description }}</p>
-      {% endif %}
-
-      <a class="read-more" href="{{ featured.url }}">Read More →</a>
-    </article>
-  </section>
-
-  {# ✅ Rest of posts as cards (skip first one) #}
-  <section class="post-grid">
-    {% set shown = 0 %}
-    {% for post in collections.posts %}
-      {% if loop.index0 > 0 and shown < 8 %}
-        {% set shown = shown + 1 %}
-
-        <article class="post-card">
-
-          {% if post.data.featuredImage %}
-            <a href="{{ post.url }}">
-              <img 
-                class="post-card-image"
-                src="{{ post.data.featuredImage }}" 
-                alt="{{ post.data.title }}">
+          {% if featured.data.featuredImage %}
+            <a href="{{ featured.url }}">
+              <img class="featured-image"
+                   src="{{ featured.data.featuredImage }}"
+                   alt="{{ featured.data.title }}">
             </a>
           {% endif %}
 
-          <p class="post-date">{{ post.date | readableDate }}</p>
+          <p class="post-date">{{ featured.date | readableDate }}</p>
 
-          <h3>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          <h3 class="featured-title">
+            <a href="{{ featured.url }}">{{ featured.data.title }}</a>
           </h3>
 
-          {% if post.data.description %}
-            <p class="post-desc">{{ post.data.description }}</p>
+          <div class="post-tags">
+            {% for tag in featured.data.tags %}
+              {% if topicTags.includes(tag) %}
+                <a class="tag" href="/tags/{{ tag }}/">
+                  {{ tag | tagLabel }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          {% if featured.data.description %}
+            <p class="featured-desc">{{ featured.data.description }}</p>
           {% endif %}
 
-          <a class="read-more" href="{{ post.url }}">Read More →</a>
+          <a class="read-more" href="{{ featured.url }}">Read More →</a>
+
         </article>
+      </section>
 
-      {% endif %}
-    {% endfor %}
-  </section>
+      <section class="post-grid">
+        {% set shown = 0 %}
+        {% for post in collections.posts %}
+          {% if loop.index0 > 0 and shown < 8 %}
+            {% set shown = shown + 1 %}
 
-  <p class="view-all">
-    <a href="/blog/">View all posts →</a>
-  </p>
+            <article class="post-card">
 
-{% else %}
-  <p>No posts found.</p>
-{% endif %}
+              {% if post.data.featuredImage %}
+                <a href="{{ post.url }}">
+                  <img class="post-card-image"
+                       src="{{ post.data.featuredImage }}"
+                       alt="{{ post.data.title }}">
+                </a>
+              {% endif %}
 
+              <p class="post-date">{{ post.date | readableDate }}</p>
 
+              <h3>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+              </h3>
+
+              <div class="post-tags">
+                {% for tag in post.data.tags %}
+                  {% if topicTags.includes(tag) %}
+                    <a class="tag" href="/tags/{{ tag }}/">
+                      {{ tag | tagLabel }}
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+
+              {% if post.data.description %}
+                <p class="post-desc">{{ post.data.description }}</p>
+              {% endif %}
+
+              <a class="read-more" href="{{ post.url }}">Read More →</a>
+
+            </article>
+
+          {% endif %}
+        {% endfor %}
+      </section>
+
+      <p class="view-all">
+        <a href="/blog/">View all posts →</a>
+      </p>
+
+    {% endif %}
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar">
+
+    {% include "subscribe.njk" %}
+
+    <div class="sidebar-categories">
+      <h3>Categories</h3>
+      {% include "category-list.njk" %}
+    </div>
+
+  </aside>
+
+</div>

@@ -37,7 +37,6 @@ layout: base.njk
       </div>
     {% endif %}
 
-    <!-- Share Buttons -->
     <div class="share">
       <span class="share-label">Share:</span>
 
@@ -62,7 +61,6 @@ layout: base.njk
 
   </header>
 
-  <!-- Featured Image -->
   {% if featuredImage %}
     <img 
       src="{{ featuredImage }}" 
@@ -73,8 +71,9 @@ layout: base.njk
 
   <div class="post-content">
     {{ content | safe }}
+  </div>
 
-    <!-- SUBSCRIBE (inline, clean card) -->
+  <div class="post-extras">
     <div class="subscribe-inline">
       {% include "subscribe.njk" %}
     </div>
@@ -107,22 +106,7 @@ layout: base.njk
         crossorigin="anonymous"
         async>
       </script>
-
     </div>
-
   </div>
 
 </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
