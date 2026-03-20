@@ -1,40 +1,54 @@
 <nav class="main-nav">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <a href="/">
+      <strong>[Analyst]</strong> in Action
+    </a>
+  </div>
+
+  <!-- NAV LINKS -->
   <div class="nav-links">
-    <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>HOME</a>
+
+    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>
+      Home
+    </a>
 
     <a href="/blog/"
        {% if page.url == "/blog/" or (page.url and page.url | slice(0, 6) == "/blog/") %}
-         aria-current="page"
+         class="active"
        {% endif %}>
-      BLOG
+      Blog
     </a>
 
     <a href="/start-here/"
        {% if page.url == "/start-here/" %}
-         aria-current="page"
+         class="active"
        {% endif %}>
-      START HERE
+      Start Here
     </a>
 
     <a href="/about/"
        {% if page.url == "/about/" %}
-         aria-current="page"
+         class="active"
        {% endif %}>
-      ABOUT
+      About
     </a>
 
     <a href="/contact/"
        {% if page.url == "/contact/" %}
-         aria-current="page"
+         class="active"
        {% endif %}>
-      CONTACT
+      Contact
     </a>
 
     <a href="/training/"
        {% if page.url == "/training/" %}
-         aria-current="page"
+         class="active"
        {% endif %}>
-      LEARN POWER BI (HANDS-ON)
+      Learn Power BI
     </a>
+
   </div>
+
 </nav>
