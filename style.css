@@ -3024,4 +3024,70 @@ body.no-hero .site-nav a {
   height: 55vh;
   min-height: 320px;
 }
+/* make nav a positioning container */
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* position hamburger manually */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;   /* 👈 THIS puts it top-left */
+    
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    z-index: 20;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100vh;
+
+    background: white;
+    padding: 80px 20px 20px; /* space below hamburger */
+
+    flex-direction: column;
+    gap: 16px;
+
+    z-index: 15;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+.logo {
+  padding-left: 50px; /* gives space for hamburger */
+}
 
