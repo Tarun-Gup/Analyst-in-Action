@@ -2803,4 +2803,47 @@ body.no-hero .site-nav a {
 .hero-content {
   margin-top: 110px;
 }
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  .main-nav {
+    padding: 15px 20px;
+  }
+
+  /* LOGO */
+  .logo a {
+    font-size: 1.4rem; /* smaller for mobile */
+    text-align: center;
+  }
+
+  /* NAV LINKS */
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    transform: none; /* remove desktop shift */
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    min-width: auto; /* remove forced width */
+  }
+
+  /* HERO SPACING */
+  .hero-content {
+    margin-top: 50px; /* reduce big desktop spacing */
+    padding: 0 15px;
+  }
+
+  /* HERO TEXT */
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+}
 
