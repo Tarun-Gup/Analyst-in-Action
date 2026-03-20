@@ -2897,4 +2897,39 @@ body.no-hero .site-nav a {
   }
 
 }
+.main-nav {
+  position: relative;
+}
+
+/* hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 
