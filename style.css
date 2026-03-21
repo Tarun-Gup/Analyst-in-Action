@@ -3090,4 +3090,84 @@ body.no-hero .site-nav a {
 .logo {
   padding-left: 50px; /* gives space for hamburger */
 }
+/* ===== NAV BASE ===== */
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center; /* keeps logo centered */
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+/* ===== HAMBURGER ===== */
+.menu-toggle {
+  display: none;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  /* keep logo centered ALWAYS */
+  .main-nav {
+    justify-content: center;
+  }
+
+  /* hamburger top-left */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    font-size: 22px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    z-index: 20;
+  }
+
+  /* HIDE links by default */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;   /* 👈 hidden off screen */
+    width: 75%;
+    height: 100vh;
+
+    background: white;
+    padding: 80px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    transition: left 0.3s ease;
+    z-index: 15;
+  }
+
+  /* SHOW when active */
+  .nav-links.active {
+    left: 0;
+  }
+
+  /* make links visible */
+  .nav-links a {
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
 
