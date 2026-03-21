@@ -3491,4 +3491,76 @@ body.no-hero .site-nav a {
     font-size: 1rem;
   }
 }
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.95); /* 👈 CHANGE THIS */
+    backdrop-filter: blur(6px);
+
+    padding: 90px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    color: white !important;   /* 👈 FORCE WHITE */
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+@media (max-width: 768px) {
+
+  .nav-links::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+  }
+
+}
+/* NAV LAYOUT RESET */
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 👈 THIS centers logo */
+}
+
+/* LOGO */
+.logo {
+  position: relative;
+  z-index: 31;
+  text-align: center;
+}
+
+.logo a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
 
