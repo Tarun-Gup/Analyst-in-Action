@@ -3219,4 +3219,276 @@ body.no-hero .site-nav a {
 .nav-links {
   display: none;
 }
+/* =========================
+   FINAL MOBILE NAV FIX
+   ========================= */
+
+/* Desktop */
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px 0;
+}
+
+.logo {
+  text-align: center;
+  z-index: 31;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  display: none;
+  appearance: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main-nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 16px 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 50;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+    padding: 0 48px;
+  }
+
+  .logo a {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 78%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 84px 24px 24px;
+    z-index: 45;
+    transition: left 0.28s ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    color: #222 !important;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .nav-links a.active {
+    color: #000 !important;
+  }
+
+  /* hero spacing fix */
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-content {
+    padding-top: 140px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .hero-content h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    margin-top: 0;
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+}
+/* =========================
+   NAV - DESKTOP
+   ========================= */
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* hamburger */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    font-size: 24px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 30;
+  }
+
+  /* logo stays centered */
+  .main-nav {
+    justify-content: center;
+  }
+
+  .logo a {
+    font-size: 2rem;
+  }
+
+  /* mobile menu panel */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+
+    background: #fff;
+    padding: 90px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    transition: left 0.3s ease;
+    z-index: 25;
+  }
+
+  /* show menu */
+  .nav-links.active {
+    left: 0;
+  }
+
+  /* mobile links */
+  .nav-links a {
+    color: #222;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* ===== HERO FIX ===== */
+
+  .hero-content {
+    padding-top: 40px;   /* reduces big gap */
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+}
 

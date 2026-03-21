@@ -36,6 +36,7 @@
   <link rel="icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/style.css">
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2K1TEG6BM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -85,16 +86,18 @@
     </p>
   </footer>
 
-  <!-- ✅ ADD THIS SCRIPT -->
+  <!-- ✅ SIMPLE + SAFE MENU SCRIPT -->
   <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-    if (toggle && navLinks) {
-      toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    }
+      if (toggle && navLinks) {
+        toggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      }
+    });
   </script>
 
 </body>
