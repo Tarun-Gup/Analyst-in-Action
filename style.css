@@ -3660,3 +3660,35 @@ body.no-hero .site-nav a {
   }
 
 }
+@media (max-width: 768px) {
+
+  .nav-links {
+    z-index: 1000; /* bring menu above everything */
+  }
+
+  .menu-toggle {
+    z-index: 1100; /* make hamburger always clickable */
+  }
+
+}
+/* ===== FORCE REMOVE GREY BLOCK (mobile) ===== */
+@media (max-width: 768px) {
+
+  /* kill any pseudo overlay */
+  .nav-links::before,
+  .nav-links::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* ensure nothing invisible is blocking clicks */
+  .nav-links {
+    pointer-events: auto;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    z-index: 1100;
+  }
+
+}
