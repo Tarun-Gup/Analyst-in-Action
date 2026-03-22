@@ -4707,3 +4707,50 @@ body.no-hero .site-nav a {
   }
 
 }
+@media (max-width: 768px) {
+
+  .nav-links {
+    align-items: flex-start;
+    padding-left: 24px;
+  }
+
+  .nav-links a {
+    text-align: left;
+    width: 100%;
+  }
+
+}
+.nav-links a {
+  margin: 14px 0;
+  padding-bottom: 6px;
+}
+.nav-links a {
+  color: #111;
+}
+
+.nav-links a:not([aria-current="page"]) {
+  color: #444;
+}
+.nav-links a:active {
+  opacity: 0.6;
+}
+.nav-links a {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.nav-links.open a {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+
+.nav-links.open a:nth-child(1) { transition-delay: 0.05s; }
+.nav-links.open a:nth-child(2) { transition-delay: 0.1s; }
+.nav-links.open a:nth-child(3) { transition-delay: 0.15s; }
+.nav-links.open a:nth-child(4) { transition-delay: 0.2s; }
+.nav-links.open a:nth-child(5) { transition-delay: 0.25s; }
+.mobile-menu {
+  background: #f7f7f7;
+  box-shadow: 2px 0 20px rgba(0,0,0,0.08);
+}
