@@ -3897,3 +3897,56 @@ body.no-hero .site-nav a {
   }
 
 }
+@media (max-width: 768px) {
+
+  .mobile-menu a {
+    color: #111 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    color: #111 !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu a::before,
+  .mobile-menu a::after {
+    content: "" !important;
+  }
+
+  .mobile-menu a[aria-current="page"]::before {
+    content: "[ ";
+  }
+
+  .mobile-menu a[aria-current="page"]::after {
+    content: " ]";
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    padding-top: 60px; /* reduce this */
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    padding: 60px 24px 40px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu a {
+    opacity: 1 !important;
+  }
+
+}
