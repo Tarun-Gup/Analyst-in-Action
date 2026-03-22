@@ -4348,3 +4348,108 @@ body.no-hero .site-nav a {
   }
 
 }
+@media (max-width: 768px) {
+
+  /* 🔴 HIDE COMPLETELY when NOT open */
+  .mobile-menu {
+    display: none !important;
+  }
+
+  /* 🟢 SHOW ONLY when open */
+  .mobile-menu.open {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100vh;
+
+    background: #fff;
+    z-index: 9999;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 60px 20px 40px;
+  }
+
+  /* TEXT FIX */
+  .mobile-menu a {
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+
+  /* BRACKETS LOGIC */
+  .mobile-menu a::before,
+  .mobile-menu a::after {
+    content: "" !important;
+  }
+
+  .mobile-menu a[aria-current="page"]::before {
+    content: "[ ";
+  }
+
+  .mobile-menu a[aria-current="page"]::after {
+    content: " ]";
+  }
+
+}
+@media (max-width: 768px) {
+
+  /* 🔴 Hide menu completely by default */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* 🟢 Show only when toggled */
+  .nav-links.open {
+    display: flex !important;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100vh;
+
+    background: #fff;
+    z-index: 9999;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 60px 20px 40px;
+  }
+
+  /* TEXT FIX */
+  .nav-links a {
+    color: #000 !important;
+    opacity: 1 !important;
+    margin: 14px 0;
+    font-size: 18px;
+  }
+
+  /* REMOVE brackets everywhere */
+  .nav-links a::before,
+  .nav-links a::after {
+    content: "" !important;
+  }
+
+  /* ADD brackets only for active */
+  .nav-links a.active::before {
+    content: "[ ";
+  }
+
+  .nav-links a.active::after {
+    content: " ]";
+  }
+
+}
+.nav-links {
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+}
