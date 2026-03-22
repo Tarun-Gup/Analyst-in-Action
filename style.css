@@ -4453,3 +4453,142 @@ body.no-hero .site-nav a {
 .nav-links.open {
   display: flex;
 }
+@media (max-width: 768px) {
+
+  /* ===== MENU CONTAINER ===== */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+
+    background: #fff !important;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   /* removes top gap */
+    align-items: flex-start;       /* left align */
+
+    padding: 80px 24px 40px;
+
+    opacity: 1 !important;
+  }
+
+  /* ===== MENU ITEMS ===== */
+  .mobile-menu a {
+    color: #000 !important;
+    opacity: 1 !important;
+
+    text-align: left;
+    width: 100%;
+
+    font-size: 18px;
+    margin: 18px 0;
+
+    text-decoration: none;
+  }
+
+  /* ===== RESET BRACKETS ===== */
+  .mobile-menu a::before,
+  .mobile-menu a::after {
+    content: "" !important;
+  }
+
+  /* ===== ACTIVE ITEM ONLY ===== */
+  .mobile-menu a[aria-current="page"]::before {
+    content: "[ ";
+  }
+
+  .mobile-menu a[aria-current="page"]::after {
+    content: " ]";
+  }
+
+  /* ===== PREVENT CLICK BLOCK BUG ===== */
+  .mobile-menu:not(.open) {
+    display: none !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .nav-links a::before,
+  .nav-links a::after {
+    content: "" !important;
+  }
+
+  .nav-links a.active::before {
+    content: "[ ";
+  }
+
+  .nav-links a.active::after {
+    content: " ]";
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+
+    background: #ffffff;
+    z-index: 9999;
+
+    padding: 80px 24px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* LEFT aligned */
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu a {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 18px 0;
+    letter-spacing: 0.3px;
+  }
+
+}
+.mobile-menu a {
+  color: #111;
+}
+
+.mobile-menu a:not([aria-current="page"]) {
+  color: #444;
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+}
+@media (max-width: 768px) {
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 9998;
+  }
+
+}
+.mobile-menu {
+  justify-content: flex-start;
+}
