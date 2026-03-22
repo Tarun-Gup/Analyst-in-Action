@@ -3787,3 +3787,29 @@ body.no-hero .site-nav a {
   position: relative;
   left: 10px; /* tweak this: try 8px–16px */
 }
+.mobile-menu a {
+  color: #111 !important;
+  opacity: 1;
+}
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(6px);
+}
+.mobile-menu {
+  padding: 80px 24px 40px;
+}
+
+.mobile-menu a {
+  display: block;
+  margin: 16px 0;
+  font-size: 18px;
+}
+.menu-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 10000;
+}
+.mobile-menu {
+  box-shadow: 2px 0 20px rgba(0,0,0,0.1);
+}
