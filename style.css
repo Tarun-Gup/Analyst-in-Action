@@ -3950,3 +3950,105 @@ body.no-hero .site-nav a {
   }
 
 }
+@media (max-width: 768px) {
+
+  .mobile-menu a {
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu a::before,
+  .mobile-menu a::after {
+    content: "" !important;
+  }
+
+  .mobile-menu a[aria-current="page"]::before {
+    content: "[ ";
+  }
+
+  .mobile-menu a[aria-current="page"]::after {
+    content: " ]";
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* THIS fixes top gap */
+  }
+
+}
+@media (max-width: 768px) {
+
+  /* === MENU CONTAINER === */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 40px 24px; /* removes top gap */
+
+    opacity: 1 !important;
+  }
+
+  /* === MENU LINKS === */
+  .mobile-menu a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #000 !important;
+    opacity: 1 !important;
+    text-decoration: none;
+
+    margin: 16px 0;
+  }
+
+  /* === REMOVE ANY DEFAULT BRACKETS === */
+  .mobile-menu a::before,
+  .mobile-menu a::after {
+    content: "" !important;
+  }
+
+  /* === ACTIVE LINK WITH BRACKETS === */
+  .mobile-menu a[aria-current="page"]::before {
+    content: "[ ";
+  }
+
+  .mobile-menu a[aria-current="page"]::after {
+    content: " ]";
+  }
+
+  /* Optional: make active slightly stronger */
+  .mobile-menu a[aria-current="page"] {
+    font-weight: 600;
+  }
+
+  /* === REMOVE ANY FADED STYLING FROM PARENT === */
+  .mobile-menu * {
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  /* === HAMBURGER BUTTON === */
+  .menu-toggle {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10000;
+  }
+
+}
