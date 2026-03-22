@@ -52,6 +52,9 @@
     
     {% include "nav.njk" %}
 
+    <!-- 🔥 NEW: overlay for mobile -->
+    <div class="menu-overlay"></div>
+
     <div class="hero-content">
       <h1>Power BI, built for real-world use.</h1>
       <p>
@@ -86,19 +89,38 @@
     </p>
   </footer>
 
-  <!-- ✅ FIXED MOBILE MENU SCRIPT -->
+  <!-- 🔥 CLEAN MOBILE MENU SYSTEM -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.querySelector(".menu-toggle");
       const navLinks = document.querySelector(".nav-links");
+      const overlay = document.querySelector(".menu-overlay");
 
-      if (toggle && navLinks) {
-        toggle.addEventListener("click", () => {
-          navLinks.classList.toggle("open");
+      if (toggle && navLinks && overlay) {
 
-          const isOpen = navLinks.classList.contains("open");
-          toggle.setAttribute("aria-expanded", isOpen);
+        function openMenu() {
+          navLinks.classList.add("open");
+          overlay.classList.add("open");
+          document.body.classList.add("menu-open");
+          toggle.setAttribute("aria-expanded", "true");
+        }
+
+        function closeMenu() {
+          navLinks.classList.remove("open");
+          overlay.classList.remove("open");
+          document.body.classList.remove("menu-open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+
+        toggle.addEventListener("click", function () {
+          if (navLinks.classList.contains("open")) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
         });
+
+        overlay.addEventListener("click", closeMenu);
       }
     });
   </script>
