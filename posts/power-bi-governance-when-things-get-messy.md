@@ -82,9 +82,8 @@ Okay, in theory, this looks very simple, but in practice, it is not so simple fo
 
 This is usually how governance starts. Not as a big design, but as small changes that make the setup easier to trust. This is just the tip of the iceberg. There is a lot more in governance that you can do. We will be covering part 2 in this governance series.
 
----
 
-**Pro tip:** Keep a simple list of “approved” datasets somewhere visible. It doesn’t need to be perfect, just something the team can refer to. These are typically the datasets that are trusted, used across multiple reports, and should not be recreated unless really needed.
+> **Pro tip:**  Keep a simple list of “approved” datasets somewhere visible. It doesn’t need to be perfect, just something the team can refer to. These are typically the datasets that are trusted, used across multiple reports, and should not be recreated unless really needed.
 
 ---
 
