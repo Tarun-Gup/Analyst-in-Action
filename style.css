@@ -4754,3 +4754,45 @@ body.no-hero .site-nav a {
   background: #f7f7f7;
   box-shadow: 2px 0 20px rgba(0,0,0,0.08);
 }
+/* Recommended Articles */
+
+.recommended-posts {
+  margin-top: 3rem;
+}
+
+.recommended-posts h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.recommended-card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.recommended-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.recommended-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.recommended-card:hover {
+  border-color: #ccc;
+  transform: translateY(-2px);
+}
