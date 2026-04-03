@@ -124,19 +124,17 @@ layout: base.njk
 
     {# STEP 4: Fallback → latest posts if needed #}
     {% if finalPosts.length < 3 %}
-      {% for post in collections.posts | reverse %}
-        {% if post.url != currentPost and (post.url not in selectedUrls) %}
-          
-          {% set finalPosts = finalPosts.concat([post]) %}
-          {% set selectedUrls = selectedUrls.concat([post.url]) %}
+  {% for post in collections.posts | reverse %}
+    {% if finalPosts.length < 3 %}
+      {% if post.url != currentPost and (post.url not in selectedUrls) %}
+        
+        {% set finalPosts = finalPosts.concat([post]) %}
+        {% set selectedUrls = selectedUrls.concat([post.url]) %}
 
-          {% if finalPosts.length == 3 %}
-            {% break %}
-          {% endif %}
-
-        {% endif %}
-      {% endfor %}
+      {% endif %}
     {% endif %}
+  {% endfor %}
+{% endif %}
 
     {# STEP 5: Render #}
     {% for post in finalPosts %}

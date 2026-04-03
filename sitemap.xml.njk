@@ -1,0 +1,15 @@
+---
+permalink: /sitemap.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+{% for post in collections.posts %}
+<url>
+  <loc>https://analystinaction.com{{ post.url }}</loc>
+</url>
+{% endfor %}
+
+</urlset>
