@@ -1,48 +1,88 @@
 ---
 layout: base.njk
-title: Power BI & DAX Hands-On Training | Analyst in Action
-description: 5-session weekend Power BI & DAX hands-on training for individuals and corporate batches.
+title: Power BI & DAX Training | Analyst in Action
+description: A 5-week guided Power BI training program tailored to your current level, focusing on real-world DAX, modeling, and problem-solving.
 permalink: /training/
 ---
 
-# Power BI & DAX Hands-On Training  
-### 5-Session Weekend Program
+# Power BI & DAX Training  
+### A Guided, Custom Learning Program
 
-This is a structured, hands-on training program designed to build real Power BI capability from fundamentals to confident DAX implementation.
+This is not a standard Power BI training.
 
-The program runs over **5 weekend sessions**, with each session lasting **2 hours**.
+Every learner starts at a different point, some know the basics but struggle with DAX, others can build reports but don’t understand modeling or performance.
+
+This program is designed around **you**, not a fixed curriculum.
 
 ---
 
-## Who This Is For
+## How the Training Works
+
+### Step 1: Initial Assessment  
+We start with a session to understand:
+- What you already know?
+- Where you’re getting stuck?
+- What kind of work you’re aiming for? 
+
+---
+
+### Step 2: Custom 5-Week Plan  
+Based on this, a structured plan is created:
+- Focused on your gaps  
+- Aligned to real-world scenarios  
+- Balanced between concepts and hands-on work  
+
+---
+
+### Step 3: Guided Weekly Sessions  
+Each week builds on your progress:
+- Practical problem solving  
+- Real use cases (not just features)  
+- Continuous adjustment based on your pace  
+
+---
+
+### Step 4: Focus Where It Matters  
+More time is spent where it actually counts:
+- DAX clarity  
+- Data modeling thinking  
+- Debugging and performance  
+
+---
+
+## Who This Is For?
 
 ### Individuals
-- Professionals transitioning into Power BI roles  
-- Analysts who understand basics but want structured DAX clarity  
-- Anyone serious about building production-ready models  
+- You’ve learned Power BI but still feel unsure in real scenarios  
+- You can build reports but struggle with DAX or modeling  
+- You want structured guidance, not random tutorials  
 
 ### Teams / Corporate Batches
-- Organizations implementing Power BI  
-- Teams that need consistent modeling standards  
-- Groups looking for practical, applied learning  
+- Teams working with inconsistent models or definitions  
+- Organizations adopting Power BI seriously  
+- Groups that need practical, applied training (not theory-heavy sessions)  
 
 ---
 
 ## Program Format
 
-- 5 consecutive weekend sessions  
-- 2 hours per session  
-- Interactive, hands-on approach  
-- Individual enrollment available  
-- Dedicated corporate batches available  
-- In-person or live remote delivery  
-- Delivered virtually (live) and open to participants worldwide 
+- 5-week guided program  
+- 1 session per week (approx. 2 hours)  
+- Hands-on and discussion-driven  
+- Delivered live (remote) or in-person  
+- Individual and corporate batches available  
 
 ---
 
 ## Enrollment & Corporate Inquiries
 
-To join as an individual or book a corporate batch:
+If this approach makes sense for you or your team:
 
 - **Email:** [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
-- **LinkedIn:** [Tarun Gupta](https://www.linkedin.com/in/tarun-gupta-3a0082141/)
+- **LinkedIn:** [Tarun Gupta](https://www.linkedin.com/in/tarun-gupta-3a0082141/)  
+
+---
+
+### Note
+
+This program works best for people who are willing to actively engage, practice, and improve and not just attend sessions.
