@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-title: Power BI & DAX Training | Analyst in Action
+title: Curated Power BI Training | Analyst in Action
 description: A 5-week guided Power BI training program tailored to your current level, focusing on real-world DAX, modeling, and problem-solving.
 permalink: /training/
 ---
 
-# Power BI & DAX Training  
-### A Guided, Custom Learning Program
+# Curated Power BI Training 
+### A Guided, Personalized Learning Program
 
 This is not a standard Power BI training.
 
