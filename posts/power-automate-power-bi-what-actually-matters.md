@@ -17,21 +17,21 @@ tags:
 
 Most BI setups start off looking clean foundationally. You build a few reports, connect a couple of datasets, and everything seems under control. For a while, it even feels stable.
 
-But over time, things start to shift. Reports get copied. Datasets start overlapping. Numbers don’t always match anymore. And suddenly, you’re not just building reports, you’re trying to keep things from drifting. That’s usually where the need for something like Power Automate starts becoming real.
+But over time, things start to evolve. Reports get copied, Datasets start overlapping, Numbers don’t always match anymore, and suddenly, you’re not just building reports, you’re trying to keep things from drifting away. That’s usually where the need for something like Power Automate starts becoming real.
 
 In the last edition of BI Bits, I touched on a part of this. A report can look good, but if nothing connects it to action, the value is limited. [You can read it here](https://www.linkedin.com/pulse/your-report-looks-good-now-connect-action-tarun-gupta-pctie)
 
-But even that is just one part of the problem. When most people start with Power Automate, the focus usually stays on small improvements. Sending emails when something fails. Triggering alerts. Automating simple approvals.
+But even that is just one part of the problem. When most people start with Power Automate, the focus usually stays on small improvements and exploration. Sending emails when something fails. Triggering alerts and Automating simple approvals.
 
 Useful, but they don’t really change how the BI environment behaves over time. In this article, we’re taking a different direction. Instead of focusing on small tasks, we’ll look at a few problems that keep repeating in most BI environments. Things like datasets running without purpose, numbers slowly losing trust, or important reports being treated the same as everything else.
 
-The idea is simple. If you’re starting with Power Automate, it’s better to use it where it actually changes how your system behaves, not just where it saves a few clicks.
+The idea is simple. If you’re starting with Power Automate, it’s better to use it where it actually changes how your system behaves, not just where it saves a time and a few clicks.
 
 ---
 
 ## Reality: BI environments don’t stay stable
 
-If you’ve worked on even one or two BI projects, you’ve probably seen how this plays out. It never breaks in one go. It starts small. A new report gets added because someone needs a slight variation. Then another dataset comes in because the existing one doesn’t exactly fit. Someone leaves, ownership shifts, and slowly, things stop being as clear as they were in the beginning. Now think, if you have a portfolio of more than 100 reports.
+If you’ve worked on even one or two BI projects, you’ve probably seen how this plays out. It never breaks in one go. It starts small. A new report gets added because someone needs a slight variation. Then another dataset comes in because the existing one doesn’t exactly fit. Someone leaves the team, ownership shifts, and slowly, things stop being as clear as they were in the beginning. Now think, if you have a portfolio of more than 100 reports. It can become a nightmare quite soon.
 
 At that point, nothing looks obviously wrong. Reports are still refreshing. Dashboards are still being used. But if you look closely, you start noticing the cracks. Two reports show slightly different numbers. Datasets that look similar but aren’t really the same. No one is fully sure which version is the right one.
 
@@ -45,7 +45,7 @@ There’s no failure notification. No clear signal that something is off. It jus
 
 Power Automate is already there in most setups. People are using it, but mostly in a very limited way. A dataset fails, and you get an email alert. Something changes, you get an alert. Sometimes there’s an approval flow built around access or publishing.
 
-Nothing wrong with that. It’s a good starting point, and it solves immediate problems. But if you step back and look at it, all of this sits around the system, not inside it. You’re reacting to events after they happen, not really shaping how the BI environment behaves over time. And that’s the gap. I see this as using the tool just for the sake of it.
+Nothing wrong with that. It’s a good starting point but this is not improving the process from the core, and it solves immediate problems. But if you step back and look at it, all of this sits around the system, not inside it. You’re reacting to events after they happen, not really shaping how the BI environment behaves over time. And that’s the gap. I see this as using the tool just for the sake of it.
 
 We’ve automated actions around reports, but not the system that produces them. So unused datasets keep refreshing, duplicate logic keeps growing, and trust issues slowly build up. Every time, it depends on someone noticing and stepping in, which is exactly what doesn’t scale.
 
@@ -57,7 +57,7 @@ But in a BI environment, that approach only takes you so far. A better starting 
 
 Once you start looking at it that way, the role of automation changes. It’s not just about saving effort. It’s about putting some control around how the system behaves when no one is actively watching it.
 
-The next few sections are built around that idea. These are not random use cases. These are problems that show up in almost every BI setup, and where Power Automate can actually make a difference.
+This blog is not about explaining what Power Automate is. Instead, we’ll focus on four scenarios where you can use it to improve your processes. These are not random use cases. These are problems that show up in almost every BI setup, and where Power Automate can actually make a difference.
 
 ---
 
@@ -71,7 +71,7 @@ Instead of letting datasets run blindly, you introduce a simple check around usa
 
 If there is no usage, you don’t just leave it there. You flag it. You notify the owner. And if it stays unused for long enough, you take action like pausing the refresh or pushing it for review. What this does is simple but powerful. The dataset is no longer just sitting there. It has to justify why it exists.
 
-This is how your Power Automate flow will look in human language. We are not going deep into connectors here, but if this is something you want to explore further, we can break it down in detail in a follow-up.
+This is how your Power Automate flow will look in human language. We are not going deep into connectors here, but if this is something you want to explore further, we can break it down in detail in a follow-up blog.
 
 ![](/assets/images/power-automate-power-bi-what-actually-matters/step-1.png)
 
@@ -85,7 +85,7 @@ Over time, you end up with multiple datasets that look similar but are not reall
 
 The problem is, nothing actually fails. Everything refreshes fine, so there’s no clear signal that something is off. But the confidence in the data slowly starts dropping, and that’s much harder to fix later.
 
-This is where automation helps, not by solving the issue directly, but by making it visible early. You can set up a simple scan that looks for datasets with similar names, the same data sources, or overlapping tables. When something looks too close, it gets flagged and sent to the owners for review.
+This is where automation helps, not by solving the issue directly, but by making it visible early. You can set up a simple review process that scans for datasets with similar names, the same data sources, or overlapping tables. When something looks too close, it gets flagged and sent to the owners for review.
 
 The idea is not to stop people from creating new datasets. That’s not realistic. But at least now, duplication doesn’t go unnoticed. Someone is forced to take a call. Keep it, merge it, or clean it up. That small intervention is often enough to prevent trust from drifting further.
 
@@ -130,3 +130,5 @@ From there, you introduce a simple process. Notify the owner, mark the asset for
 If you’re starting with Power Automate, it’s easy to focus on small wins like alerts, notifications, or saving a few manual steps. That’s useful, but it doesn’t really change how your BI environment behaves. The bigger value comes when automation starts handling the things that usually depend on someone remembering to check, fix, or clean up.
 
 Instead of asking what I can automate, it’s better to look at what keeps repeating in your environment. Unused datasets, trust issues, lack of prioritization, and cluttered workspaces. When you start building flows around these, you’re not just automating tasks; you’re putting structure into the system itself. That’s where Power Automate actually starts to make a difference.
+
+Also, that being said, creating a flow in Power Automate is quite easy. You don’t need separate training for it. But once you start building multiple flows, it’s worth stepping back and asking which ones are actually solving meaningful problems for your team. Over time, it’s not just about adding more automation. It’s about decluttering your setup and focusing on what truly makes a difference.
