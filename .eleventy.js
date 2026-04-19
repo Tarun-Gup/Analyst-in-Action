@@ -110,7 +110,8 @@ module.exports = function (eleventyConfig) {
     "deployment",
     "fabric",
     "capacity",
-    "best-practices"
+    "best-practices",
+    "ai"
   ]);
 
   /* ============================= */
@@ -118,29 +119,30 @@ module.exports = function (eleventyConfig) {
   /* ============================= */
 
   eleventyConfig.addFilter("tagLabel", function(tag) {
-    const labels = {
-      "dax": "DAX",
-      "powerbi": "Power BI",
-      "data-modeling": "Data Modeling",
-      "performance": "Performance",
-      "tools": "Tools",
-      "architecture": "Architecture",
-      "deployment": "Deployment",
-      "fabric": "Fabric",
-      "capacity": "Capacity",
-      "best-practices": "Best Practices"
-    };
-
-    return labels[tag] || tag;
-  });
-
-  return {
-    dir: {
-      input: ".",
-      includes: "_includes",
-      output: "_site"
-    }
+  const labels = {
+    "dax": "DAX",
+    "powerbi": "Power BI",
+    "data-modeling": "Data Modeling",
+    "performance": "Performance",
+    "tools": "Tools",
+    "architecture": "Architecture",
+    "deployment": "Deployment",
+    "fabric": "Fabric",
+    "capacity": "Capacity",
+    "best-practices": "Best Practices",
+    "ai": "AI" 
   };
+
+  return labels[tag] || tag;
+});
+
+return {
+  dir: {
+    input: ".",
+    includes: "_includes",
+    output: "_site"
+  }
+};
 };
 
 
