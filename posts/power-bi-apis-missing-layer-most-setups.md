@@ -20,9 +20,9 @@ That gap doesn’t come from bad reports. It comes from everything around them b
 
 We’ll focus on the points where most Power BI setups start to struggle once things scale:
 
-- Why does refresh stop being predictable and turn into a manual task  
-- Why you don’t really know what’s being used across reports and datasets  
-- What actually breaks when you make a change 
+- Why refresh starts failing even when nothing obvious has changed  
+- Why you don’t really know which reports and datasets actually matter  
+- What could break when you make a change, and how to find out before it does 
 
 ---
 
@@ -32,23 +32,24 @@ Most of the effort in Power BI goes into building the model and getting the repo
 
 That’s the part most setups don’t really control. And that’s where APIs start to make sense. Not as an advanced feature, but as the layer that helps you manage what sits behind the reports. We will cover the three pain points in this post, but there is so much that you can achieve with APIs 
 
+This is also where APIs started to stand out when I was experimenting with them recently. I had mentioned this briefly in a [recent newsletter](https://www.linkedin.com/pulse/power-bi-apis-missing-layer-most-developers-ignore-tarun-gupta-ukc7e), but the more I worked through it, the clearer the gap became. So enough of talking, let's get our hands dirty.
 ---
 
 ## When refresh starts failing for no clear reason
 
 ![](/assets/images/power-bi-apis-missing-layer-most-setups/step-1.png)
 
-Scheduled refresh works until datasets start depending on upstream jobs or other datasets. One process finishes late, another refresh starts too early, and suddenly, you are manually retrying refreshes instead of controlling them.
+Scheduled refresh works until datasets start depending on upstream jobs or other datasets. One process finishes late, another refresh starts too early, and sometimes the source data isn’t even ready. The model keeps refreshing on schedule anyway, completely unaware of upstream failures, and you end up manually retrying things that should have worked in the first place.
 
 ### How can you implement it in the real world
 
 1. Pick one dataset that often fails or runs at the wrong time.  
-2. Identify what needs to be finished before it refreshes; this could be a file load, pipeline, or another dataset.  
-3. Instead of relying only on the schedule, trigger the refresh using the Power BI API. This can be done with tools like Power Automate, Azure Data Factory, or even a simple script.  
-4. Set this trigger to run right after your upstream process completes.  
-5. Add a basic check that looks at refresh status and retries once if it fails.  
+2. Identify what needs to finish before it refreshes, this could be a file load, pipeline, or another dataset.  
+3. Move the refresh trigger out of the schedule and into your upstream process. For example, once your pipeline, file load, or dataflow completes, trigger the dataset refresh using Power Automate, Azure Data Factory, or a simple script.  
+4. Place this trigger as the final step in your upstream process so it only runs after everything completes successfully.  
+5. Add a basic check for refresh status and retry once if it fails.    
 
-If you’re new to APIs, start with Power Automate. It hides most of the complexity and lets you focus on the logic first. Once that works, you can move to scripts if needed.
+If you’re starting out, Power Automate is usually the easiest way to set this up without worrying about API details.
 
 > **Pro tip:** Don’t try to move everything to API-driven refresh at once. Start with one unstable dataset. Also, avoid triggering too many refreshes in parallel; capacity limits will hit you faster than you expect.
 
@@ -66,11 +67,11 @@ Without proper visibility, everything ends up being treated the same. You spend 
 
 ### How can you implement it in the real world
 
-1. Start by pulling a list of your workspaces and reports using Power BI APIs.  
-2. You can do this using Power Automate or a simple script that calls the API and stores the result in a table.  
-3. Capture basic fields like report name, workspace, and last activity.  
-4. Add refresh history for datasets so you know how often they run.  
-5. Build a simple Power BI report on top of this data to see usage vs refresh frequency.  
+1. Start by pulling a list of your workspaces, datasets, and reports using Power BI APIs. If you're new to this, the easiest way is to use Power Automate and call the built-in Power BI actions like “Get workspaces” or “Get reports”.  
+2. Store the output of these calls in a simple table, this could be an Excel file, a SharePoint list, or even a database if you already have one.  
+3. Capture basic fields like report name, workspace name, dataset name, and last activity where available.  
+4. Add dataset refresh history using the API so you can see how often each dataset runs and whether it fails.  
+5. Build a simple Power BI report on top of this data to compare usage vs refresh frequency.  
 
 > **Pro tip:** Usage data is never perfect. Don’t treat it as the absolute truth. Use it to spot patterns, not make one-time decisions like deleting reports immediately.
 
@@ -85,10 +86,10 @@ A dataset change looks small until it breaks multiple reports downstream. Withou
 ### How can you implement it in the real world
 
 1. Pick the dataset you’re planning to change.  
-2. Use Power BI APIs to get a list of reports in your environment. You can do this using Power Automate, a script, or any tool that lets you call APIs.  
-3. From that list, identify which reports are connected to your dataset. Even a basic match at the workspace level is a good starting point.  
-4. Store this in a simple table with the dataset name, report name, and workspace.  
-5. Before making the change, review this list and mark the important reports.  
+2. Use Power BI APIs to pull a list of workspaces, datasets, and reports. If you're starting out, Power Automate is the easiest option using actions like “Get workspaces” and “Get reports”.  
+3. From this data, match reports to your dataset. In most cases, this means looking for reports that are built on that dataset within the same workspace or connected via a shared dataset.  
+4. Store this mapping in a simple table with dataset name, report name, and workspace.  
+5. Before making the change, review this list and identify the reports that matter most.  
 6. After the change, validate only these reports instead of checking everything manually.  
 
 > **Pro tip:** Don’t aim for a perfect dependency map in the beginning. Even a partial view is enough to avoid most surprises. Also, if you’re using shared datasets across workspaces, this becomes much more important. That’s usually where hidden dependencies show up.
@@ -97,16 +98,25 @@ A dataset change looks small until it breaks multiple reports downstream. Withou
 
 ## Where can I start?
 
-If you haven’t worked with APIs before, the easiest way to begin is to pick one use case and follow it through end to end. Start with something simple, like refresh control or usage visibility. Don’t try to cover everything. Just get one flow working properly.
+If you haven’t worked with APIs before, the easiest way to begin is to pick one use case and take it end to end. Don’t try to connect everything at once. Just focus on getting one flow working properly.
 
-A practical way to approach this:
+A simple way to approach this:
 
-- First, pull some data using the API. This could be a list of datasets, reports, or refresh history.  
-- Store that data somewhere simple, like a table or file.  
-- Build a small view on top of it so you can actually see what’s going on.  
-- Then add one action. This could be triggering a refresh, flagging failures, or identifying unused reports.  
+- Start by pulling a small set of data using the API, like datasets, reports, or refresh history  
+- Store it somewhere simple so you can reuse it  
+- Build a quick view on top of it so you can actually see what’s going on  
+- Then add one action, like triggering a refresh or flagging something that needs attention  
 
-At this point, you’ve already gone beyond most setups. From there, you can build gradually. Add another dataset, extend the logic, or connect it to an existing process. The goal isn’t to automate everything; it’s to make one part of your setup more visible and controlled.
+That’s enough to move from a manual setup to something more controlled.
+
+### What not to do in the first go
+
+- Don’t try to automate your entire Power BI setup  
+- Don’t aim for a perfect model or complete coverage  
+- Don’t overcomplicate things with scripts if you’re just starting out  
+- Don’t wait until everything is defined before trying it  
+
+Start small, get one piece working, and build from there. That’s usually what makes the difference.
 
 ---
 
@@ -120,6 +130,6 @@ For example, pulling ownership details into one place avoids the usual back and 
 
 ## Closing thought
 
-Most Power BI setups don’t break because of bad reports. They break because everything around the reports is being handled manually. At the beginning, that’s not a problem. A few datasets, a few reports, and things are easy to manage. But as things grow, the gaps start showing up. Refresh becomes unpredictable, ownership becomes unclear, and every change carries a bit of risk.
+Most Power BI setups don’t struggle because of bad reports. They struggle because everything around the reports is left to manual processes. It works for a while, but as things grow, small gaps start turning into recurring issues.
 
-APIs don’t fix everything overnight, but they change how you approach these problems. You stop reacting to issues one by one and start building a setup where things are visible, controlled, and easier to manage. And that’s the difference. Not better reports, but a setup that actually holds together as it grows.
+APIs don’t fix everything in a go, but they change how you deal with those gaps. Instead of reacting to problems one by one, you start putting simple controls in place. That’s usually where things begin to feel different.
