@@ -33,6 +33,7 @@ Most of the effort in Power BI goes into building the model and getting the repo
 That’s the part most setups don’t really control. And that’s where APIs start to make sense. Not as an advanced feature, but as the layer that helps you manage what sits behind the reports. We will cover the three pain points in this post, but there is so much that you can achieve with APIs 
 
 This is also where APIs started to stand out when I was experimenting with them recently. I had mentioned this briefly in a [recent newsletter](https://www.linkedin.com/pulse/power-bi-apis-missing-layer-most-developers-ignore-tarun-gupta-ukc7e), but the more I worked through it, the clearer the gap became. So enough of talking, let's get our hands dirty.
+
 ---
 
 ## When refresh starts failing for no clear reason
