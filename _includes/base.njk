@@ -49,11 +49,12 @@
 
 <body>
 
+  <div class="reading-progress-bar"></div>
+
   <header class="hero">
     
     {% include "nav.njk" %}
-    
-<script src="/pagefind/pagefind-ui.js"></script>
+
     <!-- 🔥 NEW: overlay for mobile -->
     <div class="menu-overlay"></div>
 
@@ -90,6 +91,25 @@
       © 2026 Analyst in Action. All rights reserved.
     </p>
   </footer>
+
+  <script src="/pagefind/pagefind-ui.js"></script>
+
+  <!-- READING PROGRESS BAR -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+
+      const progressBar = document.querySelector(".reading-progress-bar");
+      if (progressBar) {
+        progressBar.style.width = progress + "%";
+      }
+    });
+  </script>
 
   <!-- 🔥 CLEAN MOBILE MENU SYSTEM -->
   <script>

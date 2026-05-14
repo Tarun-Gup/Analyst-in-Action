@@ -4881,3 +4881,18 @@ body.no-hero .site-nav a {
 .search-section {
   margin-top: 24px;
 }
+/* ============================= */
+/* READING PROGRESS BAR */
+/* ============================= */
+
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #f2c811, #ffd84d);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  z-index: 9999;
+  transition: width 0.08s linear;
+}
