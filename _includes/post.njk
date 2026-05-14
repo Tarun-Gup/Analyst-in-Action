@@ -22,6 +22,9 @@ layout: base.njk
         {% if updated %}
           • Updated {{ updated | readableDate }}
         {% endif %}
+        <span class="reading-time">
+          • <span id="reading-time-value">Reading</span>
+        </span>
       </p>
     {% endif %}
 
@@ -73,86 +76,87 @@ layout: base.njk
     {{ content | safe }}
   </div>
 
-  <!-- ✅ Recommended Articles (ADDED HERE) -->
+  <!-- ✅ Recommended Articles -->
   {% if tags %}
-<section class="recommended-posts">
+  <section class="recommended-posts">
 
-  <h3>Recommended Articles</h3>
+    <h3>Recommended Articles</h3>
 
-  <div class="recommended-grid">
+    <div class="recommended-grid">
 
-    {% set currentPost = page.url %}
-    {% set recommendations = [] %}
-    {% set selectedUrls = [] %}
+      {% set currentPost = page.url %}
+      {% set recommendations = [] %}
+      {% set selectedUrls = [] %}
 
-    {# STEP 1: Find tag-based matches #}
-    {% for post in collections.posts %}
+      {# STEP 1: Find tag-based matches #}
+      {% for post in collections.posts %}
 
-      {% if post.url != currentPost %}
+        {% if post.url != currentPost %}
 
-        {% set matchCount = 0 %}
+          {% set matchCount = 0 %}
 
-        {% for tag in tags %}
-          {% if tag in post.data.tags %}
-            {% set matchCount = matchCount + 1 %}
+          {% for tag in tags %}
+            {% if tag in post.data.tags %}
+              {% set matchCount = matchCount + 1 %}
+            {% endif %}
+          {% endfor %}
+
+          {% if matchCount > 0 %}
+            {% set recommendations = recommendations.concat([{
+              "post": post,
+              "score": matchCount
+            }]) %}
+          {% endif %}
+
+        {% endif %}
+
+      {% endfor %}
+
+      {# STEP 2: Sort by relevance #}
+      {% set recommendations = recommendations | sort(attribute="score") | reverse %}
+
+      {# STEP 3: Take top matches first #}
+      {% set finalPosts = [] %}
+
+      {% for item in recommendations %}
+        {% if finalPosts.length < 3 %}
+          {% set finalPosts = finalPosts.concat([item.post]) %}
+          {% set selectedUrls = selectedUrls.concat([item.post.url]) %}
+        {% endif %}
+      {% endfor %}
+
+      {# STEP 4: Fallback → latest posts if needed #}
+      {% if finalPosts.length < 3 %}
+        {% for post in collections.posts | reverse %}
+          {% if finalPosts.length < 3 %}
+            {% if post.url != currentPost and (post.url not in selectedUrls) %}
+
+              {% set finalPosts = finalPosts.concat([post]) %}
+              {% set selectedUrls = selectedUrls.concat([post.url]) %}
+
+            {% endif %}
           {% endif %}
         {% endfor %}
-
-        {% if matchCount > 0 %}
-          {% set recommendations = recommendations.concat([{
-            "post": post,
-            "score": matchCount
-          }]) %}
-        {% endif %}
-
       {% endif %}
 
-    {% endfor %}
+      {# STEP 5: Render #}
+      {% for post in finalPosts %}
+        <a href="{{ post.url }}" class="recommended-card">
+          <h4>{{ post.data.title }}</h4>
+          {% if post.data.description %}
+            <p>{{ post.data.description }}</p>
+          {% endif %}
+        </a>
+      {% endfor %}
 
-    {# STEP 2: Sort by relevance #}
-    {% set recommendations = recommendations | sort(attribute="score") | reverse %}
+    </div>
 
-    {# STEP 3: Take top matches first #}
-    {% set finalPosts = [] %}
-
-    {% for item in recommendations %}
-      {% if finalPosts.length < 3 %}
-        {% set finalPosts = finalPosts.concat([item.post]) %}
-        {% set selectedUrls = selectedUrls.concat([item.post.url]) %}
-      {% endif %}
-    {% endfor %}
-
-    {# STEP 4: Fallback → latest posts if needed #}
-    {% if finalPosts.length < 3 %}
-  {% for post in collections.posts | reverse %}
-    {% if finalPosts.length < 3 %}
-      {% if post.url != currentPost and (post.url not in selectedUrls) %}
-        
-        {% set finalPosts = finalPosts.concat([post]) %}
-        {% set selectedUrls = selectedUrls.concat([post.url]) %}
-
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-    {# STEP 5: Render #}
-    {% for post in finalPosts %}
-      <a href="{{ post.url }}" class="recommended-card">
-        <h4>{{ post.data.title }}</h4>
-        {% if post.data.description %}
-          <p>{{ post.data.description }}</p>
-        {% endif %}
-      </a>
-    {% endfor %}
-
-  </div>
-
-</section>
-{% endif %}
+  </section>
+  {% endif %}
   <!-- ✅ End Recommended -->
 
   <div class="post-extras">
+
     <div class="subscribe-inline">
       {% include "subscribe.njk" %}
     </div>
@@ -160,14 +164,15 @@ layout: base.njk
     <hr>
 
     <div class="comments-section">
+
       <h3>Comments</h3>
 
-     <p class="comment-note">
-  Join the discussion below (GitHub login required), or share your thoughts on 
-  <a href="https://www.linkedin.com/in/tarun-gupta-3a0082141/" target="_blank" rel="noopener">
-    LinkedIn
-  </a>. I’m most active there.
-</p>
+      <p class="comment-note">
+        Join the discussion below (GitHub login required), or share your thoughts on 
+        <a href="https://www.linkedin.com/in/tarun-gupta-3a0082141/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>. I’m most active there.
+      </p>
 
       <script src="https://giscus.app/client.js"
         data-repo="Tarun-Gup/Analyst-in-Action"
@@ -184,7 +189,9 @@ layout: base.njk
         crossorigin="anonymous"
         async>
       </script>
+
     </div>
+
   </div>
 
 </article>

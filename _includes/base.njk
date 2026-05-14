@@ -111,6 +111,22 @@
     });
   </script>
 
+  <!-- ESTIMATED READING TIME -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const content = document.querySelector(".post-content");
+      const readingTime = document.querySelector("#reading-time-value");
+
+      if (content && readingTime) {
+        const text = content.innerText || "";
+        const words = text.trim().split(/\s+/).filter(Boolean).length;
+        const minutes = Math.max(1, Math.ceil(words / 220));
+
+        readingTime.textContent = minutes + " min read";
+      }
+    });
+  </script>
+
   <!-- 🔥 CLEAN MOBILE MENU SYSTEM -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
