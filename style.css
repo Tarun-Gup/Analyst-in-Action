@@ -5133,3 +5133,49 @@ body.no-hero .site-nav a {
   color: #374151;
   line-height: 1.8;
 }
+.agentic-context {
+  margin: 24px 0 36px;
+  padding: 14px 18px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.agentic-context strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.agentic-context {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-left: 4px solid #6b46c1;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.agentic-context strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.agentic-context {
+  color: #555;
+  font-size: 0.95rem;
+}
+.agentic-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.agentic-items span {
+  background: #f3f0ff;
+  color: #5b3cc4;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
