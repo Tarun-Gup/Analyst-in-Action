@@ -126,7 +126,7 @@ By this point, I've usually answered the logical questions. I know the measure i
 
 That's the point where I close DAX Query View and open DAX Studio.
 
-I'm no longer trying to understand the calculation—I'm trying to understand the execution. Rather than guessing which measure or visual is responsible, I start with Performance Analyzer to identify the slowest visual on the page. I then analyse that specific query in DAX Studio using Server Timings and the Query Plan to understand where the bottleneck is and whether my optimisations are actually making a measurable difference. If you'd like to dive deeper into Server Timings, I've covered that in a [previous article](https://analystinaction.com/posts/going-beyond-dax-studio/).
+I'm no longer trying to understand the calculation but I'm trying to understand the execution. Rather than guessing which measure or visual is responsible, I start with Performance Analyzer to identify the slowest visual on the page. I then analyse that specific query in DAX Studio using Server Timings and the Query Plan to understand where the bottleneck is and whether my optimisations are actually making a measurable difference. If you'd like to dive deeper into Server Timings, I've covered that in a [previous article](https://analystinaction.com/posts/going-beyond-dax-studio/).
 
 <div class="agentic-context">
   <div class="agentic-label">🎯 Investigation Mindset</div>
