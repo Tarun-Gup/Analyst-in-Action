@@ -5236,3 +5236,72 @@ body.no-hero .site-nav a {
   margin: 2.5rem 0;
   box-shadow: 0 4px 12px rgba(244, 180, 0, 0.06);
 }
+.agentic-context {
+  background: #faf9ff;
+  border: 1px solid #e7e0ff;
+  border-left: 6px solid #6d4aff;
+  border-radius: 14px;
+
+  padding: 1.5rem 1.7rem;
+  margin: 2rem 0;
+
+  box-shadow: 0 4px 12px rgba(109, 74, 255, 0.05);
+}
+
+.agentic-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+
+  margin-bottom: 1rem;
+}
+
+.agentic-context h4 {
+  margin: 0 0 0.8rem;
+
+  font-size: 1.55rem;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #2b2b2b;
+}
+
+.agentic-context p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: #555;
+}
+
+.agentic-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+
+  margin-top: 1.2rem;
+}
+
+.agentic-items span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.45rem 0.9rem;
+
+  background: #f2efff;
+  color: #5d43d4;
+
+  border-radius: 999px;
+
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.analyst-note {
+    padding: 1.5rem 1.7rem;
+    margin: 2rem 0;
+}
