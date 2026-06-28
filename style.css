@@ -5179,3 +5179,60 @@ body.no-hero .site-nav a {
   font-size: 0.85rem;
   font-weight: 600;
 }
+.analyst-note {
+  background: #fffbea;
+  border: 1px solid #f5d76e;
+  border-left: 6px solid #f4b400;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.analyst-note-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #7a5a00;
+  margin-bottom: 1rem;
+}
+
+.analyst-note h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: #2d2d2d;
+}
+
+.analyst-note p {
+  margin: 0;
+  color: #4b4b4b;
+  line-height: 1.7;
+}
+
+.analyst-note ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.analyst-note li {
+  margin: 0.4rem 0;
+}
+.agentic-context {
+  background: #faf9ff;
+  border: 1px solid #ddd8ff;
+  border-left: 6px solid #6d4aff;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 12px rgba(109, 74, 255, 0.05);
+}
+.analyst-note {
+  background: #fffbea;
+  border: 1px solid #f4d35e;
+  border-left: 6px solid #f4b400;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 12px rgba(244, 180, 0, 0.06);
+}
