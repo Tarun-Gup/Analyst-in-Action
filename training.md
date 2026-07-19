@@ -15,7 +15,7 @@ Some people are comfortable building reports but struggle with DAX. Others under
 
 That's why this programme is curated rather than taught from a fixed syllabus.
 
-Every engagement begins by understanding where you are today, where you want to go, and the challenges you're facing. From there, the learning plan is built around you—not the other way around.
+Every engagement begins by understanding where you are today, where you want to go, and the challenges you're facing. From there, the learning plan is built around you and not the other way around.
 
 ---
 
@@ -23,7 +23,7 @@ Every engagement begins by understanding where you are today, where you want to 
 
 Over the years, I've realised that most people don't struggle because Power BI is difficult. They struggle because they're trying to bridge the gap between tutorials and real projects on their own.
 
-This programme is built around the same challenges I work with every day in enterprise Power BI environments—modelling decisions, DAX, performance, debugging, maintainability, and translating business requirements into scalable solutions.
+This programme is built around the same challenges I work with every day in enterprise Power BI environments, modelling decisions, DAX, performance, debugging, maintainability, and translating business requirements into scalable solutions.
 
 Rather than simply teaching features, the focus is on helping you develop the confidence and judgement to solve real Power BI problems independently.
 
@@ -31,9 +31,7 @@ Rather than simply teaching features, the focus is on helping you develop the co
 
 ## What You'll Learn
 
-Every learning plan is different, so the topics below are tailored to your experience and goals.
-
-Typical areas include:
+Every learning plan is different, so the topics below are tailored to your experience and goals. Typical areas include:
 
 ### Core Power BI
 
