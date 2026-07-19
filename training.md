@@ -1,88 +1,111 @@
 ---
 layout: base.njk
 title: Curated Power BI Training | Analyst in Action
-description: A 5-week guided Power BI training program tailored to your current level, focusing on real-world DAX, modeling, and problem-solving.
+description: A personalised Power BI training program built around your current skills, goals, and real-world challenges.
 permalink: /training/
 ---
 
-# Curated Power BI Training 
-### A Guided, Personalized Learning Program
+# Curated Power BI Training
 
-This is not a standard Power BI training.
+### Learn Power BI Through Real-World Practice
 
-Every learner starts at a different point, some know the basics but struggle with DAX, others can build reports but don’t understand modeling or performance.
+Most Power BI courses follow a fixed curriculum. This programme doesn't.
 
-This program is designed around **you**, not a fixed curriculum.
-
----
-
-## How the Training Works
-
-### Step 1: Initial Assessment  
-We start with a session to understand:
-- What you already know?
-- Where you’re getting stuck?
-- What kind of work you’re aiming for? 
+Every engagement is tailored to your current skills, your goals, and the areas where you need the most support. Whether you're looking to strengthen your DAX, improve your modelling skills, or gain confidence working on enterprise Power BI projects, the learning journey is built around you.
 
 ---
 
-### Step 2: Custom 5-Week Plan  
-Based on this, a structured plan is created:
-- Focused on your gaps  
-- Aligned to real-world scenarios  
-- Balanced between concepts and hands-on work  
+## Why This Training?
+
+Power BI is about far more than building reports.
+
+Real projects involve understanding business requirements, designing scalable semantic models, writing maintainable DAX, improving performance, and making decisions that continue to work as requirements evolve.
+
+That's the experience this programme is built around.
+
+Rather than teaching features in isolation, we'll focus on developing the practical thinking and problem-solving skills you'll use in real Power BI environments.
+
+## What We'll Cover
+
+Every learning plan is different, but common topics include:
+
+### Core Power BI Skills
+
+- Data modelling and semantic models
+- Power Query fundamentals and transformations
+- DAX, from core concepts to advanced calculations
+- Filter context and evaluation behaviour
+
+### Debugging & Optimisation
+
+- Troubleshooting incorrect calculations
+- Performance optimisation
+- Debugging techniques and best practices
+
+### Enterprise BI Thinking
+
+- Designing scalable solutions
+- Report and model best practices
+- Real-world approaches to enterprise BI
 
 ---
 
-### Step 3: Guided Weekly Sessions  
-Each week builds on your progress:
-- Practical problem solving  
-- Real use cases (not just features)  
-- Continuous adjustment based on your pace  
+## What Makes It Different?
+
+This isn't a certification bootcamp or a one-size-fits-all course.
+
+We won't spend time covering topics you already know simply to complete a syllabus.
+
+Instead, we'll focus on the concepts, techniques, and problem-solving skills that will have the biggest impact on your day-to-day work.
 
 ---
 
-### Step 4: Focus Where It Matters  
-More time is spent where it actually counts:
-- DAX clarity  
-- Data modeling thinking  
-- Debugging and performance  
+## Who It's For?
+
+### Individual Professionals
+
+This programme is designed for professionals who want to move beyond the basics and become more confident solving real Power BI problems.
+
+It's particularly suited if you:
+
+- Can build reports but struggle with DAX or modelling
+- Want practical guidance based on real projects
+- Prefer personalised mentoring over recorded courses
+
+### Teams & Organisations
+
+Training can also be tailored for corporate teams looking to strengthen their Power BI capability.
+
+Typical areas include:
+
+- Power BI best practices
+- Semantic modelling
+- DAX
+- Performance optimisation
+- Enterprise BI concepts
+- Report reviews and coaching sessions
 
 ---
 
-## Who This Is For?
+## What to Expect
 
-### Individuals
-- You’ve learned Power BI but still feel unsure in real scenarios  
-- You can build reports but struggle with DAX or modeling  
-- You want structured guidance, not random tutorials  
+A typical engagement includes:
 
-### Teams / Corporate Batches
-- Teams working with inconsistent models or definitions  
-- Organizations adopting Power BI seriously  
-- Groups that need practical, applied training (not theory-heavy sessions)  
-
----
-
-## Program Format
-
-- 5-week guided program  
-- 1 session per week (approx. 2 hours)  
-- Hands-on and discussion-driven  
-- Delivered live (remote) or in-person  
-- Individual and corporate batches available  
+- An initial assessment to understand your current skills and goals
+- A personalised five-week learning plan
+- Five weekly live sessions (approximately two hours each)
+- Practical exercises and real-world discussions
+- Continuous adjustments based on your progress
+- Remote delivery, with in-person sessions available where feasible
 
 ---
 
-## Enrollment & Corporate Inquiries
+## Let's Talk
 
-If this approach makes sense for you or your team:
+If you're interested in one-to-one mentoring or customised training for your team, I'd be happy to discuss your goals and whether this programme is the right fit.
 
-- **Email:** [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
-- **LinkedIn:** [Tarun Gupta](https://www.linkedin.com/in/tarun-gupta-3a0082141/)  
+**Email**  
+📧 <a href="mailto:guptatarun130@gmail.com">guptatarun130@gmail.com</a>
 
----
-
-### Note
-
-This program works best for people who are willing to actively engage, practice, and improve and not just attend sessions.
+**LinkedIn**  
+💼 <a href="https://www.linkedin.com/in/tarun-gupta-3a0082141/" target="_blank" rel="noopener">Connect with me on LinkedIn</a>
