@@ -2,89 +2,55 @@
 layout: base.njk
 title: About Me | Analyst in Action
 permalink: /about/
-description: About Tarun Gupta — Business Intelligence professional sharing practical Power BI, DAX, and data modeling learnings.
+description: Learn more about Tarun Gupta and the story behind Analyst in Action—a publication sharing practical lessons from enterprise Business Intelligence, Power BI, and modern analytics.
 ---
 
-# About Me
+## Why Analyst in Action Exists?
 
-I’m Tarun Gupta, a Business Intelligence professional focused on building reliable, scalable Power BI solutions that actually support business decisions.
+This isn't a collection of Power BI tutorials. It's a collection of investigations.
 
-For the past 5+ years, I’ve worked hands-on with Power BI, DAX, and data modeling, building reports, optimizing slow measures, fixing broken totals, and redesigning models that stopped working once data volumes grew.
+Every article begins with something that happened in a real project. A KPI that didn't look right, a semantic model that had grown too complex, a performance issue that refused to go away, or a seemingly simple change that turned out to have far-reaching consequences.
 
-I don’t write from theory.
+Sometimes the answer is a DAX measure. Sometimes it's a modelling decision. Sometimes the real problem has nothing to do with Power BI at all.
 
-Everything on this site comes from real project work:
-- Debugging DAX that behaves unexpectedly  
-- Fixing totals that don’t match row-level logic  
-- Improving performance when queries take seconds instead of milliseconds  
-- Cleaning up models that became fragile as complexity increased  
+Analyst in Action is where I document those investigations, the thinking behind them, and the lessons they've taught me along the way.
 
-Over time, I realized most BI problems aren’t about visuals.
+### The Story of Analyst in Action
 
-They’re about logic, structure, and performance.
-
-That’s why Analyst in Action exists.
-
----
-
-## Who This Is For
-
-This blog is for professionals who already work with Power BI and want to go deeper.
-
-If you:
-- Write DAX regularly  
-- Build semantic models  
-- Care about performance  
-- Want cleaner, more maintainable solutions  
-
-You’ll find practical, experience-driven content here.
-
-This is not marketing content.  
-It’s not surface-level tutorials.
-
-It’s applied Business Intelligence.
+<div class="about-evolution">
+    <img
+        src="/assets/images/about-me/analyst-in-action-evolution.png"
+        alt="The evolution of Analyst in Action"
+        class="about-evolution-image">
+</div>
 
 ---
+## Meet the Author
 
-## What You’ll Find Here
+My name is **Tarun Gupta**, and I work on enterprise Business Intelligence solutions based in Belgium.
 
-- Clear breakdowns of DAX patterns and context behavior  
-- Data modeling principles that scale  
-- Performance tuning using DAX Studio and Tabular Editor  
-- Real-world mistakes and how to avoid them  
-- Practical techniques I use in production environments  
+Over the years, my work has taken me far beyond building dashboards into semantic models, governance, automation, Databricks, Microsoft Fabric, and the operational side of analytics. What keeps me interested, though, isn't the technology. It's the questions behind it.
 
-Every article is written to make you sharper, not just informed.
+Why do two reports disagree? Why does a model become difficult to maintain? Why do small design decisions have such a lasting impact? Those are the kinds of questions I enjoy exploring, both in my day job and through Analyst in Action.
 
----
+Outside of work, you'll usually find me writing, experimenting with new ideas, or mentoring Power BI professionals who want to think beyond reports and toward building better BI platforms.
 
-## Why I Write
+*I don't have all the answers but I do enjoy chasing the right questions.*
 
-Because I’ve made the mistakes.
+Thanks for stopping by. I hope you find something here that makes your next BI decision just a little easier.
 
-I’ve written inefficient measures.
-Built messy models.
-Over-engineered solutions.
+## Let's Connect
 
-Fixing those mistakes taught me more than any documentation ever could.
+Thanks for taking the time to visit Analyst in Action.
 
-This blog is my working notebook, shared publicly so others can learn faster.
+If an article sparked an idea, helped solve a problem, or simply made you think differently, I'd love to hear from you.
 
----
+**<a href="mailto:guptatarun130@gmail.com">Send me an email</a>** if you'd like to ask a question, share feedback, or just say hello.
 
-## Connect
+**<a href="https://www.linkedin.com/in/tarun-gupta-3a0082141/" target="_blank" rel="noopener">Connect with me on LinkedIn</a>** to follow my work and join the conversation.
 
-If something here helped you or you’d like to connect:
+If you enjoy the long-form articles here, you might also like **<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960" target="_blank" rel="noopener">BI Bits</a>**, my LinkedIn newsletter where I share shorter insights, practical tips, and lessons from building enterprise BI solutions.
 
-- Email: [guptatarun130@gmail.com](mailto:guptatarun130@gmail.com)  
-- LinkedIn: [Connect with me here](https://www.linkedin.com/in/tarun-gupta-3a0082141/)  
+*See you in the next investigation.*
 
----
-
-## LinkedIn Newsletter
-
-I also share shorter Power BI insights through my  
-[LinkedIn newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7347331139264552960).
-
-If you prefer focused, bite-sized learning, that’s a good place to start.
 
