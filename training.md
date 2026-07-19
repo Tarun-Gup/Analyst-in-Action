@@ -99,7 +99,7 @@ The objective isn't to cover every Power BI feature. It's to help you build the 
 A typical engagement includes:
 
 - An initial assessment of your current skills and learning goals
-- A personalised five-week learning plan
+- A personalised 5 week learning plan
 - Five weekly live sessions (approximately two hours each)
 - Practical exercises, discussions, and real-world examples
 - Continuous adjustments as your confidence and understanding grow
