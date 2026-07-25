@@ -6844,3 +6844,1158 @@ body.no-hero .site-nav a {
     margin-top: 0.75rem;
     color: var(--color-text-light);
 }
+/* ==========================================
+   Case File
+========================================== */
+
+.case-file {
+    margin: 2rem 0;
+    padding: 1.75rem;
+    border: 1px solid var(--border-color);
+    border-left: 5px solid #2563eb;
+    border-radius: 14px;
+    background: #f8fbff;
+}
+
+.case-file__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.case-file__icon {
+    font-size: 1rem;
+}
+
+.case-file__title {
+    margin: 0 0 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.case-file__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.case-file__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.case-file__item {
+    padding: 0.7rem 1rem;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.case-file__item span {
+    display: none;
+}
+/* ==========================================
+   Insight Card
+========================================== */
+
+.insight-card {
+    position: relative;
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-left: 6px solid #2563eb;
+    border-radius: 18px;
+}
+
+.insight-card__content {
+    max-width: 900px;
+}
+
+.insight-card__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2563eb;
+}
+
+.insight-card__title {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.insight-card__text {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.insight-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.insight-card__tags span {
+    padding: 0.55rem 1rem;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   Insight Card - Case File
+========================================== */
+
+.insight-card {
+    margin: 2rem 0;
+    padding: 1.6rem 1.8rem;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-left: 6px solid #2563eb;
+    border-radius: 18px;
+}
+
+.insight-card__content {
+    max-width: 950px;
+}
+
+.insight-card__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #2563eb;
+}
+
+.insight-card__emoji {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.insight-card__title {
+    margin: 0 0 0.8rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.insight-card__text {
+    margin: 0;
+    max-width: 900px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-color);
+}
+
+.insight-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+}
+
+.insight-card__tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid #bfd8ff;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.insight-card__tags span:hover {
+    background: #2563eb;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+
+    .insight-card {
+        padding: 1.3rem;
+    }
+
+    .insight-card__title {
+        font-size: 1.45rem;
+    }
+
+    .insight-card__text {
+        font-size: 1rem;
+    }
+
+    .insight-card__tags {
+        gap: 0.5rem;
+    }
+
+    .insight-card__tags span {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+}
+/* ==========================================
+   Case File
+========================================== */
+
+.casefile-card {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #fafafa;
+
+    border: 1px solid #d9d9d9;
+    border-left: 5px solid #4b5563;
+
+    border-radius: 18px;
+
+}
+
+.casefile-icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #4b5563;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+
+}
+
+.casefile-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #4b5563;
+
+}
+
+.casefile-label::before {
+
+    content: "🕵️";
+
+    font-size: 1rem;
+
+}
+
+.casefile-card h3 {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+}
+
+.casefile-card p {
+
+    margin: 0;
+
+    max-width: 680px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+
+}
+
+.casefile-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+    margin-top: 1rem;
+
+}
+
+.casefile-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border-radius: 999px;
+
+    border: 1px solid #cfcfcf;
+
+    background: #fff;
+
+    color: #4b5563;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+@media (max-width:768px){
+
+    .casefile-card{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem 1.2rem;
+
+    }
+
+    .casefile-icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1rem;
+
+    }
+
+    .casefile-label{
+
+        font-size: .75rem;
+
+    }
+
+    .casefile-card h3{
+
+        font-size: 1.25rem;
+
+    }
+
+    .casefile-card p{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+
+    }
+
+    .casefile-tags{
+
+        gap: .35rem;
+
+        margin-top: .8rem;
+
+    }
+
+    .casefile-tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+
+    }
+
+}
+/* ==========================================
+   Decision Framework
+========================================== */
+
+.decision-framework {
+
+    margin: 2rem 0;
+
+    background: #ffffff;
+
+    border: 1px solid #d8dee8;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
+
+}
+
+.decision-framework__header {
+
+    padding: .8rem 1.4rem;
+
+    background: linear-gradient(90deg,#26364d,#344967);
+
+}
+
+.decision-framework__header span {
+
+    color: #fff;
+
+    font-size: .78rem;
+    font-weight: 700;
+
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+}
+
+.decision-framework__columns {
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    padding: .75rem 1.4rem;
+
+    background: #f8fafc;
+
+    border-bottom: 1px solid #e8edf3;
+
+}
+
+.decision-framework__columns span {
+
+    font-size: .82rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .06em;
+
+    color: #64748b;
+
+}
+
+.decision-framework__row {
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    align-items: center;
+
+    gap: 1.25rem;
+
+    padding: .9rem 1.4rem;
+
+}
+
+.decision-framework__row:not(:last-child) {
+
+    border-bottom: 1px solid #eef2f6;
+
+}
+
+.framework-request {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .75rem;
+
+    font-weight: 600;
+
+    color: var(--heading-color);
+
+}
+
+.framework-number {
+
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #26364d;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: .78rem;
+
+    font-weight: 700;
+
+}
+
+.framework-answer {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    padding: .45rem .85rem;
+
+    background: #eef5fb;
+
+    border: 1px solid #d9e6f2;
+
+    border-radius: 999px;
+
+    font-size: .92rem;
+
+    font-weight: 500;
+
+    color: #334155;
+
+}
+
+@media (max-width: 768px) {
+
+    .decision-framework__columns {
+
+        display: none;
+
+    }
+
+    .decision-framework__row {
+
+        grid-template-columns: 1fr;
+
+        gap: .6rem;
+
+    }
+
+}
+/* ==========================================
+   Thinking Shift
+========================================== */
+
+.thinking-shift {
+    margin: 2rem 0;
+    padding: 1.4rem 1.6rem;
+    border-left: 4px solid #d97706;
+    background: #fffaf2;
+    border-radius: 12px;
+}
+
+.thinking-shift-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #b45309;
+    margin-bottom: 0.8rem;
+}
+
+.thinking-shift h4 {
+    margin: 0 0 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.thinking-shift ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.thinking-shift li + li {
+    margin-top: 0.35rem;
+}
+
+/* ==========================================
+   Architecture Thinking
+========================================== */
+
+.architecture-thinking {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #fafafa;
+
+    border: 1px solid #d9d9d9;
+    border-left: 5px solid #16a34a;
+
+    border-radius: 18px;
+
+}
+
+.architecture-thinking__icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    color: #fff;
+
+    box-shadow: 0 6px 16px rgba(22,163,74,.18);
+
+}
+
+.architecture-thinking__label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #16a34a;
+
+}
+
+.architecture-thinking__label::before {
+
+    content: "📐";
+
+    font-size: 1rem;
+
+}
+
+.architecture-thinking__title {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+}
+
+.architecture-thinking__description {
+
+    margin: 0;
+
+    max-width: 680px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+
+}
+
+.architecture-thinking__tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+    margin-top: 1rem;
+
+}
+
+.architecture-thinking__tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(22,163,74,.2);
+
+    background: #fff;
+
+    color: #16a34a;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+@media (max-width:768px){
+
+    .architecture-thinking{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem 1.2rem;
+
+    }
+
+    .architecture-thinking__icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1rem;
+
+    }
+
+    .architecture-thinking__label{
+
+        font-size: .75rem;
+
+    }
+
+    .architecture-thinking__title{
+
+        font-size: 1.25rem;
+
+    }
+
+    .architecture-thinking__description{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+
+    }
+
+    .architecture-thinking__tags{
+
+        gap: .35rem;
+
+        margin-top: .8rem;
+
+    }
+
+    .architecture-thinking__tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+
+    }
+
+}
+/* ==========================================
+   Commitment Thinking
+========================================== */
+
+.commitment-thinking {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.2rem 1.75rem;
+
+    border-left: 5px solid #d97706;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(217,119,6,.05),
+        rgba(255,255,255,1)
+    );
+
+    overflow: hidden;
+
+}
+
+.commitment-thinking__icon {
+
+    position: absolute;
+
+    top: -14px;
+
+    right: 20px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #d97706;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.1rem;
+
+    box-shadow: 0 6px 16px rgba(217,119,6,.18);
+
+}
+
+.commitment-thinking__label {
+
+    display: inline-block;
+
+    margin-bottom: .25rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #d97706;
+
+}
+
+.commitment-thinking__title {
+
+    margin: 0 0 .4rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.2;
+
+}
+
+.commitment-thinking__description {
+
+    max-width: 680px;
+
+    margin-bottom: .8rem;
+
+    font-size: .98rem;
+
+    line-height: 1.5;
+
+}
+
+.commitment-thinking__tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+}
+
+.commitment-thinking__tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border: 1px solid rgba(217,119,6,.18);
+
+    border-radius: 999px;
+
+    background: #fff;
+
+    color: #d97706;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+@media (max-width:768px){
+
+    .commitment-thinking{
+
+        margin: 1.5rem 0;
+
+        padding: 1rem 1.2rem;
+
+    }
+
+    .commitment-thinking__title{
+
+        font-size: 1.25rem;
+
+    }
+
+    .commitment-thinking__description{
+
+        font-size: .92rem;
+
+        margin-bottom: .7rem;
+
+    }
+
+    .commitment-thinking__icon{
+
+        width: 42px;
+
+        height: 42px;
+
+        right: 14px;
+
+        top: -10px;
+
+        font-size: .95rem;
+
+    }
+
+    .commitment-thinking__label{
+
+        font-size: .75rem;
+
+    }
+
+    .commitment-thinking__tags{
+
+        gap: .35rem;
+
+    }
+
+    .commitment-thinking__tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+
+    }
+
+}
+/* ==========================================
+   Analyst Notebook
+========================================== */
+
+.analyst-note {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #fffdf3;
+
+    border: 1px solid #f2c94c;
+    border-left: 5px solid #f59e0b;
+
+    border-radius: 18px;
+
+}
+
+.analyst-note-icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #f59e0b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+
+}
+
+.analyst-note-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #8a6100;
+
+}
+
+.analyst-note h4 {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+}
+
+.analyst-note p {
+
+    margin: 0;
+
+    max-width: 700px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+
+}
+
+@media (max-width:768px){
+
+    .analyst-note{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem;
+
+    }
+
+    .analyst-note-icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1rem;
+
+    }
+
+    .analyst-note-label{
+
+        font-size: .75rem;
+
+    }
+
+    .analyst-note h4{
+
+        font-size: 1.25rem;
+
+    }
+
+    .analyst-note p{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+
+    }
+
+}
