@@ -2,7 +2,7 @@
 title: "The Best Enterprise BI Developers Don't Start With Power BI"
 layout: post.njk
 date: 2026-07-25
-description: "Discover the investigation process experienced BI developers follow before changing a KPI, semantic model, or Power BI report in enterprise environments."
+description: "Enterprise BI isn't just about building dashboards. Learn how experienced developers investigate requests, protect trusted business logic, and make better implementation decisions before opening Power BI."
 featuredImage: /assets/images/enterprise-bi-investigation-before-power-bi/cover.png
 tags:
   - posts
