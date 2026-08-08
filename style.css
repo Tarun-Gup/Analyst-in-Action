@@ -7999,3 +7999,1495 @@ body.no-hero .site-nav a {
     }
 
 }
+/* ==========================================
+   Think Beyond Power BI
+========================================== */
+
+.beyond-powerbi {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+
+    margin: 2rem 0;
+    padding: 1.5rem;
+
+    border: 1px solid #dfe7f2;
+    border-radius: 14px;
+    background: #f8fbff;
+}
+
+.beyond-powerbi__icon {
+    flex: 0 0 auto;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: #eaf3ff;
+
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.beyond-powerbi__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.beyond-powerbi__label {
+    margin-bottom: 0.35rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #356fa8;
+}
+
+.beyond-powerbi__title {
+    margin: 0 0 0.5rem;
+
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+
+.beyond-powerbi__description {
+    margin: 0;
+
+    font-size: 0.96rem;
+    line-height: 1.65;
+    color: #4b5563;
+}
+
+.beyond-powerbi__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.beyond-powerbi__tags span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.32rem 0.65rem;
+
+    border-radius: 999px;
+    background: #eaf3ff;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #356fa8;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 640px) {
+
+    .beyond-powerbi {
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    .beyond-powerbi__icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    .beyond-powerbi__title {
+        font-size: 1.08rem;
+    }
+
+    .beyond-powerbi__description {
+        font-size: 0.92rem;
+    }
+
+    .beyond-powerbi__tags {
+        gap: 0.4rem;
+    }
+
+    .beyond-powerbi__tags span {
+        font-size: 0.74rem;
+    }
+}
+/* ==========================================
+   Think Beyond Power BI
+========================================== */
+
+.beyond-powerbi-card {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #f7fbff;
+
+    border: 1px solid #d6e4f0;
+    border-left: 5px solid #3b82a0;
+
+    border-radius: 18px;
+}
+
+.beyond-powerbi-icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #3b82a0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+
+.beyond-powerbi-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #3b82a0;
+}
+
+.beyond-powerbi-label::before {
+
+    content: "🔭";
+
+    font-size: 1rem;
+}
+
+.beyond-powerbi-card h3 {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+.beyond-powerbi-card p {
+
+    margin: 0;
+
+    max-width: 680px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+}
+
+.beyond-powerbi-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+    margin-top: 1rem;
+}
+
+.beyond-powerbi-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border-radius: 999px;
+
+    border: 1px solid #c8dbe8;
+
+    background: #fff;
+
+    color: #3b82a0;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+@media (max-width:768px){
+
+    .beyond-powerbi-card{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem 1.2rem;
+    }
+
+    .beyond-powerbi-icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1rem;
+    }
+
+    .beyond-powerbi-label{
+
+        font-size: .75rem;
+    }
+
+    .beyond-powerbi-card h3{
+
+        font-size: 1.25rem;
+    }
+
+    .beyond-powerbi-card p{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+    }
+
+    .beyond-powerbi-tags{
+
+        gap: .35rem;
+
+        margin-top: .8rem;
+    }
+
+    .beyond-powerbi-tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+    }
+}
+/* ==========================================
+   Root Cause Check
+========================================== */
+
+.root-cause-card {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #fffaf3;
+
+    border: 1px solid #eadcc7;
+    border-left: 5px solid #b7791f;
+
+    border-radius: 18px;
+}
+
+.root-cause-icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #b7791f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+
+.root-cause-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #9a651c;
+}
+
+.root-cause-label::before {
+
+    content: "🔎";
+
+    font-size: 1rem;
+}
+
+.root-cause-card h3 {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+.root-cause-card p {
+
+    margin: 0;
+
+    max-width: 680px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+}
+
+.root-cause-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+    margin-top: 1rem;
+}
+
+.root-cause-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border-radius: 999px;
+
+    border: 1px solid #dfcfb7;
+
+    background: #fff;
+
+    color: #9a651c;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* ==========================================
+   Root Cause Check — Mobile
+========================================== */
+
+@media (max-width:768px){
+
+    .root-cause-card{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem 1.2rem;
+    }
+
+    .root-cause-icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1rem;
+    }
+
+    .root-cause-label{
+
+        font-size: .75rem;
+    }
+
+    .root-cause-card h3{
+
+        font-size: 1.25rem;
+    }
+
+    .root-cause-card p{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+    }
+
+    .root-cause-tags{
+
+        gap: .35rem;
+
+        margin-top: .8rem;
+    }
+
+    .root-cause-tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+    }
+}
+/* ==========================================
+   KPI Request Strip
+========================================== */
+
+.kpi-request-strip {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .7rem;
+
+    margin: 1.25rem 0 1.5rem;
+}
+
+.kpi-request {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .65rem .95rem;
+
+    background: #f7f7f8;
+
+    border: 1px solid #dedede;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.kpi-request__quote {
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    color: var(--text-color);
+}
+
+
+/* ==========================================
+   KPI Request Strip — Mobile
+========================================== */
+
+@media (max-width:768px){
+
+    .kpi-request-strip{
+
+        flex-direction: column;
+
+        gap: .55rem;
+
+        margin: 1rem 0 1.3rem;
+    }
+
+    .kpi-request{
+
+        width: 100%;
+
+        padding: .6rem .8rem;
+    }
+
+    .kpi-request__quote{
+
+        font-size: .86rem;
+    }
+}
+.kpi-request__icon {
+
+    margin-right: .45rem;
+
+    font-size: .85rem;
+
+    opacity: .7;
+}
+
+/* ==========================================
+   AI Boundary
+========================================== */
+
+.ai-boundary-card {
+
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 1.45rem 1.75rem;
+
+    background: #faf8ff;
+
+    border: 1px solid #ddd6f3;
+    border-left: 5px solid #6d5bd0;
+
+    border-radius: 18px;
+}
+
+.ai-boundary-icon {
+
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #6d5bd0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.35rem;
+    color: #fff;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+
+.ai-boundary-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+    margin-bottom: .4rem;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: #6d5bd0;
+}
+
+.ai-boundary-label::before {
+
+    content: "✦";
+
+    font-size: 1rem;
+}
+
+.ai-boundary-card h3 {
+
+    margin: 0 0 .55rem;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+.ai-boundary-card p {
+
+    margin: 0;
+
+    max-width: 680px;
+
+    font-size: .98rem;
+
+    line-height: 1.55;
+
+    color: var(--text-color);
+}
+
+.ai-boundary-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .45rem;
+
+    margin-top: 1rem;
+}
+
+.ai-boundary-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: .32rem .8rem;
+
+    border-radius: 999px;
+
+    border: 1px solid #d7cff1;
+
+    background: #fff;
+
+    color: #6d5bd0;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* ==========================================
+   AI Boundary — Mobile
+========================================== */
+
+@media (max-width:768px){
+
+    .ai-boundary-card{
+
+        margin: 1.5rem 0;
+
+        padding: 1.2rem 1.2rem;
+    }
+
+    .ai-boundary-icon{
+
+        width: 46px;
+        height: 46px;
+
+        top: -10px;
+        right: 14px;
+
+        font-size: 1.15rem;
+    }
+
+    .ai-boundary-label{
+
+        font-size: .75rem;
+    }
+
+    .ai-boundary-card h3{
+
+        font-size: 1.25rem;
+    }
+
+    .ai-boundary-card p{
+
+        font-size: .92rem;
+
+        line-height: 1.45;
+    }
+
+    .ai-boundary-tags{
+
+        gap: .35rem;
+
+        margin-top: .8rem;
+    }
+
+    .ai-boundary-tags span{
+
+        padding: .3rem .7rem;
+
+        font-size: .75rem;
+    }
+}
+
+/* ==========================================
+   KPI Release Strip
+========================================== */
+
+.kpi-release-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    width: 100%;
+
+    margin: 2rem 0;
+    padding: 1.25rem 0;
+
+    border-top: 1px solid #d9dee5;
+    border-bottom: 1px solid #d9dee5;
+}
+
+.kpi-release-strip__item {
+    min-width: 0;
+
+    padding: .25rem 1rem;
+
+    text-align: center;
+}
+
+.kpi-release-strip__item + .kpi-release-strip__item {
+    border-left: 1px solid #e3e7eb;
+}
+
+.kpi-release-strip__number {
+    display: block;
+
+    margin-bottom: .4rem;
+
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+
+    color: #64748b;
+}
+
+.kpi-release-strip__item strong {
+    display: block;
+
+    margin-bottom: .3rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: var(--text-color);
+}
+
+.kpi-release-strip__item small {
+    display: block;
+
+    font-size: .76rem;
+    line-height: 1.4;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-release-strip {
+        grid-template-columns: 1fr;
+
+        padding: 0;
+
+        border-bottom: none;
+    }
+
+    .kpi-release-strip__item {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+
+        column-gap: .8rem;
+
+        padding: .85rem 0;
+
+        text-align: left;
+
+        border-left: none !important;
+        border-bottom: 1px solid #e3e7eb;
+    }
+
+    .kpi-release-strip__number {
+        grid-row: 1 / 3;
+
+        align-self: center;
+
+        margin: 0;
+    }
+
+    .kpi-release-strip__item strong {
+        margin-bottom: .15rem;
+    }
+}
+/* ==========================================
+   KPI Context Strip
+========================================== */
+
+.kpi-context-strip {
+
+    display: flex;
+
+    width: 100%;
+
+    margin: 1.6rem 0 1.8rem;
+
+    background: #f8fafc;
+
+    border: 1px solid #e1e6eb;
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+.kpi-context-side {
+
+    flex: 1 1 50%;
+
+    width: 50%;
+
+    padding: 1.05rem 1.25rem;
+
+    box-sizing: border-box;
+}
+
+.kpi-context-side + .kpi-context-side {
+
+    border-left: 1px solid #dce3e9;
+}
+
+.kpi-context-label {
+
+    display: block;
+
+    margin-bottom: .35rem;
+
+    font-size: .72rem;
+    font-weight: 700;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    color: #64748b;
+}
+
+.kpi-context-side strong {
+
+    display: block;
+
+    margin-bottom: .25rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: var(--text-color);
+}
+
+.kpi-context-side small {
+
+    display: block;
+
+    font-size: .78rem;
+    line-height: 1.4;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-context-strip {
+
+        flex-direction: column;
+    }
+
+    .kpi-context-side {
+
+        width: 100%;
+
+        padding: .9rem 1rem;
+    }
+
+    .kpi-context-side + .kpi-context-side {
+
+        border-left: none;
+        border-top: 1px solid #dce3e9;
+    }
+}
+/* ==========================================
+   KPI Release Strip
+========================================== */
+
+.kpi-release-strip {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+
+    width: 100% !important;
+
+    margin: 2.2rem 0;
+    padding: .75rem .9rem;
+
+    background: #f8fafc;
+
+    border: 1px solid #e1e7ed;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .05);
+}
+
+.kpi-release-strip > .kpi-release-strip__item {
+    flex: 1 1 0 !important;
+
+    width: 20% !important;
+    min-width: 0 !important;
+    max-width: 20% !important;
+
+    margin: 0 !important;
+    padding: .65rem 1rem;
+
+    position: static !important;
+    float: none !important;
+
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.kpi-release-strip > .kpi-release-strip__item + .kpi-release-strip__item {
+    border-left: 1px solid #dfe6ec;
+}
+
+.kpi-release-strip__number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    margin-bottom: .65rem;
+
+    border-radius: 50%;
+
+    background: #e8f1f7;
+    color: #356f95;
+
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+}
+
+.kpi-release-strip__item strong {
+    display: block;
+
+    margin-bottom: .3rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+
+    color: var(--text-color);
+}
+
+.kpi-release-strip__item small {
+    display: block;
+
+    font-size: .75rem;
+    line-height: 1.4;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   KPI Release Strip — Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-release-strip {
+        flex-direction: column !important;
+
+        padding: .7rem 1rem;
+    }
+
+    .kpi-release-strip > .kpi-release-strip__item {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: grid;
+
+        grid-template-columns: 42px 1fr;
+        grid-template-rows: auto auto;
+
+        column-gap: .75rem;
+
+        padding: .8rem 0;
+
+        text-align: left;
+
+        border-left: none !important;
+        border-bottom: 1px solid #e3e7eb;
+    }
+
+    .kpi-release-strip > .kpi-release-strip__item:last-child {
+        border-bottom: none;
+    }
+
+    .kpi-release-strip__number {
+        grid-column: 1;
+        grid-row: 1 / 3;
+
+        align-self: center;
+
+        margin: 0;
+    }
+
+    .kpi-release-strip__item strong {
+        grid-column: 2;
+
+        margin-bottom: .15rem;
+    }
+
+    .kpi-release-strip__item small {
+        grid-column: 2;
+    }
+}
+/* ==========================================
+   KPI Request Examples
+========================================== */
+
+.kpi-request-list {
+    display: flex;
+    align-items: stretch;
+    gap: 1.1rem;
+
+    width: 100%;
+
+    margin: 1.4rem 0 1.6rem;
+}
+
+.kpi-request {
+    display: flex;
+    align-items: center;
+
+    flex: 1 1 0;
+    min-width: 0;
+
+    margin: 0;
+    padding: .85rem 1rem;
+
+    background: #fafafa;
+
+    border: 1px solid #dedede;
+    border-radius: 14px;
+
+    box-shadow: 0 3px 10px rgba(15, 23, 42, .04);
+}
+
+.kpi-request__icon {
+    flex-shrink: 0;
+
+    margin-right: .6rem;
+
+    font-size: 1rem;
+}
+
+.kpi-request__quote {
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.35;
+
+    color: var(--text-color);
+}
+
+
+/* ==========================================
+   KPI Request Examples — Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-request-list {
+        flex-direction: column;
+
+        gap: .65rem;
+
+        margin: 1.1rem 0 1.3rem;
+    }
+
+    .kpi-request {
+        width: 100%;
+
+        padding: .8rem .9rem;
+    }
+
+    .kpi-request__quote {
+        font-size: .86rem;
+    }
+}
+/* ==========================================
+   KPI Inherited Logic
+========================================== */
+
+.kpi-code-example {
+    margin: 1.6rem 0 1.8rem;
+
+    background: #111827;
+
+    border: 1px solid #263244;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .08);
+}
+
+.kpi-code-example__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .65rem 1rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.kpi-code-example__header span {
+    font-size: .7rem;
+    font-weight: 700;
+
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    color: #94a3b8;
+}
+
+.kpi-code-example__header small {
+    font-size: .7rem;
+    font-weight: 600;
+
+    color: #64748b;
+}
+
+.kpi-code-example pre {
+    margin: 0;
+    padding: 1rem 1.1rem;
+
+    background: transparent;
+
+    border: none;
+    border-radius: 0;
+
+    overflow-x: auto;
+}
+
+.kpi-code-example code {
+    font-size: .84rem;
+    line-height: 1.65;
+
+    color: #e5e7eb;
+}
+
+.kpi-code-comment {
+    color: #94a3b8;
+}
+
+.kpi-code-example__message {
+    padding: .7rem 1rem;
+
+    background: rgba(255, 255, 255, .035);
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+    font-size: .8rem;
+    font-weight: 600;
+
+    color: #cbd5e1;
+}
+
+
+/* ==========================================
+   KPI Inherited Logic — Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-code-example {
+        margin: 1.3rem 0 1.5rem;
+    }
+
+    .kpi-code-example pre {
+        padding: .9rem;
+    }
+
+    .kpi-code-example code {
+        font-size: .76rem;
+    }
+
+    .kpi-code-example__message {
+        padding: .65rem .9rem;
+
+        font-size: .76rem;
+    }
+}
+/* ==========================================
+   KPI Change Context
+========================================== */
+
+.kpi-context-strip {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+
+    margin: 1.6rem 0 1.8rem;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ed;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .05);
+}
+
+.kpi-context-strip > .kpi-context-side {
+    position: relative;
+
+    flex: 1 1 0 !important;
+
+    width: 50% !important;
+    min-width: 0 !important;
+    max-width: 50% !important;
+
+    margin: 0 !important;
+    padding: 1.15rem 1.35rem 1.2rem;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   Technical Side
+========================================== */
+
+.kpi-context-side--technical {
+    background: #f7fbff;
+}
+
+.kpi-context-side--technical::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: #4f8fb6;
+}
+
+
+/* ==========================================
+   Business Side
+========================================== */
+
+.kpi-context-side--business {
+    background: #fbfaf7;
+
+    border-left: 1px solid #e1e7ed;
+}
+
+.kpi-context-side--business::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: #b38b4d;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.kpi-context-top {
+    display: flex;
+    align-items: center;
+
+    gap: .6rem;
+
+    margin-bottom: .75rem;
+}
+
+.kpi-context-icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.kpi-context-side--technical .kpi-context-icon {
+    background: #e5f1f8;
+    color: #356f95;
+}
+
+.kpi-context-side--business .kpi-context-icon {
+    background: #f3eadb;
+    color: #8a672f;
+}
+
+.kpi-context-label {
+    font-size: .7rem;
+    font-weight: 700;
+
+    letter-spacing: .11em;
+    text-transform: uppercase;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   Content
+========================================== */
+
+.kpi-context-side strong {
+    display: block;
+
+    margin-bottom: .35rem;
+
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+    color: var(--text-color);
+}
+
+.kpi-context-side small {
+    display: block;
+
+    font-size: .78rem;
+    line-height: 1.45;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   KPI Change Context — Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .kpi-context-strip {
+        flex-direction: column !important;
+    }
+
+    .kpi-context-strip > .kpi-context-side {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding: 1rem;
+    }
+
+    .kpi-context-side--business {
+        border-left: none;
+        border-top: 1px solid #e1e7ed;
+    }
+
+    .kpi-context-top {
+        margin-bottom: .6rem;
+    }
+
+    .kpi-context-side strong {
+        font-size: 1rem;
+    }
+
+    .kpi-context-side small {
+        font-size: .76rem;
+    }
+}
+.kpi-release-strip__item small {
+    display: block;
+
+    min-height: 2.8em;
+    margin-bottom: .45rem;
+
+    font-size: .74rem;
+    line-height: 1.4;
+
+    color: #475569;
+}
+
+.kpi-release-strip__item em {
+    display: block;
+
+    font-size: .7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.35;
+
+    color: #356f95;
+}
