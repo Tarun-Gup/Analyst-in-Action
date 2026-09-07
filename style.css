@@ -12582,3 +12582,5108 @@ body.no-hero .site-nav a {
         font-size: .72rem;
     }
 }
+/* ==========================================
+   Analytical Product Visual
+========================================== */
+
+.analytical-product-visual {
+  margin: 2rem 0;
+  padding: 1.45rem 1.4rem 1.25rem;
+
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 50% 48%,
+      rgba(59, 130, 246, 0.08),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbfdff 100%
+    );
+
+  box-shadow:
+    0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.ap-visual-header {
+  width: 100%;
+  max-width: 620px;
+
+  margin: 0 auto 1rem;
+
+  text-align: center;
+}
+
+.ap-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 0.16rem;
+
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+
+  color: #2563eb;
+}
+
+.analytical-product-visual .ap-visual-header p {
+  margin: 0 !important;
+  padding: 0;
+
+  font-size: 0.84rem;
+  line-height: 1.4;
+  text-align: center !important;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Main Canvas
+========================================== */
+
+.ap-canvas {
+  position: relative;
+
+  min-height: 350px;
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   Centre Product
+========================================== */
+
+.ap-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+
+  width: 215px;
+  padding: 1.15rem 1.15rem 1.1rem;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0f172a 0%,
+      #172554 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 14px 30px rgba(15, 23, 42, 0.18),
+    0 0 0 8px rgba(59, 130, 246, 0.035);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.ap-product:hover {
+  transform: translate(-50%, -50%) scale(1.025);
+
+  box-shadow:
+    0 18px 34px rgba(15, 23, 42, 0.22),
+    0 0 0 10px rgba(59, 130, 246, 0.045);
+}
+
+.ap-product-label {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+
+  color: #93c5fd;
+}
+
+.ap-product strong {
+  display: block;
+
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+
+.analytical-product-visual .ap-product p {
+  margin: 0.4rem 0 0 !important;
+  padding: 0;
+
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center !important;
+
+  color: #cbd5e1;
+}
+
+
+/* ==========================================
+   Surrounding Nodes
+========================================== */
+
+.ap-node {
+  position: absolute;
+  z-index: 3;
+
+  width: 175px;
+  padding: 0.72rem 0.8rem;
+
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(248, 250, 252, 0.94)
+    );
+
+  box-shadow:
+    0 5px 14px rgba(15, 23, 42, 0.045);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.ap-node:hover {
+  z-index: 5;
+
+  border-color: rgba(96, 165, 250, 0.35);
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8fbff
+    );
+
+  box-shadow:
+    0 9px 20px rgba(15, 23, 42, 0.07);
+}
+
+.ap-node-type {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: #2563eb;
+}
+
+.ap-node strong {
+  display: block;
+
+  margin-bottom: 0.12rem;
+
+  font-size: 0.84rem;
+  line-height: 1.25;
+
+  color: #0f172a;
+}
+
+.ap-node small {
+  display: block;
+
+  font-size: 0.66rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Node Positions
+========================================== */
+
+.ap-node--top {
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.ap-node--top:hover {
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.ap-node--left {
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+}
+
+.ap-node--left:hover {
+  transform: translateY(-50%) translateX(-3px);
+}
+
+.ap-node--right {
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+}
+
+.ap-node--right:hover {
+  transform: translateY(-50%) translateX(3px);
+}
+
+.ap-node--bottom-left {
+  bottom: 0;
+  left: 13%;
+}
+
+.ap-node--bottom-left:hover {
+  transform: translateY(3px);
+}
+
+.ap-node--bottom-right {
+  right: 13%;
+  bottom: 0;
+}
+
+.ap-node--bottom-right:hover {
+  transform: translateY(3px);
+}
+
+
+/* ==========================================
+   Connector Lines
+========================================== */
+
+.ap-line {
+  position: absolute;
+  z-index: 1;
+
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.18),
+      rgba(59, 130, 246, 0.4)
+    );
+}
+
+.ap-line::after {
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #60a5fa;
+
+  box-shadow:
+    0 0 0 4px rgba(96, 165, 250, 0.08);
+}
+
+
+/* Top connector */
+
+.ap-line--top {
+  top: 67px;
+  left: 50%;
+
+  width: 1px;
+  height: 78px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(148, 163, 184, 0.18),
+      rgba(59, 130, 246, 0.42)
+    );
+}
+
+.ap-line--top::after {
+  bottom: -2px;
+  left: -2px;
+}
+
+
+/* Left connector */
+
+.ap-line--left {
+  top: 50%;
+  left: 175px;
+
+  width: 98px;
+  height: 1px;
+}
+
+.ap-line--left::after {
+  top: -2px;
+  right: -2px;
+}
+
+
+/* Right connector */
+
+.ap-line--right {
+  top: 50%;
+  right: 175px;
+
+  width: 98px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(59, 130, 246, 0.42),
+      rgba(148, 163, 184, 0.18)
+    );
+}
+
+.ap-line--right::after {
+  top: -2px;
+  left: -2px;
+}
+
+
+/* Bottom Left */
+
+.ap-line--bottom-left {
+  bottom: 68px;
+  left: 37%;
+
+  width: 1px;
+  height: 72px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(59, 130, 246, 0.42),
+      rgba(148, 163, 184, 0.18)
+    );
+
+  transform: rotate(30deg);
+  transform-origin: bottom;
+}
+
+.ap-line--bottom-left::after {
+  top: -2px;
+  left: -2px;
+}
+
+
+/* Bottom Right */
+
+.ap-line--bottom-right {
+  right: 37%;
+  bottom: 68px;
+
+  width: 1px;
+  height: 72px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(59, 130, 246, 0.42),
+      rgba(148, 163, 184, 0.18)
+    );
+
+  transform: rotate(-30deg);
+  transform-origin: bottom;
+}
+
+.ap-line--bottom-right::after {
+  top: -2px;
+  left: -2px;
+}
+
+
+/* ==========================================
+   Takeaway
+========================================== */
+
+.ap-visual-takeaway {
+  max-width: 620px;
+
+  margin: 1.1rem auto 0;
+  padding-top: 0.8rem;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.ap-visual-takeaway span {
+  margin-right: 0.2rem;
+
+  color: #64748b;
+}
+
+.ap-visual-takeaway strong {
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .analytical-product-visual {
+    margin: 1.6rem 0;
+    padding: 1.1rem 0.85rem;
+
+    border-radius: 15px;
+  }
+
+  .ap-visual-header {
+    margin-bottom: 0.9rem;
+  }
+
+  .analytical-product-visual .ap-visual-header p {
+    font-size: 0.8rem;
+  }
+
+  .ap-canvas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+
+    min-height: auto;
+  }
+
+  .ap-product,
+  .ap-node {
+    position: static;
+
+    width: auto;
+
+    transform: none !important;
+  }
+
+  .ap-product {
+    order: 1;
+
+    margin-bottom: 0.15rem;
+    padding: 1rem;
+  }
+
+  .ap-node--left {
+    order: 2;
+  }
+
+  .ap-node--top {
+    order: 3;
+  }
+
+  .ap-node--right {
+    order: 4;
+  }
+
+  .ap-node--bottom-left {
+    order: 5;
+  }
+
+  .ap-node--bottom-right {
+    order: 6;
+  }
+
+  .ap-node {
+    padding: 0.68rem 0.75rem;
+
+    text-align: left;
+  }
+
+  .ap-line {
+    display: none;
+  }
+
+  .ap-visual-takeaway {
+    margin-top: 0.9rem;
+    padding-top: 0.7rem;
+
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
+}
+/* ==========================================
+   Product Registry Card
+========================================== */
+
+.product-registry-card {
+  margin: 1.8rem 0;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbfdff 100%
+    );
+
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.045);
+}
+
+
+/* ==========================================
+   Registry Header
+========================================== */
+
+.registry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 0.85rem 1.1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+
+  background:
+    linear-gradient(
+      90deg,
+      #f8fafc 0%,
+      #ffffff 70%
+    );
+}
+
+.registry-eyebrow {
+  display: block;
+
+  margin: 0 0 0.12rem;
+
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+
+  color: #2563eb;
+}
+
+.product-registry-card .registry-header h4 {
+  margin: 0 !important;
+  padding: 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.registry-status {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.24rem 0.62rem 0.24rem 1rem;
+
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+
+  background: #ecfdf5;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  color: #047857;
+}
+
+.registry-status::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0.52rem;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+
+/* ==========================================
+   Registry Metadata
+========================================== */
+
+.registry-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.registry-meta > div {
+  position: relative;
+
+  padding: 0.72rem 1.1rem;
+
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.registry-meta > div:last-child {
+  border-right: none;
+}
+
+.registry-meta span {
+  display: block;
+
+  margin-bottom: 0.12rem;
+
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+
+  color: #94a3b8;
+}
+
+.registry-meta strong {
+  display: block;
+
+  font-size: 0.73rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: #334155;
+}
+
+
+/* Product ID emphasis */
+
+.registry-meta > div:first-child strong {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   Divider
+========================================== */
+
+.registry-divider {
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem 1.1rem;
+
+  background: #f8fafc;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.registry-divider span {
+  font-size: 0.57rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Registry Table
+========================================== */
+
+.registry-table {
+  width: 100%;
+}
+
+.registry-row {
+  display: grid;
+  grid-template-columns:
+    0.9fr
+    1.25fr
+    1fr
+    0.8fr;
+
+  align-items: center;
+
+  min-height: 38px;
+
+  padding: 0 1.1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+
+  font-size: 0.68rem;
+  line-height: 1.25;
+
+  color: #475569;
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.registry-row:last-child {
+  border-bottom: none;
+}
+
+
+/* Table header */
+
+.registry-row--header {
+  min-height: 30px;
+
+  background: #fbfcfd;
+
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #94a3b8;
+}
+
+
+/* Row hover */
+
+.registry-row:not(.registry-row--header):hover {
+  background: #f8fbff;
+}
+
+
+/* ==========================================
+   Artifact ID
+========================================== */
+
+.artifact-id {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+
+  font-size: 0.64rem;
+  font-weight: 700;
+
+  color: #334155;
+}
+
+
+/* ==========================================
+   Mapping Pill
+========================================== */
+
+.mapping-pill {
+  display: inline-flex;
+  justify-self: start;
+
+  padding: 0.18rem 0.48rem;
+
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+
+  background: #eff6ff;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   Registry Note
+========================================== */
+
+.registry-note {
+  display: flex;
+  align-items: center;
+
+  gap: 0.35rem;
+
+  padding: 0.62rem 1.1rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.13);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(239, 246, 255, 0.75),
+      rgba(255, 255, 255, 1) 65%
+    );
+}
+
+.registry-note strong {
+  flex-shrink: 0;
+
+  font-size: 0.64rem;
+  font-weight: 800;
+
+  color: #2563eb;
+}
+
+.registry-note span {
+  font-size: 0.64rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Card Interaction
+========================================== */
+
+.product-registry-card {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.product-registry-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.065);
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .product-registry-card {
+    margin: 1.5rem 0;
+    border-radius: 13px;
+  }
+
+  .registry-header {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .product-registry-card .registry-header h4 {
+    font-size: 0.9rem;
+  }
+
+  .registry-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-meta > div {
+    padding: 0.55rem 0.85rem;
+
+    border-right: none;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  }
+
+  .registry-meta > div:last-child {
+    border-bottom: none;
+  }
+
+  .registry-divider {
+    padding: 0.45rem 0.85rem;
+  }
+
+  .registry-table {
+    overflow-x: auto;
+  }
+
+  .registry-row {
+    min-width: 600px;
+
+    min-height: 36px;
+
+    padding: 0 0.85rem;
+  }
+
+  .registry-note {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 0.12rem;
+
+    padding: 0.55rem 0.85rem;
+  }
+
+}
+
+
+/* ==========================================
+   Product Metadata
+========================================== */
+
+.registry-meta {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: start !important;
+  gap: 0;
+
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0.75rem 1.5rem !important;
+}
+
+.registry-meta > div {
+  display: block !important;
+
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 1rem !important;
+}
+
+.registry-meta > div:first-child {
+  padding-left: 0 !important;
+}
+
+.registry-meta > div:last-child {
+  padding-right: 0 !important;
+}
+
+.registry-meta > div:not(:first-child) {
+  border-left: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.registry-meta span {
+  display: block;
+
+  margin: 0 0 0.15rem !important;
+  padding: 0 !important;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.3;
+
+  color: #64748b;
+}
+
+.registry-meta strong {
+  display: block;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.35;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Connected Artifacts Label
+========================================== */
+
+.registry-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0.45rem 1.5rem 0 !important;
+}
+
+.registry-divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(148, 163, 184, 0.22);
+}
+
+.registry-divider span {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Artifact Table
+========================================== */
+
+.registry-table {
+  margin: 0.55rem 1.5rem 0;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+}
+
+.registry-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.3fr 0.8fr;
+  align-items: center;
+
+  min-height: 42px;
+
+  padding: 0 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+
+  font-size: 0.8rem;
+  line-height: 1.3;
+
+  color: #334155;
+}
+
+.registry-row:last-child {
+  border-bottom: none;
+}
+
+.registry-row--header {
+  min-height: 34px;
+
+  background: #f8fafc;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+.artifact-id {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.mapping-pill {
+  display: inline-flex;
+  justify-self: start;
+
+  padding: 0.18rem 0.5rem;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   Registry Takeaway
+========================================== */
+
+.registry-note {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+
+  margin: 0.8rem 1.5rem 0.9rem;
+  padding-top: 0.7rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+
+  color: #64748b;
+}
+
+.registry-note strong {
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .product-registry-card {
+    margin: 1.8rem 0;
+  }
+
+  .registry-header {
+    padding: 0.9rem 1rem;
+  }
+
+  .registry-meta {
+    grid-template-columns: 1fr !important;
+
+    padding: 0.25rem 1rem 0.6rem !important;
+  }
+
+  .registry-meta > div {
+    padding: 0.55rem 0 !important;
+  }
+
+  .registry-meta > div:not(:first-child) {
+    padding-left: 0 !important;
+
+    border-left: none;
+    border-top: 1px solid rgba(148, 163, 184, 0.16);
+  }
+
+  .registry-divider {
+    padding: 0.35rem 1rem 0 !important;
+  }
+
+  .registry-table {
+    margin: 0.5rem 1rem 0;
+
+    border: none;
+    border-radius: 0;
+  }
+
+  .registry-row--header {
+    display: none;
+  }
+
+  .registry-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 1rem;
+
+    min-height: auto;
+
+    margin-bottom: 0.55rem;
+    padding: 0.7rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 10px;
+
+    background: #ffffff;
+  }
+
+  .registry-row:last-child {
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  }
+
+  .mapping-pill {
+    justify-self: start;
+  }
+
+  .registry-note {
+    margin: 0.7rem 1rem 0.8rem;
+    padding-top: 0.65rem;
+  }
+
+}
+/* ==========================================
+   Usage Pipeline
+========================================== */
+
+.usage-pipeline {
+  margin: 2.4rem 0;
+  padding: 1.6rem 0 0;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.usage-pipeline__header {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.usage-pipeline__eyebrow {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #2563eb;
+}
+
+.usage-pipeline__header p {
+  margin: 0 !important;
+
+  font-size: 0.94rem;
+  line-height: 1.45;
+  text-align: center;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Main Flow
+========================================== */
+
+.usage-pipeline__flow {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1.3fr)
+    auto
+    minmax(120px, 1fr)
+    auto
+    minmax(155px, 1.2fr)
+    auto
+    minmax(125px, 1fr)
+    auto
+    minmax(120px, 0.9fr);
+
+  align-items: center;
+  gap: 0.55rem;
+
+  padding: 1.2rem 0;
+}
+
+
+/* ==========================================
+   Source Group
+========================================== */
+
+.usage-source-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.usage-source {
+  padding: 0.7rem 0.8rem;
+
+  border-left: 3px solid #2563eb;
+
+  background: #f8fafc;
+}
+
+.usage-source__label {
+  display: block;
+  margin-bottom: 0.12rem;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.usage-source small {
+  display: block;
+
+  font-size: 0.72rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Pipeline Stages
+========================================== */
+
+.usage-stage {
+  padding: 0.8rem 0.85rem;
+
+  text-align: center;
+
+  border-top: 2px solid rgba(37, 99, 235, 0.55);
+
+  background: #f8fafc;
+}
+
+.usage-stage__type {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+
+  color: #2563eb;
+}
+
+.usage-stage strong {
+  display: block;
+
+  font-size: 0.84rem;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.usage-stage small {
+  display: block;
+  margin-top: 0.2rem;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Usage Tables
+========================================== */
+
+.usage-stage--tables {
+  padding-bottom: 0.7rem;
+}
+
+.usage-table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  margin-top: 0.45rem;
+}
+
+.usage-table-list code {
+  display: block;
+
+  padding: 0.18rem 0.35rem;
+
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  font-size: 0.66rem;
+  line-height: 1.3;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Arrows
+========================================== */
+
+.usage-arrow {
+  text-align: center;
+}
+
+.usage-arrow span {
+  display: block;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: #94a3b8;
+}
+
+
+/* ==========================================
+   Product
+========================================== */
+
+.usage-product {
+  padding: 0.9rem 0.85rem;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.usage-product span {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+
+  color: #93c5fd;
+}
+
+.usage-product strong {
+  display: block;
+
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+
+/* ==========================================
+   Common Fields Strip
+========================================== */
+
+.usage-fields {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  margin-top: 0.9rem;
+  padding-top: 0.85rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.usage-fields span {
+  padding: 0.25rem 0.55rem;
+
+  border-radius: 999px;
+
+  background: #f1f5f9;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .usage-pipeline {
+    margin: 2rem 0;
+    padding-top: 1.2rem;
+  }
+
+  .usage-pipeline__flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+
+    padding: 0.9rem 0;
+  }
+
+  .usage-source-group,
+  .usage-stage,
+  .usage-product {
+    width: 100%;
+  }
+
+  .usage-arrow {
+    transform: rotate(90deg);
+  }
+
+  .usage-source {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .usage-stage {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .usage-product {
+    padding: 0.8rem;
+  }
+
+  .usage-fields {
+    gap: 0.35rem;
+
+    margin-top: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .usage-fields span {
+    font-size: 0.66rem;
+  }
+
+}
+/* ==========================================
+   Usage Pipeline
+========================================== */
+
+.usage-pipeline {
+  margin: 2.4rem 0;
+  padding: 1.6rem 0 0;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.usage-pipeline__header {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.usage-pipeline__eyebrow {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #2563eb;
+}
+
+.usage-pipeline__header p {
+  margin: 0 !important;
+
+  font-size: 0.94rem;
+  line-height: 1.45;
+  text-align: center;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Main Flow
+========================================== */
+
+.usage-pipeline__flow {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1.3fr)
+    auto
+    minmax(120px, 1fr)
+    auto
+    minmax(155px, 1.2fr)
+    auto
+    minmax(125px, 1fr)
+    auto
+    minmax(120px, 0.9fr);
+
+  align-items: center;
+  gap: 0.55rem;
+
+  padding: 1.2rem 0;
+}
+
+
+/* ==========================================
+   Source Group
+========================================== */
+
+.usage-source-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.usage-source {
+  padding: 0.7rem 0.8rem;
+
+  border-left: 3px solid #2563eb;
+
+  background: #f8fafc;
+}
+
+.usage-source__label {
+  display: block;
+  margin-bottom: 0.12rem;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.usage-source small {
+  display: block;
+
+  font-size: 0.72rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Pipeline Stages
+========================================== */
+
+.usage-stage {
+  padding: 0.8rem 0.85rem;
+
+  text-align: center;
+
+  border-top: 2px solid rgba(37, 99, 235, 0.55);
+
+  background: #f8fafc;
+}
+
+.usage-stage__type {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+
+  color: #2563eb;
+}
+
+.usage-stage strong {
+  display: block;
+
+  font-size: 0.84rem;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.usage-stage small {
+  display: block;
+  margin-top: 0.2rem;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Usage Tables
+========================================== */
+
+.usage-stage--tables {
+  padding-bottom: 0.7rem;
+}
+
+.usage-table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  margin-top: 0.45rem;
+}
+
+.usage-table-list code {
+  display: block;
+
+  padding: 0.18rem 0.35rem;
+
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  font-size: 0.66rem;
+  line-height: 1.3;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Arrows
+========================================== */
+
+.usage-arrow {
+  text-align: center;
+}
+
+.usage-arrow span {
+  display: block;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: #94a3b8;
+}
+
+
+/* ==========================================
+   Product
+========================================== */
+
+.usage-product {
+  padding: 0.9rem 0.85rem;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.usage-product span {
+  display: block;
+  margin-bottom: 0.25rem;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+
+  color: #93c5fd;
+}
+
+.usage-product strong {
+  display: block;
+
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+
+/* ==========================================
+   Common Fields Strip
+========================================== */
+
+.usage-fields {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  margin-top: 0.9rem;
+  padding-top: 0.85rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.usage-fields span {
+  padding: 0.25rem 0.55rem;
+
+  border-radius: 999px;
+
+  background: #f1f5f9;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .usage-pipeline {
+    margin: 2rem 0;
+    padding-top: 1.2rem;
+  }
+
+  .usage-pipeline__flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+
+    padding: 0.9rem 0;
+  }
+
+  .usage-source-group,
+  .usage-stage,
+  .usage-product {
+    width: 100%;
+  }
+
+  .usage-arrow {
+    transform: rotate(90deg);
+  }
+
+  .usage-source {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .usage-stage {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .usage-product {
+    padding: 0.8rem;
+  }
+
+  .usage-fields {
+    gap: 0.35rem;
+
+    margin-top: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .usage-fields span {
+    font-size: 0.66rem;
+  }
+
+}
+
+
+/* ==========================================
+   Usage Architecture
+========================================== */
+
+.usage-architecture {
+  display: block !important;
+
+  width: 100%;
+  margin: 2.2rem 0;
+  padding: 1.5rem;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.usage-architecture .usage-architecture__header {
+  display: block !important;
+
+  width: 100%;
+  margin: 0 0 1.25rem !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+}
+
+.usage-architecture .usage-architecture__eyebrow {
+  display: block !important;
+
+  margin: 0 0 0.25rem !important;
+  padding: 0 !important;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+
+  color: #2563eb;
+}
+
+.usage-architecture .usage-architecture__header p {
+  display: block !important;
+
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 0.92rem;
+  line-height: 1.45;
+  text-align: center !important;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Main Layout
+========================================== */
+
+.usage-architecture .usage-architecture__grid {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    32px
+    minmax(0, 1.25fr)
+    32px
+    minmax(0, 1fr) !important;
+
+  align-items: stretch !important;
+  gap: 0.65rem !important;
+
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* ==========================================
+   Shared Zones
+========================================== */
+
+.usage-architecture .usage-zone {
+  display: block !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0.9rem !important;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.usage-architecture .usage-zone__label {
+  display: block !important;
+
+  margin: 0 0 0.65rem !important;
+  padding: 0 !important;
+
+  font-size: 0.63rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   Sources
+========================================== */
+
+.usage-architecture .usage-source-list {
+  display: flex !important;
+  flex-direction: column !important;
+
+  gap: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.usage-architecture .usage-source-list > div {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.usage-architecture .usage-source-list > div:first-child {
+  padding-top: 0 !important;
+}
+
+.usage-architecture .usage-source-list > div:last-child {
+  padding-bottom: 0 !important;
+
+  border-bottom: none;
+}
+
+.usage-architecture .usage-source-list strong {
+  display: inline !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: #0f172a;
+}
+
+.usage-architecture .usage-source-list span {
+  display: block !important;
+
+  margin: 0.1rem 0 0 !important;
+  padding: 0 !important;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Usage Flow Strip
+========================================== */
+
+.usage-flow-strip {
+  margin: 2.2rem 0;
+  padding: 1.35rem 1.45rem;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.usage-flow-strip__header {
+  margin-bottom: 1rem;
+
+  text-align: center;
+}
+
+.usage-flow-strip__header > span {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #2563eb;
+}
+
+.usage-flow-strip__header p {
+  margin: 0 !important;
+
+  font-size: 0.92rem;
+  line-height: 1.4;
+  text-align: center;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Main Flow
+========================================== */
+
+.usage-flow-strip__body {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1.15fr)
+    28px
+    minmax(145px, 1.05fr)
+    28px
+    minmax(140px, 1fr)
+    28px
+    minmax(130px, 0.9fr);
+
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* ==========================================
+   Flow Steps
+========================================== */
+
+.usage-flow-step,
+.usage-flow-product {
+  min-width: 0;
+
+  padding: 0.8rem 0.85rem;
+
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+
+  background: #f8fafc;
+}
+
+.usage-flow-step small,
+.usage-flow-product small {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #2563eb;
+}
+
+.usage-flow-step > strong {
+  display: block;
+
+  margin-bottom: 0.18rem;
+
+  font-size: 0.84rem;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.usage-flow-step > span {
+  display: block;
+
+  font-size: 0.68rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Sources
+========================================== */
+
+.usage-flow-step--sources {
+  padding: 0.75rem 0.85rem;
+}
+
+.usage-flow-source {
+  padding: 0.3rem 0;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.usage-flow-source:last-child {
+  border-bottom: none;
+}
+
+.usage-flow-source strong {
+  display: block;
+
+  margin-bottom: 0.05rem;
+
+  font-size: 0.76rem;
+  line-height: 1.25;
+
+  color: #0f172a;
+}
+
+.usage-flow-source span {
+  display: block;
+
+  font-size: 0.65rem;
+  line-height: 1.3;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Usage Lineage
+========================================== */
+
+.usage-lineage {
+  position: relative;
+
+  margin: 2.2rem 0;
+  padding: 1.1rem 0 0;
+
+  text-align: center;
+}
+
+
+/* ==========================================
+   Sources
+========================================== */
+
+.usage-lineage__sources {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.usage-lineage__source {
+  min-width: 0;
+}
+
+.usage-lineage__source strong {
+  display: block;
+
+  margin-bottom: 0.12rem;
+
+  font-size: 0.86rem;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.usage-lineage__source span {
+  display: block;
+
+  font-size: 0.7rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Converging Lines
+========================================== */
+
+.usage-lineage__converge {
+  position: relative;
+
+  width: 66%;
+  height: 34px;
+
+  margin: 0.5rem auto 0;
+}
+
+.usage-lineage__converge::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 1px;
+  height: 14px;
+
+  background: rgba(100, 116, 139, 0.35);
+}
+
+.usage-lineage__converge span {
+  position: absolute;
+  top: 0;
+
+  width: 1px;
+  height: 34px;
+
+  background: rgba(100, 116, 139, 0.35);
+
+  transform-origin: bottom;
+}
+
+.usage-lineage__converge span:nth-child(1) {
+  left: 18%;
+
+  transform: rotate(-63deg);
+}
+
+.usage-lineage__converge span:nth-child(2) {
+  left: 50%;
+}
+
+.usage-lineage__converge span:nth-child(3) {
+  right: 18%;
+
+  transform: rotate(63deg);
+}
+
+
+/* ==========================================
+   Main Usage Lane
+========================================== */
+
+.usage-lineage__lane {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.2rem;
+
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+
+  border-top: 1px solid rgba(100, 116, 139, 0.28);
+  border-bottom: 1px solid rgba(100, 116, 139, 0.28);
+
+  background: rgba(248, 250, 252, 0.65);
+}
+
+.usage-lineage__lane-label {
+  text-align: left;
+}
+
+.usage-lineage__lane-label span {
+  display: block;
+
+  margin-bottom: 0.12rem;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.usage-lineage__lane-label strong {
+  display: block;
+
+  font-size: 0.88rem;
+
+  color: #0f172a;
+}
+
+.usage-lineage__tables {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.usage-lineage__tables code {
+  padding: 0.18rem 0.42rem;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  font-size: 0.66rem;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Vertical Connector
+========================================== */
+
+.usage-lineage__vertical {
+  width: 1px;
+  height: 24px;
+
+  margin: 0 auto;
+
+  background: rgba(100, 116, 139, 0.35);
+}
+
+.usage-lineage__vertical--short {
+  height: 18px;
+}
+
+
+/* ==========================================
+   Mapping
+========================================== */
+
+.usage-lineage__mapping {
+  display: inline-block;
+
+  padding: 0.1rem 1rem;
+
+  background: #ffffff;
+}
+
+.usage-lineage__mapping span {
+  display: block;
+
+  margin-bottom: 0.08rem;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.usage-lineage__mapping strong {
+  display: block;
+
+  font-size: 0.86rem;
+
+  color: #0f172a;
+}
+
+.usage-lineage__mapping small {
+  display: block;
+
+  margin-top: 0.12rem;
+
+  font-size: 0.67rem;
+  line-height: 1.3;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Destination
+========================================== */
+
+.usage-lineage__destination {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  padding: 0.45rem 0.75rem;
+
+  border-bottom: 2px solid #0f172a;
+}
+
+.usage-lineage__destination span {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.usage-lineage__destination strong {
+  font-size: 0.9rem;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Common Schema
+========================================== */
+
+.usage-lineage__schema {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+
+  margin-top: 0.9rem;
+  padding-top: 0.65rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.usage-lineage__schema span {
+  font-size: 0.64rem;
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .usage-lineage {
+    margin: 1.8rem 0;
+  }
+
+  .usage-lineage__sources {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+
+    text-align: left;
+  }
+
+  .usage-lineage__converge {
+    display: none;
+  }
+
+  .usage-lineage__lane {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+
+    margin-top: 0.8rem;
+
+    text-align: left;
+  }
+
+  .usage-lineage__tables {
+    justify-content: flex-start;
+  }
+
+  .usage-lineage__destination {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+}
+/* ==========================================
+   Product Consumption Table
+========================================== */
+
+.consumption-table {
+  margin: 2rem 0;
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   Table Top Bar
+========================================== */
+
+.consumption-table__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.7rem 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  background: #f8fafc;
+}
+
+.consumption-table__name {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.consumption-table__status {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.consumption-table__name code {
+  padding: 0;
+
+  background: transparent;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.consumption-table__count {
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Table
+========================================== */
+
+.consumption-table__scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.consumption-table__grid {
+  display: grid;
+  grid-template-columns:
+    0.7fr
+    0.9fr
+    1fr
+    0.9fr
+    1.5fr
+    1fr;
+
+  align-items: center;
+
+  min-width: 680px;
+  min-height: 42px;
+
+  padding: 0 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+
+  font-size: 0.78rem;
+
+  color: #475569;
+}
+
+.consumption-table__grid:last-child {
+  border-bottom: none;
+}
+
+.consumption-table__grid--header {
+  min-height: 34px;
+
+  background: #fafafa;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+.consumption-table__grid code {
+  padding: 0;
+
+  background: transparent;
+
+  font-size: 0.72rem;
+
+  color: #475569;
+}
+
+.consumption-table__grid strong {
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Channel
+========================================== */
+
+.consumption-channel {
+  display: inline-flex;
+  justify-self: start;
+
+  padding: 0.16rem 0.4rem;
+
+  border-radius: 4px;
+
+  background: #f1f5f9;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  color: #334155;
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+.consumption-table__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  padding: 0.65rem 1rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+
+  background: #f8fafc;
+}
+
+.consumption-table__footer span {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.consumption-table__footer strong {
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .consumption-table {
+    margin: 1.7rem 0;
+  }
+
+  .consumption-table__top {
+    padding: 0.65rem 0.8rem;
+  }
+
+  .consumption-table__grid {
+    padding: 0 0.8rem;
+  }
+
+  .consumption-table__footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
+
+    padding: 0.65rem 0.8rem;
+  }
+
+}
+/* ==========================================
+   Product Consumption Table
+========================================== */
+
+.consumption-table {
+  margin: 1.7rem 0;
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   Table Top Bar
+========================================== */
+
+.consumption-table__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+
+  padding: 0.55rem 0.85rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  background: #f8fafc;
+}
+
+.consumption-table__name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.consumption-table__status {
+  width: 6px;
+  height: 6px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.consumption-table__name code {
+  padding: 0;
+
+  background: transparent;
+
+  font-size: 0.74rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.consumption-table__count {
+  font-size: 0.64rem;
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Table
+========================================== */
+
+.consumption-table__scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.consumption-table__grid {
+  display: grid;
+  grid-template-columns:
+    0.65fr
+    0.85fr
+    0.95fr
+    0.85fr
+    1.45fr
+    0.9fr;
+
+  align-items: center;
+
+  min-width: 640px;
+  min-height: 36px;
+
+  padding: 0 0.85rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+
+  font-size: 0.74rem;
+  line-height: 1.25;
+
+  color: #475569;
+}
+
+.consumption-table__grid:last-child {
+  border-bottom: none;
+}
+
+.consumption-table__grid--header {
+  min-height: 30px;
+
+  background: #fbfcfd;
+
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+.consumption-table__grid code {
+  padding: 0;
+
+  background: transparent;
+
+  font-size: 0.68rem;
+
+  color: #475569;
+}
+
+.consumption-table__grid strong {
+  font-size: 0.74rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Channel
+========================================== */
+
+.consumption-channel {
+  display: inline-flex;
+  justify-self: start;
+
+  padding: 0.12rem 0.34rem;
+
+  border-radius: 4px;
+
+  background: #f1f5f9;
+
+  font-size: 0.64rem;
+  font-weight: 600;
+
+  color: #334155;
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+.consumption-table__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+
+  padding: 0.5rem 0.85rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+
+  background: #f8fafc;
+}
+
+.consumption-table__footer span {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.consumption-table__footer strong {
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .consumption-table {
+    margin: 1.5rem 0;
+  }
+
+  .consumption-table__top {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .consumption-table__grid {
+    min-width: 620px;
+    min-height: 34px;
+
+    padding: 0 0.7rem;
+  }
+
+  .consumption-table__footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.1rem;
+
+    padding: 0.5rem 0.7rem;
+  }
+
+}
+/* ==========================================
+   Interaction Normalization
+========================================== */
+
+.interaction-normalization {
+  width: 100%;
+  margin: 1.8rem 0;
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.interaction-normalization__header {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 220px !important;
+  column-gap: 70px;
+
+  padding: 0.65rem 1rem;
+
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+.interaction-normalization__header span:last-child {
+  text-align: left;
+}
+
+
+/* ==========================================
+   Each Example
+========================================== */
+
+.interaction-normalization__row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 42px 220px !important;
+  align-items: center;
+  column-gap: 14px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0.85rem 1rem;
+
+  border-bottom: 1px solid #e8edf3;
+}
+
+
+/* ==========================================
+   Raw Platform Activity
+========================================== */
+
+.interaction-normalization__source {
+  min-width: 0;
+}
+
+.interaction-normalization__source > strong {
+  display: block;
+  margin: 0 0 0.4rem;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.interaction-event {
+  display: grid !important;
+  grid-template-columns: 68px minmax(0, 1fr) !important;
+  align-items: center;
+  gap: 0.5rem;
+
+  min-height: 22px;
+  margin: 0;
+
+  font-size: 0.7rem;
+  line-height: 1.25;
+
+  color: #475569;
+}
+
+.interaction-event code {
+  display: block;
+
+  min-width: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border: 0;
+  background: transparent !important;
+
+  font-size: 0.65rem;
+  white-space: nowrap;
+
+  color: #94a3b8;
+}
+
+.interaction-event span {
+  min-width: 0;
+}
+
+
+/* ==========================================
+   Grouping Key
+========================================== */
+
+.interaction-normalization__key {
+  display: inline-block;
+
+  margin-top: 0.35rem;
+  padding: 0.13rem 0.35rem;
+
+  border-radius: 4px;
+  background: #f1f5f9;
+
+  font-size: 0.57rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Arrow
+========================================== */
+
+.interaction-normalization__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+
+  font-size: 1rem;
+  line-height: 1;
+
+  color: #94a3b8;
+}
+
+
+/* ==========================================
+   Final Interaction
+========================================== */
+
+.interaction-normalization__result {
+  display: grid !important;
+  grid-template-columns: 28px minmax(0, 1fr) !important;
+  align-items: center;
+  gap: 0.55rem;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0.5rem 0.6rem;
+
+  border: 1px solid #dbeafe;
+  border-radius: 7px;
+  background: #f8fbff;
+}
+
+.interaction-normalization__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  background: #0f172a;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.interaction-normalization__result strong {
+  display: block;
+
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.25;
+
+  color: #0f172a;
+}
+
+.interaction-normalization__result small {
+  display: block;
+
+  margin-top: 0.08rem;
+  font-size: 0.61rem;
+  line-height: 1.3;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Takeaway
+========================================== */
+
+.interaction-normalization__takeaway {
+  padding: 0.6rem 1rem;
+
+  text-align: center;
+  background: #f8fafc;
+}
+
+.interaction-normalization__takeaway strong {
+  display: inline;
+
+  font-size: 0.72rem;
+  color: #0f172a;
+}
+
+.interaction-normalization__takeaway span {
+  display: inline;
+
+  margin-left: 0.3rem;
+
+  font-size: 0.68rem;
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .interaction-normalization {
+    margin: 1.5rem 0;
+  }
+
+  .interaction-normalization__header {
+    display: none !important;
+  }
+
+  .interaction-normalization__row {
+    grid-template-columns: 1fr !important;
+    row-gap: 0.45rem;
+
+    padding: 0.8rem;
+  }
+
+  .interaction-normalization__arrow {
+    width: auto;
+    height: 18px;
+
+    transform: rotate(90deg);
+  }
+
+  .interaction-normalization__result {
+    width: 100%;
+  }
+
+  .interaction-normalization__takeaway {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .interaction-normalization__takeaway strong,
+  .interaction-normalization__takeaway span {
+    display: block;
+    margin-left: 0;
+  }
+
+  .interaction-normalization__takeaway span {
+    margin-top: 0.1rem;
+  }
+
+}
+/* ==========================================
+   Consumption Note
+   Mirrors Analyst Note Reference
+========================================== */
+
+.consumption-note {
+  position: relative;
+
+  margin: 2rem 0;
+  padding: 1.7rem 2rem 1.55rem;
+
+  border: 1px solid #e4dcfb;
+  border-left: 6px solid #7c3aed;
+  border-radius: 18px;
+
+  background: #fbf9ff;
+}
+
+
+/* ==========================================
+   Floating Icon
+========================================== */
+
+.consumption-note-icon {
+  position: absolute;
+  top: -20px;
+  right: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+  background: #7c3aed;
+
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.consumption-note-icon svg {
+  width: 23px;
+  height: 23px;
+
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* ==========================================
+   Label
+========================================== */
+
+.consumption-note-label {
+  margin-bottom: 0.7rem;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #7c3aed;
+}
+
+
+/* ==========================================
+   Heading
+========================================== */
+
+.consumption-note h3 {
+  max-width: 900px;
+
+  margin: 0 4rem 0.65rem 0;
+
+  font-size: 1.35rem;
+  line-height: 1.3;
+  font-weight: 700;
+
+  color: #1f2937;
+}
+
+
+/* ==========================================
+   Supporting Text
+========================================== */
+
+.consumption-note p {
+  max-width: 920px;
+
+  margin: 0;
+
+  font-size: 0.95rem;
+  line-height: 1.55;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Tags
+========================================== */
+
+.consumption-note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-top: 1.1rem;
+}
+
+.consumption-note-tags span {
+  padding: 0.28rem 0.8rem;
+
+  border: 1px solid #d9cdf8;
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  color: #6d28d9;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .consumption-note {
+    margin: 1.7rem 0;
+    padding: 1.4rem 1.15rem 1.2rem;
+  }
+
+  .consumption-note-icon {
+    top: -16px;
+    right: 18px;
+
+    width: 46px;
+    height: 46px;
+  }
+
+  .consumption-note-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .consumption-note-label {
+    margin-bottom: 0.55rem;
+
+    font-size: 0.66rem;
+  }
+
+  .consumption-note h3 {
+    margin-right: 3rem;
+
+    font-size: 1.1rem;
+  }
+
+  .consumption-note p {
+    font-size: 0.86rem;
+  }
+
+  .consumption-note-tags {
+    margin-top: 0.9rem;
+  }
+
+  .consumption-note-tags span {
+    padding: 0.24rem 0.65rem;
+
+    font-size: 0.66rem;
+  }
+
+}
+
+
+/* ==========================================
+   Adoption Portfolio
+========================================== */
+
+.adoption-portfolio {
+  margin: 1.8rem 0;
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.adoption-portfolio__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.7rem 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  background: #f8fafc;
+}
+
+.adoption-portfolio__header span {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.adoption-portfolio__header strong {
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Table Wrapper
+========================================== */
+
+.adoption-portfolio__scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+/* ==========================================
+   Grid
+========================================== */
+
+.adoption-portfolio__grid {
+  display: grid;
+  grid-template-columns:
+    1.3fr
+    0.9fr
+    1.2fr
+    0.75fr
+    0.9fr
+    0.55fr;
+
+  align-items: center;
+
+  min-width: 680px;
+  min-height: 40px;
+
+  padding: 0 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+
+  font-size: 0.75rem;
+  line-height: 1.25;
+
+  color: #475569;
+}
+
+.adoption-portfolio__grid:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================
+   Column Header
+========================================== */
+
+.adoption-portfolio__grid--header {
+  min-height: 32px;
+
+  background: #fbfcfd;
+
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Product Column
+========================================== */
+
+.adoption-portfolio__grid > strong {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Numeric Columns
+========================================== */
+
+.adoption-portfolio__grid > span {
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ==========================================
+   Consumption Columns
+========================================== */
+
+.adoption-portfolio__grid > span:nth-child(2),
+.adoption-portfolio__grid > span:nth-child(3),
+.adoption-portfolio__grid > span:nth-child(4) {
+  font-weight: 600;
+  color: #334155;
+}
+
+
+/* ==========================================
+   Trend
+========================================== */
+
+.portfolio-trend {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.portfolio-trend--up {
+  background: #ecfdf5;
+  color: #15803d;
+}
+
+.portfolio-trend--down {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+
+/* ==========================================
+   Row Hover
+========================================== */
+
+.adoption-portfolio__grid:not(.adoption-portfolio__grid--header):hover {
+  background: #fafcff;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .adoption-portfolio {
+    margin: 1.5rem 0;
+  }
+
+  .adoption-portfolio__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
+
+    padding: 0.65rem 0.8rem;
+  }
+
+  .adoption-portfolio__grid {
+    min-width: 650px;
+    min-height: 38px;
+
+    padding: 0 0.8rem;
+  }
+
+}
+/* ==========================================
+   Adoption Question Shift
+========================================== */
+
+.adoption-question-shift {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.65fr)
+    90px
+    minmax(0, 1.35fr);
+
+  align-items: center;
+  gap: 0;
+
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+
+/* ==========================================
+   Old Question
+========================================== */
+
+.adoption-question-shift__old {
+  padding: 0.4rem 1.4rem 0.4rem 0.3rem;
+
+  opacity: 0.72;
+}
+
+.adoption-question-shift__old span {
+  display: block;
+
+  margin-bottom: 0.45rem;
+
+  font-size: 0.59rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+
+  color: #94a3b8;
+}
+
+.adoption-question-shift__old p {
+  margin: 0;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.45;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Transition
+========================================== */
+
+.adoption-question-shift__arrow {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 32px;
+
+  font-size: 0;
+
+  color: transparent;
+}
+
+
+/* transition line */
+
+.adoption-question-shift__arrow::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 10px;
+  top: 50%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #cbd5e1 0%,
+      #93c5fd 70%,
+      #3b82f6 100%
+    );
+}
+
+
+/* arrow head */
+
+.adoption-question-shift__arrow::after {
+  content: "→";
+
+  position: relative;
+
+  padding-left: 0.35rem;
+
+  background: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   New Question
+========================================== */
+
+.adoption-question-shift__new {
+  position: relative;
+
+  margin-left: 1.1rem;
+  padding: 0.9rem 0 0.9rem 1.35rem;
+}
+
+
+/* Blue editorial accent */
+
+.adoption-question-shift__new::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 4px;
+
+  border-radius: 4px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #60a5fa,
+      #2563eb
+    );
+}
+
+.adoption-question-shift__new span {
+  display: block;
+
+  margin-bottom: 0.45rem;
+
+  font-size: 0.61rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+
+  color: #2563eb;
+}
+
+.adoption-question-shift__new p {
+  max-width: 680px;
+
+  margin: 0;
+
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.45;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Interaction
+========================================== */
+
+.adoption-question-shift__old,
+.adoption-question-shift__new {
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+
+.adoption-question-shift:hover .adoption-question-shift__old {
+  opacity: 0.55;
+}
+
+.adoption-question-shift:hover .adoption-question-shift__new {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .adoption-question-shift {
+    grid-template-columns: 1fr;
+
+    padding: 1.2rem 0;
+  }
+
+  .adoption-question-shift__old {
+    padding: 0 0 0.8rem;
+  }
+
+  .adoption-question-shift__arrow {
+    justify-content: center;
+
+    width: 32px;
+    height: 42px;
+  }
+
+  .adoption-question-shift__arrow::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: auto;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+      linear-gradient(
+        180deg,
+        #cbd5e1,
+        #60a5fa
+      );
+  }
+
+  .adoption-question-shift__arrow::after {
+    content: "↓";
+
+    padding: 0.2rem 0 0;
+
+    background: #ffffff;
+  }
+
+  .adoption-question-shift__new {
+    margin: 0;
+    padding: 0.7rem 0 0.7rem 1rem;
+  }
+
+  .adoption-question-shift__old p {
+    font-size: 0.82rem;
+  }
+
+  .adoption-question-shift__new p {
+    font-size: 0.96rem;
+  }
+
+}
+/* ==========================================
+   Maintenance → Exceptions Shift
+========================================== */
+
+.maintenance-shift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  margin: 1.8rem 0 1.5rem;
+  padding: 0.9rem 0;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+
+/* ==========================================
+   Maintenance
+========================================== */
+
+.maintenance-shift__from {
+  position: relative;
+
+  padding: 0.45rem 0.85rem;
+}
+
+.maintenance-shift__from span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #94a3b8;
+}
+
+/* Strike through the old operating model */
+
+.maintenance-shift__from::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 4%;
+
+  width: 92%;
+  height: 1px;
+
+  background: #94a3b8;
+
+  transform: rotate(-4deg);
+}
+
+
+/* ==========================================
+   Arrow
+========================================== */
+
+.maintenance-shift__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background: #f1f5f9;
+
+  font-size: 0.9rem;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Exceptions
+========================================== */
+
+.maintenance-shift__to {
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 6px;
+  background: #ecfdf5;
+}
+
+.maintenance-shift__to span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+
+  color: #047857;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .maintenance-shift {
+    gap: 0.65rem;
+
+    margin: 1.5rem 0 1.3rem;
+    padding: 0.8rem 0;
+  }
+
+  .maintenance-shift__from,
+  .maintenance-shift__to {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .maintenance-shift__from span,
+  .maintenance-shift__to span {
+    font-size: 0.63rem;
+    letter-spacing: 0.07em;
+  }
+
+  .maintenance-shift__arrow {
+    width: 26px;
+    height: 26px;
+
+    font-size: 0.78rem;
+  }
+
+}
+/* ==========================================
+   Exception Signals
+========================================== */
+
+.exception-signals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.7rem;
+
+  margin: 1.5rem 0 1.8rem;
+  padding: 0.7rem;
+
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffaf5 0%,
+      #ffffff 55%,
+      #f8fafc 100%
+    );
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.035);
+}
+
+
+/* ==========================================
+   Individual Signal
+========================================== */
+
+.exception-signal {
+  position: relative;
+
+  min-width: 0;
+  overflow: hidden;
+
+  padding: 0.9rem 0.9rem 0.8rem;
+
+  border: 1px solid rgba(251, 146, 60, 0.25);
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fffaf5 100%
+    );
+
+  box-shadow:
+    0 3px 10px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* ==========================================
+   Top Accent
+========================================== */
+
+.exception-signal::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #fb923c 0%,
+      #f97316 45%,
+      rgba(249, 115, 22, 0.08) 100%
+    );
+}
+
+
+/* ==========================================
+   Status Dot
+========================================== */
+
+.exception-signal::after {
+  content: "";
+
+  position: absolute;
+  top: 0.95rem;
+  right: 0.85rem;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #f97316;
+
+  box-shadow:
+    0 0 0 4px rgba(249, 115, 22, 0.09);
+}
+
+
+/* ==========================================
+   Signal Text
+========================================== */
+
+.exception-signal span {
+  display: block;
+
+  margin-bottom: 0.16rem;
+  padding-right: 1.2rem;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+
+  color: #c2410c;
+}
+
+.exception-signal strong {
+  display: block;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+  color: #1e293b;
+}
+
+
+/* ==========================================
+   Hover
+========================================== */
+
+.exception-signal:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(249, 115, 22, 0.38);
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fff7ed 100%
+    );
+
+  box-shadow:
+    0 8px 18px rgba(15, 23, 42, 0.07);
+}
+
+.exception-signal:hover::after {
+  box-shadow:
+    0 0 0 5px rgba(249, 115, 22, 0.11),
+    0 0 12px rgba(249, 115, 22, 0.14);
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .exception-signals {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.55rem;
+
+    margin: 1.3rem 0 1.6rem;
+    padding: 0.55rem;
+
+    border-radius: 12px;
+  }
+
+  .exception-signal {
+    padding: 0.78rem 0.75rem 0.72rem;
+  }
+
+  .exception-signal::after {
+    top: 0.85rem;
+    right: 0.7rem;
+
+    width: 6px;
+    height: 6px;
+  }
+
+  .exception-signal span {
+    font-size: 0.56rem;
+  }
+
+  .exception-signal strong {
+    font-size: 0.72rem;
+  }
+
+}
+/* ==========================================
+   Maintenance Principle
+========================================== */
+
+.maintenance-principle {
+  position: relative;
+
+  margin: 2rem 0 0;
+  padding: 1.4rem 4.5rem 1.4rem 1.6rem;
+
+  overflow: hidden;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  border-left: 4px solid #f97316;
+
+  background:
+    linear-gradient(
+      105deg,
+      rgba(255, 247, 237, 0.85) 0%,
+      rgba(255, 255, 255, 0.98) 48%,
+      rgba(248, 250, 252, 0.8) 100%
+    );
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-left-color 0.22s ease;
+}
+
+
+/* ==========================================
+   Small Editorial Accent
+========================================== */
+
+.maintenance-principle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 90px;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f97316 0%,
+      rgba(249, 115, 22, 0) 100%
+    );
+}
+
+
+/* ==========================================
+   Editorial Quote Mark
+========================================== */
+
+.maintenance-principle::after {
+  content: "”";
+
+  position: absolute;
+  top: -0.5rem;
+  right: 1.35rem;
+
+  font-family: Georgia, serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: 1;
+
+  color: rgba(249, 115, 22, 0.11);
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   Setup
+========================================== */
+
+.maintenance-principle p {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 0.5rem;
+
+  font-size: 0.67rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+
+  color: #9a3412;
+}
+
+
+/* ==========================================
+   Principle
+========================================== */
+
+.maintenance-principle strong {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  max-width: 850px;
+
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.45;
+
+  color: #0f172a;
+}
+
+
+/* ==========================================
+   Hover
+========================================== */
+
+.maintenance-principle:hover {
+  transform: translateY(-2px);
+
+  border-left-color: #ea580c;
+
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .maintenance-principle {
+    margin-top: 1.6rem;
+
+    padding:
+      1.15rem
+      2.8rem
+      1.15rem
+      1.1rem;
+
+    border-left-width: 3px;
+  }
+
+  .maintenance-principle::before {
+    width: 65px;
+  }
+
+  .maintenance-principle::after {
+    top: -0.2rem;
+    right: 0.7rem;
+
+    font-size: 4rem;
+  }
+
+  .maintenance-principle p {
+    margin-bottom: 0.4rem;
+
+    font-size: 0.6rem;
+    letter-spacing: 0.045em;
+  }
+
+  .maintenance-principle strong {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+}
+/* ==========================================
+   Adoption Start Plan
+========================================== */
+
+.adoption-start-plan {
+  position: relative;
+
+  margin: 1.9rem 0 2rem;
+  padding: 0.45rem 0;
+
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(248, 250, 252, 0.75) 0%,
+      #ffffff 22%,
+      #ffffff 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* Vertical journey line */
+
+.adoption-start-plan::before {
+  content: "";
+
+  position: absolute;
+  top: 34px;
+  bottom: 34px;
+  left: 35px;
+
+  width: 1px;
+
+  background: linear-gradient(
+    180deg,
+    #cbd5e1 0%,
+    #94a3b8 65%,
+    #86efac 100%
+  );
+}
+
+
+/* ==========================================
+   Individual Step
+========================================== */
+
+.adoption-start-step {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: center;
+  gap: 0.95rem;
+
+  min-height: 64px;
+  padding: 0.72rem 1rem;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.11);
+}
+
+.adoption-start-step:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================
+   Step Number
+========================================== */
+
+.adoption-start-step__number {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #dbe3ec;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Content
+========================================== */
+
+.adoption-start-step strong {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.adoption-start-step p {
+  margin: 0;
+
+  font-size: 0.69rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Interaction
+========================================== */
+
+.adoption-start-step {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.adoption-start-step:hover {
+  background: rgba(248, 250, 252, 0.85);
+}
+
+.adoption-start-step:hover .adoption-start-step__number {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   Final Step
+========================================== */
+
+.adoption-start-step:last-child {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 253, 245, 0.65),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.adoption-start-step:last-child .adoption-start-step__number {
+  border-color: #bbf7d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.adoption-start-step:last-child strong {
+  color: #064e3b;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .adoption-start-plan {
+    margin: 1.6rem 0 1.8rem;
+    border-radius: 14px;
+  }
+
+  .adoption-start-plan::before {
+    left: 29px;
+    top: 31px;
+    bottom: 31px;
+  }
+
+  .adoption-start-step {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 0.7rem;
+
+    min-height: 60px;
+    padding: 0.68rem 0.75rem;
+  }
+
+  .adoption-start-step__number {
+    width: 30px;
+    height: 30px;
+
+    font-size: 0.61rem;
+  }
+
+  .adoption-start-step strong {
+    font-size: 0.77rem;
+  }
+
+  .adoption-start-step p {
+    font-size: 0.64rem;
+  }
+
+}
+
+/* ==========================================
+   Adoption Scale Flow
+========================================== */
+
+.adoption-scale-flow {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    48px
+    minmax(0, 1.25fr)
+    48px
+    minmax(0, 1.25fr);
+
+  align-items: center;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 1.6rem 0 1.8rem;
+}
+
+
+/* ==========================================
+   Steps
+========================================== */
+
+.adoption-scale-flow__step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+  min-height: 64px;
+
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.05);
+
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+
+  color: #334155;
+}
+
+
+/* ==========================================
+   Connectors
+========================================== */
+
+.adoption-scale-flow__connector {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+
+/* line */
+
+.adoption-scale-flow__connector::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  height: 1px;
+
+  background: #cbd5e1;
+}
+
+
+/* arrow */
+
+.adoption-scale-flow__connector span {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid #dbe3ec;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 6px rgba(15, 23, 42, 0.06);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Final Step
+========================================== */
+
+.adoption-scale-flow__step--final {
+  border-color: #bfdbfe;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff 0%,
+      #f8fbff 100%
+    );
+
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.07);
+
+  color: #1d4ed8;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .adoption-scale-flow {
+    grid-template-columns:
+      max-content
+      34px
+      max-content
+      34px
+      max-content;
+
+    overflow-x: auto;
+
+    padding-bottom: 0.35rem;
+  }
+
+  .adoption-scale-flow__step {
+    min-height: 54px;
+    padding: 0.7rem 0.8rem;
+
+    font-size: 0.67rem;
+
+    white-space: nowrap;
+  }
+
+}
+/* ==========================================
+   Tomorrow Plan
+========================================== */
+
+.tomorrow-plan {
+  margin: 1.8rem 0 2rem;
+
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ==========================================
+   Step
+========================================== */
+
+.tomorrow-plan__step {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  gap: 1rem;
+
+  padding: 0.85rem 1.1rem;
+
+  border-bottom: 1px solid #eef2f7;
+}
+
+.tomorrow-plan__step:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================
+   Number
+========================================== */
+
+.tomorrow-plan__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 38px;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid #dbe3ec;
+  border-radius: 50%;
+
+  background: #f8fafc;
+
+  box-shadow:
+    0 3px 8px rgba(15, 23, 42, 0.05);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  color: #475569;
+}
+
+
+/* ==========================================
+   Content
+========================================== */
+
+.tomorrow-plan__content {
+  flex: 1 1 auto;
+
+  width: auto;
+  min-width: 0;
+}
+
+.tomorrow-plan__content strong {
+  display: block;
+
+  margin: 0 0 0.18rem;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+.tomorrow-plan__content p {
+  margin: 0;
+
+  font-size: 0.68rem;
+  line-height: 1.35;
+
+  color: #64748b;
+}
+
+
+/* ==========================================
+   Subtle Journey Accent
+========================================== */
+
+.tomorrow-plan__step::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+
+  width: 3px;
+
+  border-radius: 0 3px 3px 0;
+
+  background: #cbd5e1;
+}
+
+.tomorrow-plan__step:nth-child(2)::before {
+  background: #a5b4fc;
+}
+
+.tomorrow-plan__step:nth-child(3)::before {
+  background: #93c5fd;
+}
+
+.tomorrow-plan__step:nth-child(4)::before {
+  background: #60a5fa;
+}
+
+
+/* ==========================================
+   Final Step
+========================================== */
+
+.tomorrow-plan__step:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(239, 246, 255, 0.8),
+      rgba(255, 255, 255, 1) 55%
+    );
+}
+
+.tomorrow-plan__step:last-child::before {
+  background: #2563eb;
+}
+
+.tomorrow-plan__step:last-child .tomorrow-plan__number {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   Hover
+========================================== */
+
+.tomorrow-plan__step {
+  transition: background 0.18s ease;
+}
+
+.tomorrow-plan__step:hover {
+  background: #fafcff;
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 760px) {
+
+  .tomorrow-plan {
+    margin: 1.5rem 0 1.7rem;
+    border-radius: 14px;
+  }
+
+  .tomorrow-plan__step {
+    gap: 0.75rem;
+
+    padding: 0.75rem 0.8rem;
+  }
+
+  .tomorrow-plan__number {
+    flex-basis: 32px;
+
+    width: 32px;
+    height: 32px;
+
+    font-size: 0.62rem;
+  }
+
+  .tomorrow-plan__content strong {
+    font-size: 0.76rem;
+  }
+
+  .tomorrow-plan__content p {
+    font-size: 0.64rem;
+  }
+
+}
+/* ==========================================
+   Tomorrow Plan — Interaction
+========================================== */
+
+.tomorrow-plan__step {
+  transition:
+    background 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.tomorrow-plan__number {
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.tomorrow-plan__step::before {
+  transition:
+    width 0.22s ease,
+    background 0.22s ease;
+}
+
+
+/* ==========================================
+   Hover
+========================================== */
+
+.tomorrow-plan__step:hover {
+  z-index: 2;
+
+  transform: translateX(4px);
+
+  background: #f8fbff;
+
+  box-shadow:
+    0 7px 18px rgba(15, 23, 42, 0.055);
+}
+
+
+/* Number reacts */
+
+.tomorrow-plan__step:hover .tomorrow-plan__number {
+  transform: scale(1.06);
+
+  border-color: #bfdbfe;
+  background: #eff6ff;
+
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.12);
+
+  color: #2563eb;
+}
+
+
+/* Left journey marker */
+
+.tomorrow-plan__step:hover::before {
+  width: 5px;
+  background: #2563eb;
+}
+
+
+/* ==========================================
+   Final Step
+========================================== */
+
+.tomorrow-plan__step:last-child:hover {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(219, 234, 254, 0.75),
+      rgba(255, 255, 255, 1) 60%
+    );
+}
